@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/test/PuntoTests[1]_tests.cmake")
+  include("C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/test/PuntoTests[1]_tests.cmake")
+else()
+  add_test(PuntoTests_NOT_BUILT PuntoTests_NOT_BUILT)
+endif()
