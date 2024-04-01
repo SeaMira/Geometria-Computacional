@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\T2\EstructurasCPP\build\CMakeFiles\b7ef084085b35e25c8148953346acd53\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D72D054F-97BC-303C-A24B-40E344A73CEC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

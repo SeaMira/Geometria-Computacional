@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\T2\EstructurasCPP\build\_deps\googletest-subbuild\CMakeFiles\74ede1b2e68dd7d8f71e1570714fd909\googletest-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\T2\EstructurasCPP\build\_deps\googletest-subbuild\CMakeFiles\74ede1b2e68dd7d8f71e1570714fd909\googletest-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\T2\EstructurasCPP\build\_deps\googletest-subbuild\CMakeFiles\74ede1b2e68dd7d8f71e1570714fd909\googletest-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\T2\EstructurasCPP\build\_deps\googletest-subbuild\CMakeFiles\74ede1b2e68dd7d8f71e1570714fd909\googletest-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\T2\EstructurasCPP\build\_deps\googletest-subbuild\CMakeFiles\74ede1b2e68dd7d8f71e1570714fd909\googletest-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\T2\EstructurasCPP\build\_deps\googletest-subbuild\CMakeFiles\74ede1b2e68dd7d8f71e1570714fd909\googletest-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\T2\EstructurasCPP\build\_deps\googletest-subbuild\CMakeFiles\74ede1b2e68dd7d8f71e1570714fd909\googletest-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\T2\EstructurasCPP\build\_deps\googletest-subbuild\CMakeFiles\74ede1b2e68dd7d8f71e1570714fd909\googletest-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\T2\EstructurasCPP\build\_deps\googletest-subbuild\CMakeFiles\ad8e8124425cc9de62667022ce1abce2\googletest-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\T2\EstructurasCPP\build\_deps\googletest-subbuild\CMakeFiles\650fb1e11714164e8cec9b07effaf200\googletest-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\T2\EstructurasCPP\build\_deps\googletest-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\T2\EstructurasCPP\build\_deps\googletest-subbuild\CMakeFiles\googletest-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CA118552-C0B7-31CD-831D-73DBC48838BC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
