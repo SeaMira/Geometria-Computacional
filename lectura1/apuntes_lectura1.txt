@@ -1,0 +1,190 @@
+Técnicas para atacar problemas de precisión en la implementación de algoritmos geométricos.
+Accuracy: relación entre realidad y las medidas de datos que la miden
+Precisión: nivel de detalle con que data numérica es representada en un modelo o en calculos de un modelo
+Spatial data can be processed and analysed using Geographical Information Systems (GIS) or Image Processing packages.
+Problemas notorios que calculos geometricos imprecisos pueden causar.
+
+Se asume data geométrica accurate.
+
+Algoritmos geométricos son correctos en modelos computacionales con cómputos exactos en los reales. Pero la mayoría de las veces cálculos exactos son reemplazados con aritmética rápida de precisión finita en puntos flotantes, dada por el hardware. Este cambio de infinitos reales a finitos puntos flotantes genera errores;
+Errores acumulados por redondeo.
+Ejemplos
+--Determinación de la orientación de puntos: El cálculo de la orientación relativa de tres puntos en un plano puede fallar si se realizan operaciones de aritmética en coma flotante con números muy cercanos. Esto puede llevar a determinar incorrectamente si los puntos están en posición colineal, lo que a su vez podría afectar al resultado de algoritmos geométricos más complejos.
+
+--Intersección de líneas: Calcular la intersección de dos líneas en un plano puede llevar a errores de redondeo si se utilizan fórmulas algebraicas estándar. Especialmente cuando las líneas son casi paralelas, las operaciones de resta y división pueden producir resultados muy pequeños que se redondean a cero, lo que lleva a una imprecisión en el resultado final.
+
+--Operaciones con polígonos convexos: Algoritmos que implican operaciones con polígonos convexos, como cálculos de área o pruebas de intersección, pueden verse afectados por errores de redondeo si no se manejan correctamente. Por ejemplo, calcular el área de un polígono puede requerir sumar áreas de triángulos formados por puntos del polígono, y estos cálculos pueden acumular errores de redondeo si se realizan de manera ingenua.
+Operaciones aritméticas básicas: Las operaciones aritméticas, como la suma, resta, multiplicación y división, pueden introducir errores de redondeo cuando se aplican repetidamente a números en coma flotante. Estos errores se pueden acumular a medida que se realizan más operaciones, lo que puede afectar la precisión del resultado final.
+
+--*Puntos cercanos: Si el polígono tiene vértices muy cercanos entre sí, como podría ser el caso en polígonos con esquinas afiladas o que han sido generados a partir de datos con baja precisión, las operaciones que implican coordenadas de puntos cercanos pueden magnificar los errores de redondeo.
+
+--*Triángulos pequeños: Al dividir el polígono en triángulos para calcular su área, es posible que algunos de estos triángulos sean muy pequeños, lo que puede resultar en áreas cercanas a cero. Operaciones de suma y resta que involucran números muy pequeños pueden perder precisión debido al redondeo.
+
+--*Puntos colineales: Si el polígono contiene segmentos de línea que son casi colineales, las operaciones para calcular el área de los triángulos formados por estos segmentos pueden verse afectadas por errores de redondeo, especialmente cuando se trata de restar áreas de triángulos superpuestos.
+
+--*Para abordar estos problemas, es importante utilizar técnicas que minimicen los errores de redondeo, como trabajar con aritmética de precisión extendida, utilizar algoritmos robustos que manejen correctamente situaciones límite y realizar análisis de estabilidad numérica para comprender cómo los errores se propagan a través del algoritmo. Además, en algunos casos, puede ser útil reescalar o transformar los datos para reducir la magnitud de los errores de redondeo.
+
+--Algoritmos de triangulación: Los algoritmos que triangulan polígonos pueden verse afectados por errores de redondeo, especialmente cuando se encuentran puntos cercanos entre sí o líneas que son casi paralelas. Esto puede resultar en triangulaciones incorrectas o en la generación de triángulos con áreas muy pequeñas que pueden llevar a errores adicionales en cálculos posteriores.
+
+--Determinación del sentido de giro: Dados tres puntos, determinar si al recorrerlos se gira a la izquierda o a la derecha puede ser sensible a errores de redondeo. Esto se basa en el cálculo del producto cruzado, que puede ser casi cero para puntos que están casi en línea recta.
+
+--Determinación de la posición relativa de un punto y un segmento: Decidir si un punto está a la izquierda o a la derecha de un segmento, o si un punto es interior a un polígono, puede ser problemático si el punto está muy cerca del segmento o del borde del polígono.
+
+
+En todos estos casos, es importante utilizar técnicas adecuadas para minimizar los errores de redondeo, como trabajar con aritmética de precisión extendida, evitar operaciones que impliquen restas de números cercanos en magnitud, y realizar análisis de estabilidad numérica para comprender cómo los errores de redondeo pueden propagarse a través del algoritmo.
+
+Como inevitablemente se lidiará con estos problemas no se habla de correctitud sino de robustez: capacided de recuperación de errores de condiciones (de componentes internas o de input data). Una implementación de algoritmo es robusta si el resultado es correcto aún con perturbaciones al input data. Si es solo con pequeñas perturbaciones entonces es estable.
+
+***** Método antidegeneraciones:The basic idea of SoS is to perturb the given ob jects slightly which amounts to changing the
+numbers that represent the ob jects; these numbers will be called the coordinates or the parameters
+of the ob jects. It is important that the perturbation is small enough so that it does not change
+the nondegenerate position of ob jects relative to each other. Coming up with such a perturbation
+is rather dicult and may require much higher precision than used for the original set of ob jects.
+For this reason, we perform the perturbation only symbolically by replacing each coordinate by a
+polynomial in ". The polynomials will be chosen in such a way that the perturbed set goes towards
+the original set as " goes to zero. We will see that it is not important to know the exact value
+of " to perform the simulation; rather, it is sucient to assume that " is positive and suciently
+small. Thus, it will be possible to use " as an indeterminant and to handle primitive operations
+symbolically. ****
+
+Este párrafo está discutiendo dos enfoques para resolver el problema de precisión en la computación geométrica:
+
+Cambiar el modelo de cálculo: El primer enfoque es diseñar algoritmos que puedan manejar cálculos imprecisos. Esto se ha aplicado con éxito a un pequeño número de problemas básicos, pero una teoría general de cómo diseñar algoritmos con primitivas imprecisas o cómo adoptar algoritmos diseñados para cálculos exactos con números reales todavía es un objetivo lejano.
+Cálculo exacto: El segundo enfoque es calcular con una precisión que sea suficiente para mantener la corrección teórica de un algoritmo diseñado para aritmética real. Esto es básicamente posible, al menos teóricamente, en casi todos los casos que surgen en la computación geométrica práctica. Este segundo enfoque es muy prometedor, porque permite implementaciones exactas de numerosos algoritmos geométricos desarrollados para aritmética real sin modificaciones de estos algoritmos.
+En resumen, el párrafo está discutiendo los desafíos y posibles soluciones al problema de precisión en la computación geométrica, un problema que surge debido a la naturaleza finita de la precisión de punto flotante en las computadoras.
+
+------------------------------- ARITMÉTICA PUNTO FLOTANTE ------------------------------------------
+
+La aritmética de punto flotante es una forma de representar números reales en sistemas de computación. Debido a limitaciones de memoria y procesamiento, los números de punto flotante no pueden representar todos los números reales con precisión perfecta. Esto lleva a errores de redondeo inevitables.
+
+Las leyes básicas de la aritmética, como la asociatividad (a+b)+c = a+(b+c) y la distributividad a*(b+c) = ab + ac, no se cumplen en la aritmética de punto flotante debido a estos errores de redondeo.
+
+Por ejemplo, si tienes tres números de punto flotante, a, b y c, y los sumas de dos formas diferentes ((a+b)+c versus a+(b+c)), puedes obtener resultados ligeramente diferentes debido a los errores de redondeo.
+
+Además, el estándar IEEE 754 para la aritmética de punto flotante especifica cómo se deben representar los números de punto flotante en la memoria de la computadora. Esta representación incluye una mantisa (la parte significativa del número) y un exponente (que indica la potencia de la base a la que se eleva la mantisa).
+
+Dado que esta representación es fija, puedes usar operaciones de bits para extraer información sobre la mantisa y el exponente de un número de punto flotante. Esto puede ser útil para ciertas aplicaciones, como la depuración de software o la implementación de funciones matemáticas especiales.
+
+
+------------------------------- PROBLEMAS GEOMÉTRICOS ------------------------------------------
+
+Problemas geométricos selectivos: el output es un subset del data de input
+Problema selectivo: Un ejemplo de un problema geométrico selectivo podría ser encontrar el punto más cercano a un punto dado en un conjunto de puntos. Aquí, los datos de entrada serían el conjunto de puntos (parte combinatoria) y sus coordenadas (parte numérica). La salida sería el punto más cercano del conjunto, por lo que los datos numéricos de la salida son un subconjunto de los datos de entrada.
+Otro ejemplo: convex hull.
+
+Problemas geométricos constructivos: nuevos objetos geométricos son creados a partir del input data, involucrando nuva data numérica 
+Problema constructivo: Un ejemplo de un problema geométrico constructivo podría ser calcular el centroide de un conjunto de puntos. En este caso, los datos de entrada serían nuevamente el conjunto de puntos y sus coordenadas. Sin embargo, la salida sería el centroide, cuyas coordenadas se calculan a partir de los datos de entrada pero no son un subconjunto de ellos.
+Estos son ejemplos simplificados y los problemas geométricos pueden tener varias facetas y aparecer en diferentes variantes. Por ejemplo, podríamos tener que considerar restricciones adicionales, como limitaciones en la distancia entre puntos o la necesidad de tener en cuenta la forma de los objetos geométricos.
+
+Problema selectivo con restricciones: Supongamos que tienes un conjunto de puntos en un plano y quieres encontrar el punto más cercano a un punto dado. Pero ahora añadimos una restricción: los puntos deben estar a una distancia mínima entre sí. Esta variante del problema podría requerir un enfoque diferente para resolverlo, ya que ahora debes tener en cuenta la restricción de distancia.
+Problema constructivo con formas geométricas: En lugar de calcular el centroide de un conjunto de puntos, podrías tener que calcular el centroide de una forma geométrica, como un triángulo o un polígono. Esto implicaría calcular áreas y usar diferentes fórmulas.
+Problema selectivo con diferentes dimensiones: Los problemas geométricos no se limitan a dos dimensiones. Podrías tener un problema selectivo en tres dimensiones, como encontrar el punto más cercano a un punto dado en un conjunto de puntos en el espacio tridimensional.
+Problema constructivo con creación de nuevas formas: En algunos problemas, podrías tener que crear nuevas formas geométricas a partir de los datos de entrada. Por ejemplo, podrías tener que construir un polígono convexo (el “envoltorio convexo”) a partir de un conjunto de puntos.
+
+------------------------------- PREDICADOS GEOMÉTRICOS ------------------------------------------
+
+Los predicados geométricos son operaciones básicas en los algoritmos geométricos que prueban propiedades de objetos geométricos básicos. Estos predicados se utilizan en pruebas condicionales que dirigen el flujo de control en los algoritmos geométricos.
+
+Aquí te dejo algunos ejemplos de predicados geométricos:
+
+Intersección de segmentos de línea: Este predicado prueba si dos segmentos de línea se cruzan o no.
+Giro a la derecha: Este predicado prueba si una secuencia de puntos define un giro a la derecha. Esto es útil, por ejemplo, en el algoritmo de envoltura convexa de Graham.
+Punto en el círculo: Este predicado prueba si un punto está dentro o en el círculo definido por otros tres puntos. Esto es útil en la triangulación de Delaunay.
+Los predicados geométricos implican la comparación de números que se dan mediante expresiones aritméticas. Los operandos de las expresiones son constantes, en problemas prácticos principalmente enteros, y datos numéricos de los objetos geométricos que se están probando.
+
+Las expresiones difieren por las operaciones utilizadas, pero muchos predicados geométricos implican expresiones aritméticas solo sobre +, -, *, /, o al menos pueden reformularse de tal manera.
+
+ La Triangulación de Delaunay es una técnica en matemáticas y geometría computacional que se utiliza para dividir un conjunto de puntos en una serie de triángulos de manera que maximice el ángulo mínimo de todos los triángulos12. Aquí te dejo una explicación más detallada:
+
+Definición: Una Triangulación de Delaunay para un conjunto dado de puntos es una triangulación tal que ningún punto está dentro del círculo circunscrito de ningún triángulo12.
+Condición de Delaunay: La condición de Delaunay de un triángulo establece que la circunferencia circunscrita del mismo no debe contener ningún otro vértice de la triangulación en su interior, aunque sí se admiten vértices situados sobre la circunferencia1.
+Propiedades: Las triangulaciones de Delaunay tienen varias propiedades interesantes1:
+La frontera externa de la triangulación forma la envolvente convexa del conjunto de puntos.
+El ángulo mínimo dentro de todos los triángulos está maximizado, es decir, se evita obtener resultados con ángulos demasiado agudos.
+Los triángulos generados en una triangulación de Delaunay tienden a ser lo más equiláteros posible.
+Relación con el diagrama de Voronoi: La triangulación de Delaunay de un conjunto de puntos corresponde al gráfico dual del diagrama de Voronoi para esos puntos. Los circuncentros de los triángulos de Delaunay son los vértices del diagrama de Voronoi
+
+------------------------------- PROBLEMAS GEOMÉTRICOS CON PUNTOS FLOTANTES ------------------------------------------
+
+En un paso de ramificación de un algoritmo geométrico, se comparan los valores numéricos de alguna expresión dada por un DAG (Directed Acyclic Graph) de expresiones. En el modelo teórico de cálculo, una expresión de valor real se evalúa correctamente para todos los datos de entrada reales, pero en la práctica solo se calcula una aproximación. El error acumulado en el cálculo numérico podría ser tan grande que el valor de verdad del predicado con las expresiones evaluadas con cálculo de punto flotante inherentemente impreciso es diferente del valor de verdad del predicado con una evaluación exacta del predicado.
+
+La aritmética de punto flotante aplicada de manera ingenua puede desordenar los axiomas de la geometría. Un ejemplo clásico de esto son las “líneas trenzadas” de Ramshaw1.
+
+Las “líneas trenzadas” de Ramshaw son un ejemplo de cómo los errores de redondeo en la aritmética de punto flotante pueden llevar a resultados incorrectos en los cálculos geométricos. Considera dos líneas, l1: y = 9833x/9454 y l2: y = 9366x/9005, ambas pasan por el origen, la pendiente de l1 es ligeramente mayor que la de l2. Un programa que calcula y compara el valor de y para cada línea en múltiplos de 0.001 entre 0 y 1, informa que l1 y l2 se intersectan 24 veces, lo cual es claramente incorrecto1. Este es un ejemplo de cómo los errores de redondeo pueden llevar a resultados incorrectos en los cálculos geométricos.
+
+------------------------------- GEOMETRÍA COMPUTACIONAL EXACTA ------------------------------------------
+
+------------------------------- PROBLEMAS GEOMÉTRICOS CON PUNTOS FLOTANTES ------------------------------------------
+
+------------------------------- ARITMÉTICA EXACTA DE ENTEROS Y RACIONALES ------------------------------------------
+
+Los problemas de proximidad en la geometría computacional son una clase de problemas que implican la estimación de distancias entre objetos geométricos1. Algunos de estos problemas, expresados solo en términos de puntos, a veces se denominan problemas de punto más cercano1. Estos problemas son fundamentales en varios campos, como gráficos por computadora, sistemas de información geográfica (GIS), reconocimiento de patrones, aprendizaje automático y robótica2.
+
+Algunos problemas de proximidad notables incluyen:
+
+Par más cercano de puntos: Dados N puntos, encuentra dos con la menor distancia entre ellos1.
+Consulta de punto más cercano / consulta de vecino más cercano: Dado N puntos, encuentra uno con la menor distancia a un punto de consulta dado1.
+Problema de todos los vecinos más cercanos (construcción del gráfico del vecino más cercano): Dados N puntos, encuentra uno más cercano para cada uno de ellos1.
+Diámetro de un conjunto de puntos: Dados N puntos, encuentra dos con la mayor distancia entre ellos1.
+Ancho de un conjunto de puntos: Dados N puntos, encuentra dos (hiper)planos con la menor distancia entre ellos y con todos los puntos entre ellos1.
+En cuanto a los problemas racionales en la geometría computacional, estos se refieren a problemas que involucran solo expresiones que incluyen operaciones +, -, , ,/. Todos los predicados que surgen en problemas como la superposición de mapas en cartografía y en la mayoría de los problemas discutidos en los libros de texto sobre geometría computacional son de este tipo34. Estos problemas son llamados racionales. Estos predicados racionales son de interés porque pueden ser resueltos con precisión numérica exacta, lo que es crítico para garantizar la corrección de los algoritmos geométricos5.
+
+
+------------------------------- LAZY EVALUATION ------------------------------------------
+
+La evaluación perezosa (Lazy Evaluation) es una estrategia de evaluación que retrasa el cálculo de una expresión hasta que su valor sea realmente necesario. Esto puede mejorar la eficiencia del código y permitir estructuras de datos infinitas. Aquí te dejo algunos ejemplos:
+
+Generación de números naturales: Imagina que quieres generar una lista de números naturales. En lugar de calcular todos los números de una vez, puedes definir una función que genera el siguiente número natural cuando se le solicita. Esto se hace de manera diferida, es decir, solo calculas el siguiente número cuando se necesita1.
+Operadores lógicos en C: Los operadores lógicos and y or en C (y sus derivados) son ejemplos de evaluación perezosa. Por ejemplo, en la expresión (a != null && a.nombre == “Peperino”), si a es nulo, la segunda parte de la expresión a.nombre == “Peperino” nunca se ejecuta1.
+Funciones en Scala: En Scala, puedes indicar que un parámetro sea manejado de forma perezosa utilizando => cuando se declara el parámetro. Por ejemplo, puedes definir una función and en Scala de la siguiente manera: def and(x:Boolean, y: => Boolean) = if (x) y else x. De esta forma, si x es verdadero, devuelves y, y si x es falso, ni siquiera ejecutas y1.
+
+------------ GEOMETRÍA EPSILON -------------------
+
+La geometría epsilon, introducida por Guibas, Salesin y Stolfi1, es un marco teórico interesante para investigar la imprecisión en los cálculos geométricos. En lugar de un valor booleano, un predicado epsilon devuelve un número real que proporciona información sobre “cuánto” satisface el predicado la entrada1.
+
+En la geometría epsilon, el tamaño de una perturbación se mide por un número real no negativo. Solo la identidad tiene tamaño cero. Si una entrada no satisface un predicado, el “valor de verdad” de un predicado epsilon es el tamaño de la perturbación más pequeña que produce una entrada perturbada que satisface el predicado1.
+
+Si la entrada satisface un predicado, el “valor de verdad” es el número no positivo ε si el predicado todavía se satisface después de perturbar con cualquier perturbación de tamaño a lo sumo -ε.
+
+En el trabajo de Guibas, Salesin y Stolfi1, los predicados epsilon se combinan con aritmética de intervalos. Las evaluaciones imprecisas de los predicados epsilon calculan un límite inferior y un límite superior en el “valor de verdad” de un predicado epsilon1.
+
+Guibas, Salesin y Stolfi componen predicados epsilon básicos en predicados menos simples1. Desafortunadamente, la geometría epsilon solo se ha aplicado con éxito a unas pocas primitivas geométricas básicas1. Razonar en el marco de la geometría epsilon parece ser difícil1.
+
+Aquí te dejo un ejemplo de cómo se utiliza la geometría epsilon:
+
+Generación de números naturales: Imagina que quieres generar una lista de números naturales. En lugar de calcular todos los números de una vez, puedes definir una función que genera el siguiente número natural cuando se le solicita. Esto se hace de manera diferida, es decir, solo calculas el siguiente número cuando se necesita2.
+
+--------------------------------------------------
+---------- OTROS PROBLEMAS -----------------------
+--------------------------------------------------
+Punto dentro de un polígono: Dado un polígono convexo y un punto en el plano, determinar si el punto está dentro o fuera del polígono.
+
+Circunferencia mínima que cubre un conjunto de puntos: Encontrar el centro y el radio de la circunferencia más pequeña que cubre un conjunto dado de puntos en el plano.
+
+Triangulación de un polígono: Dado un polígono simple (sin autointersecciones), dividirlo en triángulos mediante la adición de diagonales.
+
+Corte de polígonos: Dados dos polígonos en el plano, determinar si se intersectan y, si es así, calcular la región de intersección.
+
+Envoltura convexa en 3D: Encontrar el envoltorio convexo más pequeño que cubre un conjunto dado de puntos en el espacio tridimensional.
+
+Intersección de esferas: Dadas dos esferas en el espacio tridimensional, determinar si se intersectan y, si es así, calcular el círculo de intersección.
+
+Transformaciones geométricas: Realizar operaciones de transformación geométrica, como traslación, rotación y escalado, en objetos geométricos en el plano o en el espacio.
+
+Triangulación de Delaunay: Dado un conjunto de puntos en el plano, encontrar una triangulación de Delaunay, que es una triangulación en la que ningún punto está dentro del círculo circunscrito de ningún triángulo.
+
+Calculadora de área de superficie de un objeto tridimensional: Calcular el área de la superficie de un objeto tridimensional dado su modelo geométrico.
+
+Problemas de visión por computadora: Resolver problemas relacionados con la detección de objetos, el seguimiento de movimientos, la reconstrucción 3D, etc., utilizando técnicas geométricas.
+LEA system: En el sistema LEA, los números se representan por intervalos y DAGs de expresiones que reflejan su historia de creación. Inicialmente, solo se calcula una representación de baja precisión, y las representaciones con precisión aumentada repetidamente se calculan solo si las decisiones no pueden tomarse con la precisión actual2.
+
+
+
+
+Metodos de barrido
+Claro, el método de los lugares geométricos es una herramienta muy útil en geometría. Aquí te presento algunos ejemplos de problemas que se pueden resolver con este método:
+
+Cónicas y lugares geométricos: Un ejemplo es hallar el lugar geométrico de los puntos, P, del plano tales que su distancia a Q(2, 4) sea igual a 3. La solución es una circunferencia de centro (2, 4) y radio 31.
+Mediatriz de un segmento: La mediatriz de un segmento AB es el lugar geométrico de los puntos del plano que equidistan de A y de B. Por ejemplo, si tienes los puntos A(1, 4) y B(5, 0), puedes hallar la ecuación de la mediatriz de este segmento2.
+Bisectriz de dos rectas: Las bisectrices de dos rectas r y s son el lugar geométrico de los puntos del plano que equidistan de r y de s. Por ejemplo, si tienes las rectas r: 4x - 3y + 9 = 0 y s: 12x + 5y - 7 = 0, puedes hallar las bisectrices de los ángulos que forman estas rectas2.
+Problemas en el espacio: También puedes resolver problemas de lugares geométricos en el espacio. Por ejemplo, puedes hallar el plano mediador de un segmento, el lugar geométrico de los puntos que estén a igual distancia de tres planos, o las ecuaciones de los planos bisectores de dos planos
