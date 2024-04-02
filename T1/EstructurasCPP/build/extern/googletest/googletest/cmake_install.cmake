@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/extern/googletest/googletest
+# Install script for directory: D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/extern/googletest/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -32,11 +32,16 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "C:/msys64/ucrt64/bin/objdump.exe")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/GTest/GTestTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/GTest/GTestTargets.cmake"
-         "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets.cmake")
+         "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/GTest/GTestTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -49,85 +54,36 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/GTest" TYPE FILE FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets.cmake")
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/GTest" TYPE FILE FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets-debug.cmake")
-  endif()
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/GTest" TYPE FILE FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets-minsizerel.cmake")
-  endif()
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/GTest" TYPE FILE FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets-relwithdebinfo.cmake")
-  endif()
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/GTest" TYPE FILE FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets-release.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/GTest" TYPE FILE FILES "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/GTest" TYPE FILE FILES "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/CMakeFiles/Export/0c08b8e77dd885bfe55a19a9659d9fc1/GTestTargets-noconfig.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/GTest" TYPE FILE FILES
-    "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/generated/GTestConfigVersion.cmake"
-    "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/generated/GTestConfig.cmake"
+    "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/generated/GTestConfigVersion.cmake"
+    "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/generated/GTestConfig.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/extern/googletest/googletest/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/extern/googletest/googletest/include/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/lib/Debug/gtestd.lib")
-  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/lib/Release/gtest.lib")
-  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/lib/MinSizeRel/gtest.lib")
-  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/lib/RelWithDebInfo/gtest.lib")
-  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/lib/libgtest.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/lib/Debug/gtest_maind.lib")
-  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/lib/Release/gtest_main.lib")
-  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/lib/MinSizeRel/gtest_main.lib")
-  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/lib/RelWithDebInfo/gtest_main.lib")
-  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/lib/libgtest_main.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE OPTIONAL FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/bin/${CMAKE_INSTALL_CONFIG_NAME}/gtestd.pdb")
-  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE OPTIONAL FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/bin/${CMAKE_INSTALL_CONFIG_NAME}/gtest.pdb")
-  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE OPTIONAL FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/bin/${CMAKE_INSTALL_CONFIG_NAME}/gtest.pdb")
-  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE OPTIONAL FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/bin/${CMAKE_INSTALL_CONFIG_NAME}/gtest.pdb")
-  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/generated/gtest.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE OPTIONAL FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/bin/${CMAKE_INSTALL_CONFIG_NAME}/gtest_maind.pdb")
-  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE OPTIONAL FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/bin/${CMAKE_INSTALL_CONFIG_NAME}/gtest_main.pdb")
-  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE OPTIONAL FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/bin/${CMAKE_INSTALL_CONFIG_NAME}/gtest_main.pdb")
-  elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE OPTIONAL FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/bin/${CMAKE_INSTALL_CONFIG_NAME}/gtest_main.pdb")
-  endif()
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/generated/gtest.pc")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/generated/gtest_main.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/extern/googletest/googletest/generated/gtest_main.pc")
 endif()
 

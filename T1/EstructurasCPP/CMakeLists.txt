@@ -12,4 +12,4 @@ add_subdirectory(test)
 #quitar para evitar test
 enable_testing()
 
-target_link_libraries(${PROJECT_NAME} punto)
+target_link_libraries(${PROJECT_NAME} punto vector poligono)

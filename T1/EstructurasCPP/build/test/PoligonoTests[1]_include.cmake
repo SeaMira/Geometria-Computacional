@@ -1,0 +1,5 @@
+if(EXISTS "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/test/PoligonoTests[1]_tests.cmake")
+  include("D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/test/PoligonoTests[1]_tests.cmake")
+else()
+  add_test(PoligonoTests_NOT_BUILT PoligonoTests_NOT_BUILT)
+endif()

@@ -8,10 +8,10 @@ class PuntoClass2 : public ::testing::Test {
  protected:
   // You can remove any or all of the following functions if their bodies would
   // be empty.
-   punto<int> p1{0, 0};
-   punto<float> p2{2.5f, 2.5f};
-   punto<int> p3{0, 1};
-   punto<float> p4{2.5f, 0.0f};
+   Punto<int> p1{0, 0};
+   Punto<float> p2{2.5f, 2.5f};
+   Punto<int> p3{0, 1};
+   Punto<float> p4{2.5f, 0.0f};
    
 //    public:
 //     PuntoClass2() : p1(0, 0), p2(2.5f, 2.5f), p3(0, 1), p4(2.5f, 0.0f) {}
@@ -61,6 +61,7 @@ class PuntoClass2 : public ::testing::Test {
 TEST_F(PuntoClass2, TestGetters) {
     EXPECT_EQ(p1.GetX(), 0);
     EXPECT_EQ(p1.GetY(), 0);
+    EXPECT_EQ(p1.ToString(), "(0, 0)");
 }
 
 TEST_F(PuntoClass2, TestSetters) {
@@ -79,6 +80,14 @@ TEST_F(PuntoClass2, TestDistanceBetweenPoints) {
 TEST_F(PuntoClass2, TestEquivalence) {
     EXPECT_TRUE(p1 == p1);
     EXPECT_FALSE(p2 == p4);
+}
+
+TEST_F(PuntoClass2, TestOutputOperator) {
+    std::stringstream ss, ss2;
+    ss << p1;
+    EXPECT_EQ(ss.str(), "(0 , 0)");
+    ss2 << p2;
+    EXPECT_EQ(ss2.str(), "(2.5 , 2.5)");
 }
 
 int main(int argc, char **argv) {

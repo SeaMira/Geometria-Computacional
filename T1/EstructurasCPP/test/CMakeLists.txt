@@ -3,6 +3,16 @@ add_executable(
   testPuntoClassFixtures.cpp
 )
 
+add_executable(
+  VectorTests
+  testVectorClassFixtures.cpp
+)
+
+add_executable(
+  PoligonoTests
+  testPoligonoClassFixtures.cpp
+)
+
 #https://google.github.io/googletest/quickstart-cmake.html
 target_link_libraries(
     PuntoTests
@@ -10,5 +20,19 @@ target_link_libraries(
     punto
 )
 
+target_link_libraries(
+    VectorTests
+    gtest_main
+    vector
+)
+
+target_link_libraries(
+    PoligonoTests
+    gtest_main
+    poligono
+)
+
 include(GoogleTest)
 gtest_discover_tests(PuntoTests)
+gtest_discover_tests(VectorTests)
+gtest_discover_tests(PoligonoTests)

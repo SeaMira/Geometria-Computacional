@@ -1,18 +1,19 @@
 #include<iostream>
 #include<cmath>
+#include <string>
 
 template <typename T>
-class punto {
+class Punto {
     private:
         std::pair<T, T> par;
     public:
 
-        punto(T x, T y) {
+        Punto(T x, T y) {
             this->par.first = x; this->par.second = y;
         }
 
-        ~punto() {
-            std::cout<<"Deleted punto"<<std::endl;
+        ~Punto() {
+            std::cout<<"Deleted Punto"<<std::endl;
         }
 
         void SetX(T x) {
@@ -31,17 +32,21 @@ class punto {
             return par.second;
         }
 
-        double DistToPoint(const punto<T>& p) {
+        std::string ToString() const {
+        return "(" + std::to_string(GetX()) + ", " + std::to_string(GetY()) + ")";
+        }   
+
+        double DistToPoint(const Punto<T>& p) {
             T comp1 = pow(p.GetX() - this->GetX(), 2);
             T comp2 = pow(p.GetY() - this->GetY(), 2);
             return sqrt(comp1 + comp2);
         }
 
-        bool operator==(const punto<T>& p) {
+        bool operator==(const Punto<T>& p) const {
             return (this->GetX() == p.GetX()) && (this->GetY() == p.GetY());
         } 
 
-        friend std::ostream& operator<<(std::ostream& out, const punto<T>& p) {
+        friend std::ostream& operator<<(std::ostream& out, const Punto<T>& p) {
             out << "(" << p.GetX() << " , " << p.GetY() << ")";
             return out;
         }

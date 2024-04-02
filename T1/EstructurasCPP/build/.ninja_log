@@ -1,0 +1,58 @@
+# ninja log v5
+41	1427	7337240333171181	test/CMakeFiles/VectorTests.dir/testVectorClassFixtures.cpp.obj	c14eb4f531053134
+12	23	0	clean	c0505d4284e53968
+716	829	7337240327135980	structures.exe	1be63fde9ffae343
+19	2136	7337240340233341	extern/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	81272f81504cff1f
+4746	4811	7337240367019667	lib/libgtest_main.a	bb69e2a06dcce292
+4811	5148	7337240370379656	test/PuntoTests.exe	872c3af137c52d14
+588	700	7337240325905962	src/libvector.a	a77fbd3157ed1913
+4819	5149	7337240370379656	test/PoligonoTests[1]_tests.cmake	28d96c6fea43f4b0
+619	716	7337240326065991	src/libpoligono.a	c0b3d8ca6a953b18
+28	574	7337240324575981	src/CMakeFiles/punto.dir/punto.cpp.obj	8b912c8b576cf72b
+21	1415	7337240333051174	extern/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	2f8810e17c2c7990
+4811	5148	7337240370379656	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/test/PuntoTests[1]_tests.cmake	872c3af137c52d14
+4825	4900	7337240367909663	lib/libgmock_main.a	21de8f0a6b22ce13
+17	438	7337240323255982	CMakeFiles/structures.dir/main.cpp.obj	8ef2b40ef0c93275
+34	619	7337240325065970	src/CMakeFiles/poligono.dir/poligono.cpp.obj	3841d29f1ea36598
+4814	5149	7337240370399685	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/test/VectorTests[1]_tests.cmake	965536fcf0d01ae6
+4819	5149	7337240370379656	test/PoligonoTests.exe	28d96c6fea43f4b0
+4743	4825	7337240367149667	lib/libgmock.a	87d81064a7e31cbf
+24	4641	7337240365259645	extern/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	fc67ce82e031785c
+4814	5149	7337240370399685	test/VectorTests[1]_tests.cmake	965536fcf0d01ae6
+4641	4743	7337240366349669	lib/libgtest.a	687f5e138198ebf3
+4819	5149	7337240370379656	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/test/PoligonoTests[1]_tests.cmake	28d96c6fea43f4b0
+37	1370	7337240332581183	test/CMakeFiles/PuntoTests.dir/testPuntoClassFixtures.cpp.obj	dd70184fa8f13efd
+26	1147	7337240330365972	extern/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	c95ed2e4b5740661
+4811	5148	7337240370379656	test/PuntoTests[1]_tests.cmake	872c3af137c52d14
+4814	5149	7337240370399685	test/VectorTests.exe	965536fcf0d01ae6
+44	1458	7337240333481173	test/CMakeFiles/PoligonoTests.dir/testPoligonoClassFixtures.cpp.obj	c6cbeeda9829a6c4
+31	582	7337240324565981	src/CMakeFiles/vector.dir/vector.cpp.obj	1a9d39766fdd9fea
+577	696	7337240325835971	src/libpunto.a	dc1e93c4edaba1c0
+17	437	7337240970778284	CMakeFiles/structures.dir/main.cpp.obj	8ef2b40ef0c93275
+31	581	7337240972188258	src/CMakeFiles/vector.dir/vector.cpp.obj	1a9d39766fdd9fea
+28	591	7337240972278273	src/CMakeFiles/punto.dir/punto.cpp.obj	8b912c8b576cf72b
+33	623	7337240972598264	src/CMakeFiles/poligono.dir/poligono.cpp.obj	3841d29f1ea36598
+594	719	7337240973587480	src/libpunto.a	dc1e93c4edaba1c0
+582	721	7337240973587480	src/libvector.a	a77fbd3157ed1913
+626	750	7337240973920992	src/libpoligono.a	c0b3d8ca6a953b18
+750	886	7337240975220878	structures.exe	1be63fde9ffae343
+26	1131	7337240977730881	extern/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	c95ed2e4b5740661
+36	1365	7337240980070871	test/CMakeFiles/PuntoTests.dir/testPuntoClassFixtures.cpp.obj	dd70184fa8f13efd
+39	1418	7337240980580861	test/CMakeFiles/VectorTests.dir/testVectorClassFixtures.cpp.obj	c14eb4f531053134
+22	1419	7337240980620875	extern/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	2f8810e17c2c7990
+44	1526	7337240981680898	test/CMakeFiles/PoligonoTests.dir/testPoligonoClassFixtures.cpp.obj	c6cbeeda9829a6c4
+20	2153	7337240987936004	extern/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	81272f81504cff1f
+24	4586	7337241012221294	extern/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	fc67ce82e031785c
+4587	4692	7337241013351305	lib/libgtest.a	687f5e138198ebf3
+4695	4765	7337241014081305	lib/libgtest_main.a	bb69e2a06dcce292
+4692	4778	7337241014211310	lib/libgmock.a	87d81064a7e31cbf
+4778	4868	7337241015101319	lib/libgmock_main.a	21de8f0a6b22ce13
+4769	5133	7337241017743090	test/VectorTests.exe	965536fcf0d01ae6
+4769	5133	7337241017743090	test/VectorTests[1]_tests.cmake	965536fcf0d01ae6
+4769	5133	7337241017743090	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/test/VectorTests[1]_tests.cmake	965536fcf0d01ae6
+4773	5147	7337241017883116	test/PoligonoTests.exe	28d96c6fea43f4b0
+4773	5147	7337241017883116	test/PoligonoTests[1]_tests.cmake	28d96c6fea43f4b0
+4773	5147	7337241017883116	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/test/PoligonoTests[1]_tests.cmake	28d96c6fea43f4b0
+4765	5147	7337241017893105	test/PuntoTests.exe	872c3af137c52d14
+4765	5147	7337241017893105	test/PuntoTests[1]_tests.cmake	872c3af137c52d14
+4765	5147	7337241017893105	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/test/PuntoTests[1]_tests.cmake	872c3af137c52d14
