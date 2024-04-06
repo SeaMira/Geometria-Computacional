@@ -1,0 +1,125 @@
+
+
+Propiedades de las triangulaciones.
+
+
+Existen muchas maneras de triangular un poligono, pero todas
+tienen el mismo numero de diagonales y triangulos.
+
+Lema: Numero de diagonales y triangulos. Cada   triangulacion de un poligono
+tiene n-3 diagonales   y n-2 triangulos
+
+Dem: por induccion. Para n=3, trivial. Suponemos que se cumple
+hasta poligonos de tamaño n-1. Anora demostrar para un poligono 
+de tamaño n.  Dividir P en
+dos poligonos P1 y P2 con la diagonal ab. Supongamos que los
+poligonos tienen n1 y n2 vertices respectivamente. Entonces
+tenemos que n1+n2 = n+2, dado que los vertices de ab cuentan
+dos veces.  Aplicando la hipotesis de inducciona sobre P1 y P2,
+vemos el numero de diagonales es  n1-3 + n2-3 + 1 = n-3 y 
+tambien hay n1-2 + n2-2 = n-2 triangulos
+
+
+Lema: Suma de angulos. La suma de los angulos de un poligono es (n-2)pi.
+
+Dem: Como hay n-2 triangulos y cada uno contribuye con pi a los angulos internos
+
+
+Triangulaciones y arboles
+
+Un concepto importante en teoria de grafos es el dual de un grafo.
+En el contexto de las triangulaciones, el estudio del dual de 
+una triangulacion nos entrega un estructura
+util muchas veces para construir algoritmos o demostrar ciertas
+propiedades.
+El dual T de una  triangulacion de un poligono es un grafo con un nodo 
+asociado a cada triangulo y un arco entre dos nodos si ellos comparten una
+diagonal. 
+
+
+
+Lema: El dual T de una triangulacion es un arbol, donde cada nodo tiene
+un grado menor o igual a tres.
+
+Dem: El hecho que un nodo tenga a lo mas grado tres viene de que 
+el triangulos tiene  a lo mas tres lados para compartir. Supongamos
+por contradiccion que T no es un arbol. Esto significa que tiene 
+un ciclo C. Si este  ciclo es dibujado como un camino W, 
+conectando con lineas rectas los centros de las diagonales compartidas 
+por los triangulos cuyos nodos componen C, este debe encerrar 
+algun vertice del poligono,
+en particular algun  extremo de algunas de las diagonales de W. Dado que
+los vertices del poligono son vertices del borde de P la unica posibilidad es
+que encierre algun vertice exterior. Esto contradice la simplicidad
+del poligono
+
+
+
+fig 1.14
+
+
+
+
+
+
+
+
+
+
+
+
+
+Notar que los nodos de grado 1 son las hojas de T; los nodos de grado 2
+estan en caminos del arbol y los nodos de grado 3 son puntos ramales.
+Notar que un arbol es binario si tomamos como raiz nodos de grado
+1  o 2.  Esta propiedad puede ser explotada
+
+
+Definicion: tres vertices consecutivos a,b,c forman una oreja  
+de un poligono si ac es una diagonal. Se dice que b es un ear tip. 
+Dos orejas no se superponen si sus triangulos
+interiores son disjuntos.
+
+
+Teorema. Dos orejas. Todo poligono con n>= 4 tiene al menos dos orejas.
+
+Dem: Un nodo hoja del arbol dual  de una triangulacion corresponde  a una oreja.
+Un arbol de dos o mas nodos tiene   que tener al menos dos hojas y por lo tanto
+el poligono tiene al menos dos orejas.
+
+
+teorema: 3-coloring. El grafo de una triangulacion de un poligono puede
+se pintada con tres colores.
+
+Dem. La prueba es por induccion sobre el numero de vertices. Claramente
+un triangulo puedes ser pintado de tres colores.
+
+Suponer n>=4. por el teorema anterior, P tiene una oreja abc, con ear tip b.
+formar un nuevo poligono P' cortando la oreja: es decir, reemplazar
+secuencia  abc en  @P con ac en @P'. P' tiene n-1 vertices, solo falta b.
+Aplicar hipotesis de induccion a P' para pintarlo. Ahora agragar la oreja
+de vuelta y colorear b con el color distinto al usado para a y c. 
+Por lo tanto existe el pintado con tres colores.
+
+
+
+1.3 Aspectos de implementacion.
+
+- Representar poligonos usando clases, definir iteradores para recorrerlos
+a traves de indices ( operador [] )
+
+
+- Enteros vs reales. Mantenerse con opeaciones enteras ayuda a no tener
+errores de redondeo. En todo caso  esto en general no se puede evitar.
+
+- Usar clases para todos los objetos geometricos, asignar correctamente
+metodos a clases? Que correcto?
+
+Problemas propuestos:
+
+- Cual es la suma de los angulos exteriores a un triangulo?
+- Que tipo de poligono tiene el numero minimo de triangulaciones distintas?
+- Que tipo  de poligonos tiene el maximo numero de triangulaciones?
+- (Dificil)  calcular el numero de triangulaciones distintas que hay para
+poligono convexo
+

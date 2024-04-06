@@ -1,0 +1,186 @@
+
+--- Demostracion  de suficiencia para G(n) = |n/3| 
+
+La primera demostracion la hizo Chvatal (1975). El demostro
+por induccion, suponiendo que n/3 guardias se necesitaban para
+n < N,  y lo demostro para n = N. 
+
+En 1978, Fisk encontro una demostracion muchos mas simple, de una
+sola pagina, y es la siguiente:
+
+
+Primero, obtiene una particion del poligono usando diagonales. Una
+diagonal de un poligono P es un segmento entre dos vertices ab
+que son visibles    entre ellos. (La interseccion de ab con @P es
+exactamente {a,b}.  Se dice que dos diagonales no se cruzan si
+su interseccion es  un subconjunto de sus puntos extremos (no comparten
+puntos interiores). Al insertar todas las diagonales posibles se obtiene
+una triangulacion. 
+
+Fig. 1.6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Segundo, colorear los vertices del poligono usando tres colores.   
+Sea G el grafo asociado con la triangulacion de P. Los arcos del grafo
+son los arcos de la triangulacion y los nodos del grafo son los vertices
+del poligono. K-coloring significa pintar los nodos de grafo de algun color
+tal que ningun par de nodos conectados por un arco tiene asignado el
+mismo color. Fisk usa el hecho que cualquier triangulacion puede ser
+pintada con tres colores. 
+
+Fig 1.7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Partiendo de la flecha y asignadole al triangulo inicial 
+los tres colores en forma arbitraria, los colores para
+el resto quedan determinados. Esto funciona pues uno nunca necesita
+arrepentirse de decisiones tomadas (En poligonos con hoyos, no funciona?)
+
+Tercero, Detectar donde poner los guardias. Fisk observo que
+uicando guardias en todos los vertices que tienen el mismo color
+garantiza cubrir el poligono. La razon es la siguiente: Supongamos
+que los guardias son ubicados en los nodos rojos (rojos, verdes y azules)
+Asi cada triangulo tiene un guardia en una de sus esquinas y por lo
+tanto esta vigilado. Ahora, como la triangulacion es una particion
+del poligono, el poligono entero esta vigilado por guardias.
+
+
+Cuarto. qui Fisk  usa el principo de las "pigneon-hole": si se 
+colocan n objetos en k hoyos de palomas, al menos un hoyo no contiene
+mas de n/k objetos (si todos los hoyos contienen mas de n/k, el numero
+total de objetos excede n). En nuetro caso los n objetos son los n nodos
+y los k hoyos son los 3 colores. Este principio afirma que  al menos un
+color no puede ser usado mas de n/3 veces. COmo n es un entero, se puede
+concluir que al menos un color no sera usado mas que |n/3| veces.   
+
+
+Figura 1.7 , n= 14, |n/4| = 4.   1.7 (a), el segundo color es usado
+4 veces, y 1.7 (b) es usado solo tres veces. Notar que no siempre
+el 3-coloring lleva a la distribucion mas eficiente de guardias para
+un poligono dado.
+
+
+(Con los ejemplos, unos muestra que al menos se necesitan n/3)
+
+
+1.2 Triangulaciones: Teoria
+
+
+Existe siempre una triangulacion para un poligono? Veremos que la respuesta
+es si. Existe una triangulacion ( en tetraedros en 3D) para cualquier
+poliedro? La respuesta es No...
+
+
+
+
+
+
+
+1.2.1 Existencia de una diagonal
+
+Para esto necesistamos saber un hecho mas obvio: todo poligono tiene
+al menos un vertice convexo
+
+lema: todo poligono tiene al menos un vertice convexo.
+Dem: El vertice de mas abajo, a la derecha, es estrictamente conexo
+
+fig. 1.11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lema: cada poligono de n >= 4 vertices tiene una diagonal
+dem: Sea v el vertice convexo y sean a,b, los vertices adyacentes a el.
+Si ab es diagonal, estamos listos. Supongamos que
+no es una diagonal, es decir si ab cruza po
+el exterior de P, o intersecta @P. En caso que n>3, el triangulo avb contiene
+al menos un vertice de P, distinto de a,v,b. Sea x el vertice mas cercano
+a v (distancia medida ortogonal a ab)
+
+Fig. 1.12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sea L una linea paralela al segmento ab, que se mueve de v hacia ab.
+Asi vx es una diagonal, pues la region definida por la interseccion del
+semiplano bajo L (cuando L esta sobre x) y el triangulo avb
+no incluye puntos de @P. Entoces vx no puede intersectar el borde @P (excepto
+en los punto v y x).
+
+
+
+
+
+
+
+
+
+
+Teorema: triangulacion. Cada poligono P de n vertices puede ser partido
+en triangulos agragando 0 o mas diagonales.
+
+La pruebe es por induccion. Para n= 3, el poligono es un
+triangulo. Para n>=4, encontrar la diagonal del poligono. Dividir
+el poligono en dos subpoligonos, en los cuales se aplica la induccion. 
+(Notar que no se agregan vertices en el proceso.
+
+
+
+
+
+
+
