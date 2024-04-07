@@ -4,6 +4,22 @@ Precisión: nivel de detalle con que data numérica es representada en un modelo
 Spatial data can be processed and analysed using Geographical Information Systems (GIS) or Image Processing packages.
 Problemas notorios que calculos geometricos imprecisos pueden causar.
 
+
+Parte Numérica
+La parte numérica de un problema de geometría computacional se refiere a los cálculos que involucran valores reales o enteros, como pueden ser las coordenadas de puntos, las longitudes de los bordes, los ángulos, o el área de figuras geométricas. Estos cálculos pueden requerir precisión aritmética y, en la práctica, pueden verse afectados por problemas de redondeo y precisión de punto flotante cuando se implementan en computadoras.
+
+Ejemplo: Calcular la intersección exacta de dos segmentos de línea implica resolver un sistema de ecuaciones lineales, lo cual es un problema numérico.
+Parte Combinatorial
+La parte combinatoria, por otro lado, se enfoca en la estructura, orden y relación entre los componentes geométricos, como puntos, líneas y polígonos, sin necesariamente considerar los valores numéricos específicos. Esto incluye problemas como la determinación de la topología o conectividad de un conjunto de elementos, el ordenamiento de puntos, y la construcción de estructuras como grafos o árboles de decisión basados en propiedades geométricas.
+
+Ejemplo: Determinar si un conjunto de puntos forma un polígono convexo es primordialmente un problema combinatorio, ya que se enfoca en cómo los puntos están ordenados o conectados entre sí.
+"Output-Sensitive Algorithm"
+Un "algoritmo sensitivo al output" es aquel cuya complejidad computacional depende del tamaño de la salida del algoritmo, además de la entrada. Esto es particularmente relevante en geometría computacional, donde el tamaño o la complejidad de la solución no siempre se puede predecir simplemente basándose en el tamaño de la entrada.
+
+Ejemplo: Un algoritmo para calcular la envolvente convexa de un conjunto de puntos en el plano puede tener una complejidad que depende del número de puntos en la envolvente convexa (la salida), no solo del número total de puntos (la entrada). Si la envolvente convexa resultante tiene muchos menos puntos que el conjunto de entrada, el rendimiento del algoritmo puede ser significativamente diferente en comparación con un caso donde la mayoría de los puntos forman parte de la envolvente convexa.
+
+
+
 Se asume data geométrica accurate.
 
 Algoritmos geométricos son correctos en modelos computacionales con cómputos exactos en los reales. Pero la mayoría de las veces cálculos exactos son reemplazados con aritmética rápida de precisión finita en puntos flotantes, dada por el hardware. Este cambio de infinitos reales a finitos puntos flotantes genera errores;

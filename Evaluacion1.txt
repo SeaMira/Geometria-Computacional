@@ -1,0 +1,15 @@
+Monotonía
+Un polígono se dice que es monótono respecto a una línea si para cualquier línea perpendicular a esta, el polígono es intersectado en a lo más dos puntos. Esta definición es importante porque simplifica varios problemas geométricos, incluida la triangulación de polígonos. Un polígono monótono puede ser triangulado de manera más sencilla y eficiente que los polígonos arbitrarios.
+
+La monotonía en relación con el eje Y, por ejemplo, implica que al proyectar el polígono en el eje Y, cada línea horizontal corta el polígono a lo sumo en dos puntos. Esto significa que el polígono puede ser "barrido" de arriba a abajo o de abajo a arriba sin encontrar ninguna "indentación" hacia adentro.
+
+Categorización de Vértices
+Los vértices de un polígono se clasifican para ayudar a determinar cómo contribuyen a la forma y monotonía del polígono. Esta clasificación es útil, especialmente cuando se triangulan polígonos o se determina su monotonía. Los tipos comunes de vértices incluyen:
+
+Vértices Regulares: Son aquellos que no alteran la monotonía del polígono respecto a una línea. Su clasificación depende de cómo las aristas adyacentes al vértice interactúan con la dirección de monotonía (por ejemplo, vertical).
+Vértices de Inicio y Fin: En el contexto de un polígono monótono en la dirección Y, un vértice de inicio es aquel donde las aristas adyacentes "comienzan" desde el vértice y se mueven hacia abajo, mientras que un vértice de fin es donde las aristas adyacentes llegan desde abajo y "terminan" en el vértice.
+Vértices de Unión y División: Un vértice de unión es aquel donde las aristas adyacentes llegan desde arriba y luego se desvían, una hacia la izquierda y otra hacia la derecha, hacia abajo. Un vértice de división es lo opuesto, con aristas adyacentes que vienen desde abajo y se dividen en direcciones opuestas hacia arriba.
+La clasificación de vértices es esencial para algoritmos que manipulan polígonos, como la triangulación. Por ejemplo, identificar vértices de división y unión es crucial en el proceso de descomponer un polígono no monótono en componentes monótonos, los cuales luego pueden ser triangulados eficientemente.
+
+Importancia de la Monotonía y la Categorización de Vértices
+La monotonía y la clasificación de vértices facilitan la resolución de problemas geométricos al reducir la complejidad del problema. Un polígono monótono respecto a una dirección dada es más fácil de procesar para ciertas operaciones, como la triangulación, ya que su estructura garantiza que se pueda dividir en triángulos sin la necesidad de tratar con casos complejos de intersecciones de aristas o "huecos" dentro del polígono. Esta eficiencia hace que la búsqueda de monotonía y la clasificación de vértices sean pasos preliminares valiosos en algoritmos de geometría computacional.
