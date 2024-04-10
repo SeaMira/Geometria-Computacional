@@ -1,0 +1,12 @@
+Se continúa con el problema de Klee: guardias en un museo
+
+Peor caso en que el polígono es no convexo, con muchas "esquinas escondidas". Se supuso que se necesitarían  a lo menos [n/3] guardias. Pero es verdad que eso es suficiente? Se demuestra generalmente por inducción, contradicción o por construcción.
+
+1era demostración por Chvatal (1975) fue por inducción:
+Supuso que se necesitaban [n/3] guardias para n pequeño (n < N), pero además lo hizo para n grande (n = N)
+
+En 1978 Fisk demostró de una forma simple empezando por la partición de la figura en triángulos usando diagonales. Una diagonal es un segmento entre 2 vertices A y B del polígono P que son visibles entre ellos, es decir, no hay intersección con la frontera dP (el segmento es exactamente A,B).
+
+Al insertar todas las diagonales posibles se obtiene una triangulación.
+
+A la triangulación se le ocurrió hacerle un 3-coloreo: pinto los vertices de cada triángulo de manera que cada arista tiene extremos de colores diferentes.
