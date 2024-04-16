@@ -1,5 +1,0 @@
-if(EXISTS "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/test/PuntoTests[1]_tests.cmake")
-  include("D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T1/EstructurasCPP/build/test/PuntoTests[1]_tests.cmake")
-else()
-  add_test(PuntoTests_NOT_BUILT PuntoTests_NOT_BUILT)
-endif()
