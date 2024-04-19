@@ -1,0 +1,20 @@
+Para preguntar por si un segmento es una diagonal se aplica un algoritmo creador de segmentos, que primero verifique que no choque con el borde, luego pregunta si el segmento está dentro del polígono. Esto último se hace verificando que los semgentos adyacentes a un extremo estén uno a la derecha y otro a la izquierda (esto es con un vertice reflejo). Este chequeo se hace en tiempo constante, y preferiblemente se hace antes que el chequeo de intersecciones.
+
+En caso de un vértice reflejo *revisar el ppt*
+
+El algoritmo debe encontrar todas las diagonales, por lo que se revisa cada oreja y se eliminan, luego se hace el chekeo del polígono sin esa oreja. Es un algoritmo de O(n^3), pero puede mejorarse a O(n^2) (Propuesto)
+
+
+Capítulo 2: Búsqueda o Intersección
+
+Hemos visto: intersección de segmentos exacto -coordenadas enteras-, Si uso floats -tener cuidado con la precisión
+
+Un punto contenido en un segmento implica producto cruz igual a 0.Y que esté dentro de un lpolpolígono?
+En un P convexo es simple, es verificar que el punto esté a la izquierda de todos los segmentos del vértice O(n)
+
+En uno no convexo se utiliza la técnica de ray casting: se dispara un rayo desde el punto y si intersecta una cantidad impar de veces con el polígno es porque está dentro, y fuera si es par.
+
+Casos degenerados de ray casting: rayo coincide con un segmento (no intersecta), rayo pasa por un vértice convexo(una intersección) o reflejo (no intersecta)
+Para evitar estos casos se tiene la técnica de ray-crossing. Esta se basa en la siguiente idea:
+-Dibujar un rayo en una dirección (se considera el eje x positivo)
+-Considerar las intersecciones del rayo con el borde. El punto q está dentro (fuera) si el número de intersecciones es impar (par), respectivamente. Punto en el borde (chekeo de colinealidad). Se debe checkear cada segmento del polígono por intersecciones (O(n)) al igual que el algoritmo para convexos, por lo que no vale la pena diferenciar
