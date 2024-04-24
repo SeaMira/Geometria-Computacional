@@ -1,0 +1,33 @@
+Intersección de segmentos
+
+Empecemos con un ejemplo: en sistemas con info. geográfica se muestra distinta información en capas
+ o Capas que almacenan caminos, ciudades, ri+íos, etc.
+ o Densidad de población, promedio demprecipitaciones, vegetación, etc.
+EjCaminos y ríos se pueden representar como polilineas, que son una secuencia de segmentos.
+
+El tipo de infor. geométrica almacenada en cada capa puede ser muy diferente: camino como conjunto de segmentos (o curvas), ciudades como puntos rotulados con un nombre, poligono que define su frontera. En Chile por ejemplo serviría representarlo por comuna.
+
+Cuando se dibuja más de una capa puede ser importante destacar las intersecciones:
+ - Intersecciones entre ríos y caminos (intersección de segmentos)
+ - O regiones donde hay cierta precipitación anual entre 1000 y 1500 mm
+
+Problema: dado un conjunto S de n segmentos en el plano, encontrar todas las intersecciones entre los segmentos de S.
+
+Algoritmo de fuerza bruta:
+chequear todos los segmentos contra todos O(n^2)
+
+Por qué buscar una solución mejor?
+En situaciones prácticas la mayoría de los segmentos intersecta solo unos pocos. El número de puntos de intersecciones es mucho menor que O(n^2)
+
+Idea: diseñar un algoritmo sensible a la salida
+
+Filtramos entonces a checkear que se compartan intervalos de coordenadas (en y, en primer lugar)
+
+Se barren los segmentos de arriba hacia abajo con una línea de barrido que maneja un estado (sweep line l) con los segmentos que intersectan
+
+Primera idea: segmentos que están cerca son candidatos a intersectarse; los otros no los on.
+
+Primer algoritmo. Sea S={s1, s2, ..., sn}. Recordar que no queremos testear los segmentos que están lejos. La idea es definir el intervalo-y de un segmento como su proyección ortogonal en el eje y. Si los intervalos-y de dos segmentos no se intersectan, los segmentos correspondientes tampoco. Así tenemos que calcular una posible intersección entre segmentos cuyo intervalo-y se superponen.
+Estrategaia: usar una sweepline l. Vamos a definir el estadode l como el conjunto de segmentos que la intersectan en un instante de tiempo. Es estado de la línea necesita solo ser actualizado en puntos específicos: puntos evento. Los puntos evento en este caso son 2.
++Si el punto evento es un extremo superior, un nuevo segmento comienza a intersectar l y debe ser agregado a la lista (verificar si intersecta los sementos en el "estado" de l)
++Si el punto evento es el extremo inferior de un segmento se elimina del estado l.
