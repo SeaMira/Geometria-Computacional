@@ -1,0 +1,15 @@
+set(PUNTO_HPP_LIST "${PROJECT_SOURCE_DIR}/include/Punto/punto.hpp")
+set(VECTOR_HPP_LIST "${PROJECT_SOURCE_DIR}/include/Vector/vector.hpp")
+set(POLIGONO_HPP_LIST "${PROJECT_SOURCE_DIR}/include/Poligono/poligono.hpp")
+
+set(PUNTO_CPP_LIST "punto.cpp")
+set(VECTOR_CPP_LIST "vector.cpp")
+set(POLIGONO_CPP_LIST "poligono.cpp")
+
+add_library(punto punto.cpp)
+add_library(vector vector.cpp)
+add_library(poligono poligono.cpp)
+
+target_include_directories(punto PUBLIC ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(vector PUBLIC ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(poligono PUBLIC ${PROJECT_SOURCE_DIR}/include)
