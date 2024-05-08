@@ -32,6 +32,12 @@ class Poligono {
             if (i < count && i >= 0) return this->vec[i];
             else throw std::out_of_range("Entero fuera del rango admitido");
         }
+        bool PointIsIn(Punto<T> punto) {
+            for (int i = 0; i < count; i++) {
+                if (punto == vec[i]) return true;
+            }
+            return false;
+        }
 
         bool isCounterclockwise() {
             double area = 0;

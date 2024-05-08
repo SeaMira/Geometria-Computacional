@@ -4,9 +4,9 @@
 #include <stdlib.h>
 #include<Poligono/poligono.hpp>
 
-Punto p0;
+Punto<float> p0(0.0f,0.0f);
 
-Punto nextToTop(std::stack<Punto> &S)
+Punto<float> nextToTop(std::stack<Punto<float>> &S)
 {
     Punto p = S.top();
     S.pop();
@@ -15,20 +15,20 @@ Punto nextToTop(std::stack<Punto> &S)
     return res;
 }
 
-void swap(Punto &p1, Punto &p2) {
-    Punto temp = p1;
+void swap(Punto<float> &p1, Punto<float> &p2) {
+    Punto<float> temp = p1;
     p1 = p2;
     p2 = temp;
 }
 
-int distSq(Punto p1, Punto p2)
+int distSq(Punto<float> p1, Punto<float> p2)
 {
     return (p1.GetX() - p2.GetX())*(p1.GetX() - p2.GetX()) +
           (p1.GetY() - p2.GetY())*(p1.GetY() - p2.GetY());
 }
  
 
-int orientation(Punto p, Punto q, Punto r)
+int orientation(Punto<float> p, Punto<float> q, Punto<float> r)
 {
     int val = (q.GetY() - p.GetY()) * (r.GetX() - q.GetX()) -
               (q.GetX() - p.GetX()) * (r.GetY() - q.GetY());
@@ -40,8 +40,8 @@ int orientation(Punto p, Punto q, Punto r)
 
 int compare(const void *vp1, const void *vp2)
 {
-   Punto *p1 = (Punto *)vp1;
-   Punto *p2 = (Punto *)vp2;
+   Punto<float> *p1 = (Punto<float> *)vp1;
+   Punto<float> *p2 = (Punto<float> *)vp2;
  
    int o = orientation(p0, *p1, *p2);
    if (o == 0)
@@ -50,10 +50,10 @@ int compare(const void *vp1, const void *vp2)
    return (o == 2)? -1: 1;
 }
 
-Poligono grahamScan(Punto[] puntos) {
+Poligono<float> grahamScan(Punto<float> puntos[]) {
 
-    int n = sizeof(puntos)/sizeof(Punto);
-    float ymin = puntos[0].GetY(), min = 0;
+    int n = sizeof(puntos)/sizeof(Punto<float>), min = 0;
+    float ymin = puntos[0].GetY();
     for (int i = 1; i < n; i++) {
         float y = puntos[i].GetY();
 
@@ -68,7 +68,7 @@ Poligono grahamScan(Punto[] puntos) {
     swap(puntos[0], puntos[min]);
 
     p0 = puntos[0];
-    qsort(&puntos[1], n-1, sizeof(Punto), compare);
+    qsort(&puntos[1], n-1, sizeof(Punto<float>), compare);
 
 
     int m = 1; // Initialize size of modified array
@@ -82,9 +82,11 @@ Poligono grahamScan(Punto[] puntos) {
         m++;  // Update size of modified array
     }
 
-    if (m < 3) return;
+    if (m < 3) {
+        // error
+    }
 
-    std::stack<Punto> S;
+    std::stack<Punto<float>> S;
     S.push(puntos[0]);
     S.push(puntos[1]);
     S.push(puntos[2]);
@@ -97,11 +99,11 @@ Poligono grahamScan(Punto[] puntos) {
 
     std::vector<Punto<float>> vec;
     while (!S.empty()) {
-        Punto p = S.top();
+        Punto<float> p = S.top();
         vec.push_back(p);
         std::cout << "(" << p.GetX() << ", " << p.GetY() <<")" << std::endl;
         S.pop();
     }
-    Poligono pol(vec);
+    Poligono<float> pol(vec);
     return pol;
 }

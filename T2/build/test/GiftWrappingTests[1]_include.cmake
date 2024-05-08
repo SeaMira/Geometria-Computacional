@@ -1,0 +1,5 @@
+if(EXISTS "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GiftWrappingTests[1]_tests.cmake")
+  include("D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GiftWrappingTests[1]_tests.cmake")
+else()
+  add_test(GiftWrappingTests_NOT_BUILT GiftWrappingTests_NOT_BUILT)
+endif()

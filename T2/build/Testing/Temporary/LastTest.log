@@ -1,0 +1,917 @@
+Start testing: May 08 00:04 Hora est. Sudamérica Pacífico
+----------------------------------------------------------
+1/19 Testing: PuntoClass2.TestGetters
+1/19 Test: PuntoClass2.TestGetters
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PuntoTests.exe" "--gtest_filter=PuntoClass2.TestGetters" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"PuntoClass2.TestGetters" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = PuntoClass2.TestGetters
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PuntoClass2
+[ RUN      ] PuntoClass2.TestGetters
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+[       OK ] PuntoClass2.TestGetters (0 ms)
+[----------] 1 test from PuntoClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PuntoClass2.TestGetters" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"PuntoClass2.TestGetters" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/19 Testing: PuntoClass2.TestSetters
+2/19 Test: PuntoClass2.TestSetters
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PuntoTests.exe" "--gtest_filter=PuntoClass2.TestSetters" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"PuntoClass2.TestSetters" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = PuntoClass2.TestSetters
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PuntoClass2
+[ RUN      ] PuntoClass2.TestSetters
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+[       OK ] PuntoClass2.TestSetters (0 ms)
+[----------] 1 test from PuntoClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PuntoClass2.TestSetters" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"PuntoClass2.TestSetters" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/19 Testing: PuntoClass2.TestDistanceBetweenPoints
+3/19 Test: PuntoClass2.TestDistanceBetweenPoints
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PuntoTests.exe" "--gtest_filter=PuntoClass2.TestDistanceBetweenPoints" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"PuntoClass2.TestDistanceBetweenPoints" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = PuntoClass2.TestDistanceBetweenPoints
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PuntoClass2
+[ RUN      ] PuntoClass2.TestDistanceBetweenPoints
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+[       OK ] PuntoClass2.TestDistanceBetweenPoints (0 ms)
+[----------] 1 test from PuntoClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PuntoClass2.TestDistanceBetweenPoints" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"PuntoClass2.TestDistanceBetweenPoints" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/19 Testing: PuntoClass2.TestEquivalence
+4/19 Test: PuntoClass2.TestEquivalence
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PuntoTests.exe" "--gtest_filter=PuntoClass2.TestEquivalence" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"PuntoClass2.TestEquivalence" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = PuntoClass2.TestEquivalence
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PuntoClass2
+[ RUN      ] PuntoClass2.TestEquivalence
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+[       OK ] PuntoClass2.TestEquivalence (0 ms)
+[----------] 1 test from PuntoClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PuntoClass2.TestEquivalence" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"PuntoClass2.TestEquivalence" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/19 Testing: PuntoClass2.TestOutputOperator
+5/19 Test: PuntoClass2.TestOutputOperator
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PuntoTests.exe" "--gtest_filter=PuntoClass2.TestOutputOperator" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"PuntoClass2.TestOutputOperator" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = PuntoClass2.TestOutputOperator
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PuntoClass2
+[ RUN      ] PuntoClass2.TestOutputOperator
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+[       OK ] PuntoClass2.TestOutputOperator (0 ms)
+[----------] 1 test from PuntoClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PuntoClass2.TestOutputOperator" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"PuntoClass2.TestOutputOperator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/19 Testing: VectorClass2.TestGetters
+6/19 Test: VectorClass2.TestGetters
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests.exe" "--gtest_filter=VectorClass2.TestGetters" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"VectorClass2.TestGetters" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = VectorClass2.TestGetters
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VectorClass2
+[ RUN      ] VectorClass2.TestGetters
+[       OK ] VectorClass2.TestGetters (0 ms)
+[----------] 1 test from VectorClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"VectorClass2.TestGetters" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"VectorClass2.TestGetters" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/19 Testing: VectorClass2.TestSetters
+7/19 Test: VectorClass2.TestSetters
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests.exe" "--gtest_filter=VectorClass2.TestSetters" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"VectorClass2.TestSetters" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = VectorClass2.TestSetters
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VectorClass2
+[ RUN      ] VectorClass2.TestSetters
+[       OK ] VectorClass2.TestSetters (0 ms)
+[----------] 1 test from VectorClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"VectorClass2.TestSetters" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"VectorClass2.TestSetters" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/19 Testing: VectorClass2.TestVectorSize
+8/19 Test: VectorClass2.TestVectorSize
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests.exe" "--gtest_filter=VectorClass2.TestVectorSize" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"VectorClass2.TestVectorSize" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = VectorClass2.TestVectorSize
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VectorClass2
+[ RUN      ] VectorClass2.TestVectorSize
+[       OK ] VectorClass2.TestVectorSize (0 ms)
+[----------] 1 test from VectorClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"VectorClass2.TestVectorSize" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"VectorClass2.TestVectorSize" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/19 Testing: VectorClass2.TestPointProduct
+9/19 Test: VectorClass2.TestPointProduct
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests.exe" "--gtest_filter=VectorClass2.TestPointProduct" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"VectorClass2.TestPointProduct" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = VectorClass2.TestPointProduct
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VectorClass2
+[ RUN      ] VectorClass2.TestPointProduct
+[       OK ] VectorClass2.TestPointProduct (0 ms)
+[----------] 1 test from VectorClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"VectorClass2.TestPointProduct" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"VectorClass2.TestPointProduct" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/19 Testing: VectorClass2.TestCrossProduct
+10/19 Test: VectorClass2.TestCrossProduct
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests.exe" "--gtest_filter=VectorClass2.TestCrossProduct" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"VectorClass2.TestCrossProduct" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = VectorClass2.TestCrossProduct
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VectorClass2
+[ RUN      ] VectorClass2.TestCrossProduct
+[       OK ] VectorClass2.TestCrossProduct (0 ms)
+[----------] 1 test from VectorClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"VectorClass2.TestCrossProduct" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"VectorClass2.TestCrossProduct" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/19 Testing: VectorClass2.TestAddingVectors
+11/19 Test: VectorClass2.TestAddingVectors
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests.exe" "--gtest_filter=VectorClass2.TestAddingVectors" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"VectorClass2.TestAddingVectors" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = VectorClass2.TestAddingVectors
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VectorClass2
+[ RUN      ] VectorClass2.TestAddingVectors
+[       OK ] VectorClass2.TestAddingVectors (0 ms)
+[----------] 1 test from VectorClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"VectorClass2.TestAddingVectors" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"VectorClass2.TestAddingVectors" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/19 Testing: VectorClass2.TestEquivalence
+12/19 Test: VectorClass2.TestEquivalence
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests.exe" "--gtest_filter=VectorClass2.TestEquivalence" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"VectorClass2.TestEquivalence" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = VectorClass2.TestEquivalence
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VectorClass2
+[ RUN      ] VectorClass2.TestEquivalence
+[       OK ] VectorClass2.TestEquivalence (0 ms)
+[----------] 1 test from VectorClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"VectorClass2.TestEquivalence" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"VectorClass2.TestEquivalence" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/19 Testing: VectorClass2.TestScalarMult
+13/19 Test: VectorClass2.TestScalarMult
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests.exe" "--gtest_filter=VectorClass2.TestScalarMult" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"VectorClass2.TestScalarMult" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = VectorClass2.TestScalarMult
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VectorClass2
+[ RUN      ] VectorClass2.TestScalarMult
+[       OK ] VectorClass2.TestScalarMult (0 ms)
+[----------] 1 test from VectorClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"VectorClass2.TestScalarMult" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"VectorClass2.TestScalarMult" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/19 Testing: VectorClass2.TestOutputOperator
+14/19 Test: VectorClass2.TestOutputOperator
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests.exe" "--gtest_filter=VectorClass2.TestOutputOperator" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"VectorClass2.TestOutputOperator" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = VectorClass2.TestOutputOperator
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VectorClass2
+[ RUN      ] VectorClass2.TestOutputOperator
+[       OK ] VectorClass2.TestOutputOperator (0 ms)
+[----------] 1 test from VectorClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"VectorClass2.TestOutputOperator" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"VectorClass2.TestOutputOperator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/19 Testing: PoligonoClass2.TestGetPointsAmount
+15/19 Test: PoligonoClass2.TestGetPointsAmount
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PoligonoTests.exe" "--gtest_filter=PoligonoClass2.TestGetPointsAmount" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"PoligonoClass2.TestGetPointsAmount" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = PoligonoClass2.TestGetPointsAmount
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PoligonoClass2
+[ RUN      ] PoligonoClass2.TestGetPointsAmount
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+[       OK ] PoligonoClass2.TestGetPointsAmount (0 ms)
+[----------] 1 test from PoligonoClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PoligonoClass2.TestGetPointsAmount" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"PoligonoClass2.TestGetPointsAmount" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/19 Testing: PoligonoClass2.TestOperatorSelector
+16/19 Test: PoligonoClass2.TestOperatorSelector
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PoligonoTests.exe" "--gtest_filter=PoligonoClass2.TestOperatorSelector" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"PoligonoClass2.TestOperatorSelector" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = PoligonoClass2.TestOperatorSelector
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PoligonoClass2
+[ RUN      ] PoligonoClass2.TestOperatorSelector
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+[       OK ] PoligonoClass2.TestOperatorSelector (0 ms)
+[----------] 1 test from PoligonoClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PoligonoClass2.TestOperatorSelector" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"PoligonoClass2.TestOperatorSelector" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/19 Testing: PoligonoClass2.TestIsCounterclockwise
+17/19 Test: PoligonoClass2.TestIsCounterclockwise
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PoligonoTests.exe" "--gtest_filter=PoligonoClass2.TestIsCounterclockwise" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"PoligonoClass2.TestIsCounterclockwise" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = PoligonoClass2.TestIsCounterclockwise
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PoligonoClass2
+[ RUN      ] PoligonoClass2.TestIsCounterclockwise
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+[       OK ] PoligonoClass2.TestIsCounterclockwise (0 ms)
+[----------] 1 test from PoligonoClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PoligonoClass2.TestIsCounterclockwise" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"PoligonoClass2.TestIsCounterclockwise" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/19 Testing: PoligonoClass2.TestOutputOperator
+18/19 Test: PoligonoClass2.TestOutputOperator
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PoligonoTests.exe" "--gtest_filter=PoligonoClass2.TestOutputOperator" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"PoligonoClass2.TestOutputOperator" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Note: Google Test filter = PoligonoClass2.TestOutputOperator
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PoligonoClass2
+[ RUN      ] PoligonoClass2.TestOutputOperator
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+[       OK ] PoligonoClass2.TestOutputOperator (0 ms)
+[----------] 1 test from PoligonoClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PoligonoClass2.TestOutputOperator" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"PoligonoClass2.TestOutputOperator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/19 Testing: GiftWrappingClass2.TestGetters
+19/19 Test: GiftWrappingClass2.TestGetters
+Command: "D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GiftWrappingTests.exe" "--gtest_filter=GiftWrappingClass2.TestGetters" "--gtest_also_run_disabled_tests"
+Directory: D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/build/test
+"GiftWrappingClass2.TestGetters" start time: May 08 00:04 Hora est. Sudamérica Pacífico
+Output:
+----------------------------------------------------------
+Running main() from D:/Users/Escritorio/U/OtoÃ±o 2024 - 9no semestre/Geometria-Computacional/T2/extern/googletest/googletest/src/gtest_main.cc
+Note: Google Test filter = GiftWrappingClass2.TestGetters
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GiftWrappingClass2
+[ RUN      ] GiftWrappingClass2.TestGetters
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+5
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+[(0, 0),(2.5, 0),(2.5, 2.5),(0, 2.5),(0, 0)]Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+Deleted Punto
+[       OK ] GiftWrappingClass2.TestGetters (0 ms)
+[----------] 1 test from GiftWrappingClass2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"GiftWrappingClass2.TestGetters" end time: May 08 00:04 Hora est. Sudamérica Pacífico
+"GiftWrappingClass2.TestGetters" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 08 00:04 Hora est. Sudamérica Pacífico

@@ -11,4 +11,4 @@ add_subdirectory(test)
 
 
 add_executable(${PROJECT_NAME} main.cpp)
-target_link_libraries(${PROJECT_NAME} punto vector poligono)
+target_link_libraries(${PROJECT_NAME} punto vector poligono giftWrapping grahamScan)

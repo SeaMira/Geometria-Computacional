@@ -1,0 +1,25 @@
+PuntoTests_NOT_BUILT 0 0
+VectorTests_NOT_BUILT 0 0
+PoligonoTests_NOT_BUILT 0 0
+GiftWrappingTests_NOT_BUILT 0 0
+GrahamScanTests_NOT_BUILT 0 0
+PuntoClass2.TestGetters 11 0.000905136
+PuntoClass2.TestSetters 11 0.000809409
+PuntoClass2.TestDistanceBetweenPoints 11 0.000814355
+PuntoClass2.TestEquivalence 11 0.000783236
+PuntoClass2.TestOutputOperator 11 0.000763845
+VectorClass2.TestGetters 11 0.000805673
+VectorClass2.TestSetters 11 0.000853745
+VectorClass2.TestVectorSize 11 0.000915
+VectorClass2.TestPointProduct 11 0.000796227
+VectorClass2.TestCrossProduct 11 0.000813291
+VectorClass2.TestAddingVectors 11 0.000767327
+VectorClass2.TestEquivalence 11 0.000780964
+VectorClass2.TestScalarMult 11 0.000765982
+VectorClass2.TestOutputOperator 11 0.000763782
+PoligonoClass2.TestGetPointsAmount 11 0.000764618
+PoligonoClass2.TestOperatorSelector 11 0.000797073
+PoligonoClass2.TestIsCounterclockwise 11 0.0008072
+PoligonoClass2.TestOutputOperator 11 0.000854591
+GiftWrappingClass2.TestGetters 2 0.00436455
+---

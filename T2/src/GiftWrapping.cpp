@@ -4,13 +4,14 @@
 
 
 
-float cross_product(Punto p0, Punto p1, Punto p2) {
-    return (p2.GetX() - p1.GetX())*(p0.GetY() - p1.GetY()) - (p2.GetY() - p1.GetY())*(p0.GetX() - p1.GetX());
+float cross_product(Punto<float> p0, Punto<float> p1, Punto<float> p2) {
+    return (p1.GetX() - p0.GetX())*(p2.GetY() - p1.GetY()) - (p1.GetY() - p0.GetY())*(p2.GetX() - p1.GetX());
 }
 
-Poligono giftWrapping(Punto[] puntos) {
-    Punto * p = puntos;
-    int n = sizeof(puntos)/sizeof(Punto);
+Poligono<float> giftWrapping(Punto<float> puntos[], int n) {
+    // Punto<float> * p = puntos;
+    // int n = sizeof(puntos)/sizeof(Punto<float>);
+    std::cout << n << std::endl;
     if (n  < 3) {
         // error
     }
@@ -23,10 +24,11 @@ Poligono giftWrapping(Punto[] puntos) {
         } 
     }
 
-    Poligono pol({puntos[min_x_idx]});
+    Poligono<float> pol({puntos[min_x_idx]});
 
-    int p = min_x_idx, q = (min_x_idx + 1) % n ;
+    int p = min_x_idx, q ;
     while (q != min_x_idx) {
+        q = (p + 1) % n;
 
         int i = 0; 
         while (i < n) {
@@ -34,16 +36,13 @@ Poligono giftWrapping(Punto[] puntos) {
                 float crss_pdct = cross_product(puntos[p], puntos[q], puntos[i]);
                 if (crss_pdct < 0) {
                     q = i;
-                    break;
                 }
             }
             i++;
-        }
-        if (i == n) {
-            pol.addPoint(puntos[q]);
-            p = q;
-            q = (q + 1) % n;
-        }
+        } 
+        pol.addPoint(puntos[q]);
+        p = q;
+        
     }
     return pol;
 }

@@ -1,12 +1,18 @@
 add_executable(PuntoTests testPuntoClassFixtures.cpp)
 add_executable(VectorTests testVectorClassFixtures.cpp)
 add_executable(PoligonoTests testPoligonoClassFixtures.cpp)
+add_executable(GiftWrappingTests testGiftWrappingClassFixtures.cpp)
+add_executable(GrahamScanTests testGrahamScanClassFixtures.cpp)
 
 target_link_libraries(PuntoTests gtest_main punto)
 target_link_libraries(VectorTests gtest_main vector)
 target_link_libraries(PoligonoTests gtest_main poligono)
+target_link_libraries(GiftWrappingTests gtest_main giftWrapping)
+target_link_libraries(GrahamScanTests gtest_main grahamScan)
 
 include(GoogleTest)
 gtest_discover_tests(PuntoTests)
 gtest_discover_tests(VectorTests)
 gtest_discover_tests(PoligonoTests)
+gtest_discover_tests(GiftWrappingTests)
+gtest_discover_tests(GrahamScanTests)
