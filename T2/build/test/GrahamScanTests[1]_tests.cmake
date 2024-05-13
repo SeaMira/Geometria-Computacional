@@ -1,1 +1,5 @@
-set(  GrahamScanTests_TESTS)
+add_test([=[GrahamScanClass2.GrahamScan5Points]=]  [==[D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GrahamScanTests.exe]==] [==[--gtest_filter=GrahamScanClass2.GrahamScan5Points]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[GrahamScanClass2.GrahamScan5Points]=]  PROPERTIES WORKING_DIRECTORY [==[D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[GrahamScanClass2.GrahamScan22Points]=]  [==[D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GrahamScanTests.exe]==] [==[--gtest_filter=GrahamScanClass2.GrahamScan22Points]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[GrahamScanClass2.GrahamScan22Points]=]  PROPERTIES WORKING_DIRECTORY [==[D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  GrahamScanTests_TESTS GrahamScanClass2.GrahamScan5Points GrahamScanClass2.GrahamScan22Points)

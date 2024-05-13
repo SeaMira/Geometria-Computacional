@@ -8,9 +8,9 @@ Punto<float> p0(0.0f,0.0f);
 
 Punto<float> nextToTop(std::stack<Punto<float>> &S)
 {
-    Punto p = S.top();
+    Punto<float> p = S.top();
     S.pop();
-    Punto res = S.top();
+    Punto<float> res = S.top();
     S.push(p);
     return res;
 }
@@ -50,9 +50,10 @@ int compare(const void *vp1, const void *vp2)
    return (o == 2)? -1: 1;
 }
 
-Poligono<float> grahamScan(Punto<float> puntos[]) {
+Poligono<float> grahamScan(Punto<float> puntos[], int n) {
 
-    int n = sizeof(puntos)/sizeof(Punto<float>), min = 0;
+    // int n = sizeof(puntos)/sizeof(Punto<float>);
+    int min = 0;
     float ymin = puntos[0].GetY();
     for (int i = 1; i < n; i++) {
         float y = puntos[i].GetY();

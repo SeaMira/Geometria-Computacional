@@ -19,7 +19,7 @@ class GiftWrappingClass2 : public ::testing::Test {
 
 };
 
-TEST_F(GiftWrappingClass2, TestGetters) {
+TEST_F(GiftWrappingClass2, GiftWrapping5Points) {
     Poligono<float> pol2 = giftWrapping(puntos1, 5);
     std::cout << pol2;
     ASSERT_TRUE(pol2.PointIsIn(p1));
