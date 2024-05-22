@@ -210,7 +210,7 @@ build ContinuousSubmit: phony CMakeFiles/ContinuousSubmit
 #############################################
 # Order-only phony target for structures
 
-build cmake_object_order_depends_target_structures: phony || cmake_object_order_depends_target_giftWrapping cmake_object_order_depends_target_grahamScan cmake_object_order_depends_target_poligono cmake_object_order_depends_target_punto cmake_object_order_depends_target_vector
+build cmake_object_order_depends_target_structures: phony || cmake_object_order_depends_target_experimentFuncs cmake_object_order_depends_target_giftWrapping cmake_object_order_depends_target_grahamScan cmake_object_order_depends_target_poligono cmake_object_order_depends_target_punto cmake_object_order_depends_target_vector
 
 build CMakeFiles/structures.dir/main.cpp.obj: CXX_COMPILER__structures_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/T2/main.cpp || cmake_object_order_depends_target_structures
   DEP_FILE = CMakeFiles\structures.dir\main.cpp.obj.d
@@ -227,8 +227,8 @@ build CMakeFiles/structures.dir/main.cpp.obj: CXX_COMPILER__structures_unscanned
 #############################################
 # Link the executable structures.exe
 
-build structures.exe: CXX_EXECUTABLE_LINKER__structures_ CMakeFiles/structures.dir/main.cpp.obj | src/libpunto.a src/libvector.a src/libpoligono.a src/libgiftWrapping.a src/libgrahamScan.a || src/libgiftWrapping.a src/libgrahamScan.a src/libpoligono.a src/libpunto.a src/libvector.a
-  LINK_LIBRARIES = src/libpunto.a  src/libvector.a  src/libpoligono.a  src/libgiftWrapping.a  src/libgrahamScan.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+build structures.exe: CXX_EXECUTABLE_LINKER__structures_ CMakeFiles/structures.dir/main.cpp.obj | src/libpunto.a src/libvector.a src/libpoligono.a src/libgiftWrapping.a src/libgrahamScan.a src/libexperimentFuncs.a || src/libexperimentFuncs.a src/libgiftWrapping.a src/libgrahamScan.a src/libpoligono.a src/libpunto.a src/libvector.a
+  LINK_LIBRARIES = src/libpunto.a  src/libvector.a  src/libpoligono.a  src/libgiftWrapping.a  src/libgrahamScan.a  src/libexperimentFuncs.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\structures.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -1149,6 +1149,37 @@ build src/libgrahamScan.a: CXX_STATIC_LIBRARY_LINKER__grahamScan_ src/CMakeFiles
   TARGET_FILE = src\libgrahamScan.a
   TARGET_PDB = grahamScan.a.dbg
 
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target experimentFuncs
+
+
+#############################################
+# Order-only phony target for experimentFuncs
+
+build cmake_object_order_depends_target_experimentFuncs: phony || src/CMakeFiles/experimentFuncs.dir
+
+build src/CMakeFiles/experimentFuncs.dir/ExperimentFunctions.cpp.obj: CXX_COMPILER__experimentFuncs_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/T2/src/ExperimentFunctions.cpp || cmake_object_order_depends_target_experimentFuncs
+  DEP_FILE = src\CMakeFiles\experimentFuncs.dir\ExperimentFunctions.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/include"
+  OBJECT_DIR = src\CMakeFiles\experimentFuncs.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\experimentFuncs.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target experimentFuncs
+
+
+#############################################
+# Link the static library src\libexperimentFuncs.a
+
+build src/libexperimentFuncs.a: CXX_STATIC_LIBRARY_LINKER__experimentFuncs_ src/CMakeFiles/experimentFuncs.dir/ExperimentFunctions.cpp.obj
+  OBJECT_DIR = src\CMakeFiles\experimentFuncs.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\libexperimentFuncs.a
+  TARGET_PDB = experimentFuncs.a.dbg
+
 
 #############################################
 # Utility command for test
@@ -1401,6 +1432,40 @@ build test/GrahamScanTests.exe test/GrahamScanTests[1]_tests.cmake | ${cmake_nin
   TARGET_IMPLIB = test\libGrahamScanTests.dll.a
   TARGET_PDB = GrahamScanTests.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target ExpFuncsTests
+
+
+#############################################
+# Order-only phony target for ExpFuncsTests
+
+build cmake_object_order_depends_target_ExpFuncsTests: phony || cmake_object_order_depends_target_experimentFuncs cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build test/CMakeFiles/ExpFuncsTests.dir/expFuncsClassFixtures.cpp.obj: CXX_COMPILER__ExpFuncsTests_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/T2/test/expFuncsClassFixtures.cpp || cmake_object_order_depends_target_ExpFuncsTests
+  DEP_FILE = test\CMakeFiles\ExpFuncsTests.dir\expFuncsClassFixtures.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/include" -isystem "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/extern/googletest/googletest/include" -isystem "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/extern/googletest/googletest"
+  OBJECT_DIR = test\CMakeFiles\ExpFuncsTests.dir
+  OBJECT_FILE_DIR = test\CMakeFiles\ExpFuncsTests.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ExpFuncsTests
+
+
+#############################################
+# Link the executable test\ExpFuncsTests.exe
+
+build test/ExpFuncsTests.exe test/ExpFuncsTests[1]_tests.cmake | ${cmake_ninja_workdir}test/ExpFuncsTests[1]_tests.cmake: CXX_EXECUTABLE_LINKER__ExpFuncsTests_ test/CMakeFiles/ExpFuncsTests.dir/expFuncsClassFixtures.cpp.obj | lib/libgtest_main.a src/libexperimentFuncs.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a src/libexperimentFuncs.a
+  LINK_LIBRARIES = lib/libgtest_main.a  src/libexperimentFuncs.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = test\CMakeFiles\ExpFuncsTests.dir
+  POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D "D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\T2\build\test" && C:\msys64\ucrt64\bin\cmake.exe -D TEST_TARGET=ExpFuncsTests -D "TEST_EXECUTABLE=D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/ExpFuncsTests.exe" -D TEST_EXECUTOR= -D "TEST_WORKING_DIR=D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test" -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=ExpFuncsTests_TESTS -D "CTEST_FILE=D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/ExpFuncsTests[1]_tests.cmake" -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P C:/msys64/ucrt64/share/cmake/Modules/GoogleTestAddTests.cmake"
+  PRE_LINK = cd .
+  RESTAT = 1
+  TARGET_FILE = test\ExpFuncsTests.exe
+  TARGET_IMPLIB = test\libExpFuncsTests.dll.a
+  TARGET_PDB = ExpFuncsTests.exe.dbg
+
 
 #############################################
 # Utility command for test
@@ -1481,6 +1546,10 @@ build test/install/strip: phony test/CMakeFiles/install/strip.util
 # =============================================================================
 # Target aliases.
 
+build ExpFuncsTests: phony test/ExpFuncsTests.exe
+
+build ExpFuncsTests.exe: phony test/ExpFuncsTests.exe
+
 build GiftWrappingTests: phony test/GiftWrappingTests.exe
 
 build GiftWrappingTests.exe: phony test/GiftWrappingTests.exe
@@ -1501,6 +1570,8 @@ build VectorTests: phony test/VectorTests.exe
 
 build VectorTests.exe: phony test/VectorTests.exe
 
+build experimentFuncs: phony src/libexperimentFuncs.a
+
 build giftWrapping: phony src/libgiftWrapping.a
 
 build gmock: phony lib/libgmock.a
@@ -1512,6 +1583,8 @@ build grahamScan: phony src/libgrahamScan.a
 build gtest: phony lib/libgtest.a
 
 build gtest_main: phony lib/libgtest_main.a
+
+build libexperimentFuncs.a: phony src/libexperimentFuncs.a
 
 build libgiftWrapping.a: phony src/libgiftWrapping.a
 
@@ -1582,14 +1655,14 @@ build extern/googletest/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 #############################################
 # Folder: D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/src
 
-build src/all: phony src/libpunto.a src/libvector.a src/libpoligono.a src/libgiftWrapping.a src/libgrahamScan.a
+build src/all: phony src/libpunto.a src/libvector.a src/libpoligono.a src/libgiftWrapping.a src/libgrahamScan.a src/libexperimentFuncs.a
 
 # =============================================================================
 
 #############################################
 # Folder: D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test
 
-build test/all: phony test/PuntoTests.exe test/VectorTests.exe test/PoligonoTests.exe test/GiftWrappingTests.exe test/GrahamScanTests.exe
+build test/all: phony test/PuntoTests.exe test/VectorTests.exe test/PoligonoTests.exe test/GiftWrappingTests.exe test/GrahamScanTests.exe test/ExpFuncsTests.exe
 
 # =============================================================================
 # Built-in targets

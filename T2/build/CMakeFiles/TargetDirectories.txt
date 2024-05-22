@@ -71,6 +71,7 @@ D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/buil
 D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/src/CMakeFiles/poligono.dir
 D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/src/CMakeFiles/giftWrapping.dir
 D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/src/CMakeFiles/grahamScan.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/src/CMakeFiles/experimentFuncs.dir
 D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/src/CMakeFiles/test.dir
 D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/src/CMakeFiles/edit_cache.dir
 D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/src/CMakeFiles/rebuild_cache.dir
@@ -83,6 +84,7 @@ D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/buil
 D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/CMakeFiles/PoligonoTests.dir
 D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/CMakeFiles/GiftWrappingTests.dir
 D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/CMakeFiles/GrahamScanTests.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/CMakeFiles/ExpFuncsTests.dir
 D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/CMakeFiles/test.dir
 D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/CMakeFiles/edit_cache.dir
 D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/CMakeFiles/rebuild_cache.dir

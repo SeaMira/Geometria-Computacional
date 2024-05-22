@@ -1,141 +1,140 @@
 # ninja log v5
-32	570	7372720517277064	src/CMakeFiles/vector.dir/vector.cpp.obj	bf275e65d88ea0c6
-586	723	7372720518837061	src/libpunto.a	dc1e93c4edaba1c0
-5504	5867	7372720570267395	test/PuntoTests[1]_tests.cmake	73a5453a0c00a917
-750	2384	7372720535420065	test/CMakeFiles/PoligonoTests.dir/testPoligonoClassFixtures.cpp.obj	598721f85c1dccba
-732	870	7372720520257062	src/libgiftWrapping.a	637ca1fa2ebdd768
-5512	5892	7372720570527393	test/PoligonoTests[1]_tests.cmake	bc2c9a6fd5f95598
-607	748	7372720519047062	src/libpoligono.a	c0b3d8ca6a953b18
-5521	5897	7372720570597381	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GrahamScanTests[1]_tests.cmake	2fc98060fe372a6e
-723	2236	7372720533970050	test/CMakeFiles/PuntoTests.dir/testPuntoClassFixtures.cpp.obj	e9c38d10dd03c690
-23	1669	7372720528307441	extern/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	420e29b6e88d6917
-5539	5631	7372720567942233	lib/libgmock_main.a	21de8f0a6b22ce13
-5430	5504	7372720566682215	lib/libgtest_main.a	bb69e2a06dcce292
-21	2640	7372720538000060	extern/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	359edc0f6667a5b6
-5517	5892	7372720570517376	test/GiftWrappingTests.exe	29f1b7ff5abd6b1a
-5512	5892	7372720570527393	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PoligonoTests[1]_tests.cmake	bc2c9a6fd5f95598
-5517	5892	7372720570517376	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GiftWrappingTests[1]_tests.cmake	29f1b7ff5abd6b1a
-5508	5894	7372720570557382	test/VectorTests[1]_tests.cmake	13211488a0914e0d
-25	5301	7372720564552205	extern/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	953d2316b13a26
-5508	5894	7372720570557382	test/VectorTests.exe	13211488a0914e0d
-5508	5894	7372720570557382	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests[1]_tests.cmake	13211488a0914e0d
-35	607	7372720517537051	src/CMakeFiles/poligono.dir/poligono.cpp.obj	ffb894a5644e6b7d
-845	2295	7372720534560059	test/CMakeFiles/GiftWrappingTests.dir/testGiftWrappingClassFixtures.cpp.obj	1ebe147e2282fae0
-5426	5539	7372720567002218	lib/libgmock.a	87d81064a7e31cbf
-5512	5892	7372720570527393	test/PoligonoTests.exe	bc2c9a6fd5f95598
-871	2387	7372720535460180	test/CMakeFiles/GrahamScanTests.dir/testGrahamScanClassFixtures.cpp.obj	f3f27450bbb8720f
-727	2318	7372720534790063	test/CMakeFiles/VectorTests.dir/testVectorClassFixtures.cpp.obj	300751cfa2610f6a
-18	844	7372720520037066	CMakeFiles/structures.dir/main.cpp.obj	3e6a76559170e7c
-824	964	7372720521237061	src/libgrahamScan.a	f693c2e6fdce0ea1
-37	730	7372720518867066	src/CMakeFiles/giftWrapping.dir/GiftWrapping.cpp.obj	89a6d4a786441cd1
-5517	5892	7372720570517376	test/GiftWrappingTests[1]_tests.cmake	29f1b7ff5abd6b1a
-27	1384	7372720525447454	extern/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	70b7648381b3f53e
-964	1158	7372720523077066	structures.exe	87c5179d57e751d
-570	727	7372720518817049	src/libvector.a	a77fbd3157ed1913
-5504	5867	7372720570267395	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PuntoTests[1]_tests.cmake	73a5453a0c00a917
-5521	5897	7372720570597381	test/GrahamScanTests[1]_tests.cmake	2fc98060fe372a6e
-5504	5867	7372720570267395	test/PuntoTests.exe	73a5453a0c00a917
-5521	5897	7372720570597381	test/GrahamScanTests.exe	2fc98060fe372a6e
-41	824	7372720519847056	src/CMakeFiles/grahamScan.dir/GrahamScan.cpp.obj	28dec9c3855f121c
-29	585	7372720517447058	src/CMakeFiles/punto.dir/punto.cpp.obj	e0e8e99031afbb9f
-5301	5426	7372720565892220	lib/libgtest.a	687f5e138198ebf3
-42	563	7372729610159833	src/CMakeFiles/punto.dir/punto.cpp.obj	e0e8e99031afbb9f
-44	572	7372729610229834	src/CMakeFiles/vector.dir/vector.cpp.obj	bf275e65d88ea0c6
-47	591	7372729610469844	src/CMakeFiles/poligono.dir/poligono.cpp.obj	ffb894a5644e6b7d
-50	663	7372729611199827	src/CMakeFiles/giftWrapping.dir/GiftWrapping.cpp.obj	89a6d4a786441cd1
-592	716	7372729611729840	src/libpoligono.a	c0b3d8ca6a953b18
-573	723	7372729611789841	src/libvector.a	a77fbd3157ed1913
-664	795	7372729612459838	src/libgiftWrapping.a	637ca1fa2ebdd768
-53	811	7372729612669840	src/CMakeFiles/grahamScan.dir/GrahamScan.cpp.obj	28dec9c3855f121c
-30	844	7372729612999832	CMakeFiles/structures.dir/main.cpp.obj	3e6a76559170e7c
-811	928	7372729613759838	src/libgrahamScan.a	f693c2e6fdce0ea1
-564	1006	7372729614620190	src/libpunto.a	dc1e93c4edaba1c0
-1007	1179	7372729616250187	structures.exe	87c5179d57e751d
-40	1276	7372729617320179	extern/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	70b7648381b3f53e
-35	1573	7372729620290510	extern/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	420e29b6e88d6917
-716	2145	7372729626010520	test/CMakeFiles/PuntoTests.dir/testPuntoClassFixtures.cpp.obj	e9c38d10dd03c690
-723	2207	7372729626620520	test/CMakeFiles/VectorTests.dir/testVectorClassFixtures.cpp.obj	300751cfa2610f6a
-845	2234	7372729626900521	test/CMakeFiles/GiftWrappingTests.dir/testGiftWrappingClassFixtures.cpp.obj	1ebe147e2282fae0
-796	2340	7372729627960507	test/CMakeFiles/PoligonoTests.dir/testPoligonoClassFixtures.cpp.obj	598721f85c1dccba
-33	2542	7372729629960505	extern/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	359edc0f6667a5b6
-37	5235	7372729656836110	extern/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	953d2316b13a26
-32	551	7372730279574515	src/CMakeFiles/punto.dir/punto.cpp.obj	e0e8e99031afbb9f
-37	575	7372730279834510	src/CMakeFiles/poligono.dir/poligono.cpp.obj	ffb894a5644e6b7d
-34	581	7372730279844512	src/CMakeFiles/vector.dir/vector.cpp.obj	bf275e65d88ea0c6
-40	672	7372730280814507	src/CMakeFiles/giftWrapping.dir/GiftWrapping.cpp.obj	89a6d4a786441cd1
-552	692	7372730280944512	src/libpunto.a	dc1e93c4edaba1c0
-575	774	7372730281614515	src/libpoligono.a	c0b3d8ca6a953b18
-581	781	7372730281654521	src/libvector.a	a77fbd3157ed1913
-20	841	7372730282494508	CMakeFiles/structures.dir/main.cpp.obj	3e6a76559170e7c
-42	849	7372730282544523	src/CMakeFiles/grahamScan.dir/GrahamScan.cpp.obj	28dec9c3855f121c
-673	890	7372730282874516	src/libgiftWrapping.a	637ca1fa2ebdd768
-850	980	7372730283874509	src/libgrahamScan.a	f693c2e6fdce0ea1
-981	1159	7372730285544522	structures.exe	87c5179d57e751d
-30	1319	7372730287254501	extern/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	70b7648381b3f53e
-25	1643	7372730290515831	extern/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	420e29b6e88d6917
-724	2204	7372730296132049	test/CMakeFiles/PuntoTests.dir/testPuntoClassFixtures.cpp.obj	e9c38d10dd03c690
-842	2261	7372730296702062	test/CMakeFiles/GiftWrappingTests.dir/testGiftWrappingClassFixtures.cpp.obj	1ebe147e2282fae0
-774	2297	7372730297042068	test/CMakeFiles/VectorTests.dir/testVectorClassFixtures.cpp.obj	300751cfa2610f6a
-781	2376	7372730297847227	test/CMakeFiles/PoligonoTests.dir/testPoligonoClassFixtures.cpp.obj	598721f85c1dccba
-891	2409	7372730298187214	test/CMakeFiles/GrahamScanTests.dir/testGrahamScanClassFixtures.cpp.obj	f3f27450bbb8720f
-23	2596	7372730300032367	extern/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	359edc0f6667a5b6
-28	5482	7372730328846208	extern/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	953d2316b13a26
-5482	5601	7372730330114257	lib/libgtest.a	687f5e138198ebf3
-5605	5678	7372730330904245	lib/libgtest_main.a	bb69e2a06dcce292
-5601	5699	7372730331084241	lib/libgmock.a	87d81064a7e31cbf
-5699	5802	7372730332121643	lib/libgmock_main.a	21de8f0a6b22ce13
-5695	6151	7372730335601448	test/GrahamScanTests.exe	2fc98060fe372a6e
-5695	6151	7372730335601448	test/GrahamScanTests[1]_tests.cmake	2fc98060fe372a6e
-5695	6151	7372730335601448	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GrahamScanTests[1]_tests.cmake	2fc98060fe372a6e
-5690	6152	7372730335621463	test/GiftWrappingTests.exe	29f1b7ff5abd6b1a
-5690	6152	7372730335621463	test/GiftWrappingTests[1]_tests.cmake	29f1b7ff5abd6b1a
-5690	6152	7372730335621463	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GiftWrappingTests[1]_tests.cmake	29f1b7ff5abd6b1a
-5686	6152	7372730335621463	test/PoligonoTests.exe	bc2c9a6fd5f95598
-5686	6152	7372730335621463	test/PoligonoTests[1]_tests.cmake	bc2c9a6fd5f95598
-5686	6152	7372730335621463	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PoligonoTests[1]_tests.cmake	bc2c9a6fd5f95598
-5682	6153	7372730335631456	test/VectorTests.exe	13211488a0914e0d
-5682	6153	7372730335631456	test/VectorTests[1]_tests.cmake	13211488a0914e0d
-5682	6153	7372730335631456	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests[1]_tests.cmake	13211488a0914e0d
-5679	6153	7372730335631456	test/PuntoTests.exe	73a5453a0c00a917
-5679	6153	7372730335631456	test/PuntoTests[1]_tests.cmake	73a5453a0c00a917
-5679	6153	7372730335631456	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PuntoTests[1]_tests.cmake	73a5453a0c00a917
-37	496	7372741744455487	src/CMakeFiles/vector.dir/vector.cpp.obj	bf275e65d88ea0c6
-35	517	7372741744645484	src/CMakeFiles/punto.dir/punto.cpp.obj	e0e8e99031afbb9f
-40	611	7372741745605479	src/CMakeFiles/poligono.dir/poligono.cpp.obj	ffb894a5644e6b7d
-517	638	7372741745875477	src/libpunto.a	dc1e93c4edaba1c0
-43	708	7372741746555476	src/CMakeFiles/giftWrapping.dir/GiftWrapping.cpp.obj	89a6d4a786441cd1
-612	725	7372741746745481	src/libpoligono.a	c0b3d8ca6a953b18
-46	759	7372741747075476	src/CMakeFiles/grahamScan.dir/GrahamScan.cpp.obj	28dec9c3855f121c
-22	804	7372741747425478	CMakeFiles/structures.dir/main.cpp.obj	3e6a76559170e7c
-708	830	7372741747795485	src/libgiftWrapping.a	637ca1fa2ebdd768
-760	887	7372741748335476	src/libgrahamScan.a	f693c2e6fdce0ea1
-497	913	7372741748595482	src/libvector.a	a77fbd3157ed1913
-913	1082	7372741750195486	structures.exe	87c5179d57e751d
-32	1188	7372741751375483	extern/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	70b7648381b3f53e
-27	1463	7372741754111229	extern/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	420e29b6e88d6917
-638	2003	7372741759513447	test/CMakeFiles/PuntoTests.dir/testPuntoClassFixtures.cpp.obj	e9c38d10dd03c690
-725	2133	7372741760813437	test/CMakeFiles/VectorTests.dir/testVectorClassFixtures.cpp.obj	300751cfa2610f6a
-830	2136	7372741760853435	test/CMakeFiles/GiftWrappingTests.dir/testGiftWrappingClassFixtures.cpp.obj	1ebe147e2282fae0
-804	2246	7372741761943437	test/CMakeFiles/PoligonoTests.dir/testPoligonoClassFixtures.cpp.obj	598721f85c1dccba
-887	2269	7372741762183428	test/CMakeFiles/GrahamScanTests.dir/testGrahamScanClassFixtures.cpp.obj	f3f27450bbb8720f
-25	2412	7372741763578744	extern/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	359edc0f6667a5b6
-30	4976	7372741789175153	extern/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	953d2316b13a26
-4976	5099	7372741790495159	lib/libgtest.a	687f5e138198ebf3
-5102	5182	7372741791325172	lib/libgtest_main.a	bb69e2a06dcce292
-5099	5201	7372741791475172	lib/libgmock.a	87d81064a7e31cbf
-5202	5308	7372741792585175	lib/libgmock_main.a	21de8f0a6b22ce13
-5193	5628	7372741795760283	test/GiftWrappingTests.exe	29f1b7ff5abd6b1a
-5193	5628	7372741795760283	test/GiftWrappingTests[1]_tests.cmake	29f1b7ff5abd6b1a
-5193	5628	7372741795760283	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GiftWrappingTests[1]_tests.cmake	29f1b7ff5abd6b1a
-5197	5629	7372741795770282	test/GrahamScanTests.exe	2fc98060fe372a6e
-5197	5629	7372741795770282	test/GrahamScanTests[1]_tests.cmake	2fc98060fe372a6e
-5197	5629	7372741795770282	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GrahamScanTests[1]_tests.cmake	2fc98060fe372a6e
-5182	5629	7372741795780282	test/PuntoTests.exe	73a5453a0c00a917
-5182	5629	7372741795780282	test/PuntoTests[1]_tests.cmake	73a5453a0c00a917
-5182	5629	7372741795780282	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PuntoTests[1]_tests.cmake	73a5453a0c00a917
-5185	5631	7372741795800284	test/VectorTests.exe	13211488a0914e0d
-5185	5631	7372741795800284	test/VectorTests[1]_tests.cmake	13211488a0914e0d
-5185	5631	7372741795800284	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests[1]_tests.cmake	13211488a0914e0d
-5189	5633	7372741795830283	test/PoligonoTests.exe	bc2c9a6fd5f95598
-5189	5633	7372741795830283	test/PoligonoTests[1]_tests.cmake	bc2c9a6fd5f95598
-5189	5633	7372741795830283	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PoligonoTests[1]_tests.cmake	bc2c9a6fd5f95598
+5146	5269	7378762476426660	lib/libgtest.a	687f5e138198ebf3
+16	476	7378603371092171	build.ninja	3839f6af1db19bf9
+1244	2480	7378762448524576	test/CMakeFiles/ExpFuncsTests.dir/expFuncsClassFixtures.cpp.obj	bff2c096cae997ef
+21	1126	7378762434968634	CMakeFiles/structures.dir/main.cpp.obj	3e6a76559170e7c
+732	2204	7378762445749386	test/CMakeFiles/VectorTests.dir/testVectorClassFixtures.cpp.obj	300751cfa2610f6a
+1127	2555	7378762449265222	test/CMakeFiles/GrahamScanTests.dir/testGrahamScanClassFixtures.cpp.obj	f3f27450bbb8720f
+5372	5758	7378762481291870	test/ExpFuncsTests.exe	b484f24aec4de95b
+5356	5753	7378762481241871	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests[1]_tests.cmake	13211488a0914e0d
+5356	5753	7378762481241871	test/VectorTests.exe	13211488a0914e0d
+37	597	7378762429658616	src/CMakeFiles/poligono.dir/poligono.cpp.obj	ffb894a5644e6b7d
+1269	1391	7378762437588632	src/libexperimentFuncs.a	c7ef8c5a8ca72bea
+5364	5744	7378762481141875	test/GiftWrappingTests.exe	29f1b7ff5abd6b1a
+24	2556	7378762449255219	extern/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	359edc0f6667a5b6
+736	869	7378762432348622	src/libgiftWrapping.a	637ca1fa2ebdd768
+5372	5758	7378762481291870	test/ExpFuncsTests[1]_tests.cmake	b484f24aec4de95b
+870	2377	7378762447484582	test/CMakeFiles/PoligonoTests.dir/testPoligonoClassFixtures.cpp.obj	598721f85c1dccba
+5352	5745	7378762481161878	test/PuntoTests[1]_tests.cmake	73a5453a0c00a917
+5272	5352	7378762477266686	lib/libgtest_main.a	bb69e2a06dcce292
+5352	5745	7378762481161878	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PuntoTests[1]_tests.cmake	73a5453a0c00a917
+5352	5745	7378762481161878	test/PuntoTests.exe	73a5453a0c00a917
+5367	5771	7378762481421885	test/GrahamScanTests[1]_tests.cmake	2fc98060fe372a6e
+519	667	7378762430338623	src/libvector.a	a77fbd3157ed1913
+1391	1566	7378762439298978	structures.exe	9a8022675ed88973
+5372	5758	7378762481291870	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/ExpFuncsTests[1]_tests.cmake	b484f24aec4de95b
+546	686	7378762430508614	src/libpunto.a	dc1e93c4edaba1c0
+35	518	7378762428878028	src/CMakeFiles/vector.dir/vector.cpp.obj	bf275e65d88ea0c6
+842	950	7378762433228625	src/libgrahamScan.a	f693c2e6fdce0ea1
+40	736	7378762431028621	src/CMakeFiles/giftWrapping.dir/GiftWrapping.cpp.obj	89a6d4a786441cd1
+5364	5744	7378762481141875	test/GiftWrappingTests[1]_tests.cmake	29f1b7ff5abd6b1a
+43	842	7378762432108620	src/CMakeFiles/grahamScan.dir/GrahamScan.cpp.obj	28dec9c3855f121c
+5367	5771	7378762481421885	test/GrahamScanTests.exe	2fc98060fe372a6e
+5360	5745	7378762481161878	test/PoligonoTests.exe	bc2c9a6fd5f95598
+951	2346	7378762447174586	test/CMakeFiles/GiftWrappingTests.dir/testGiftWrappingClassFixtures.cpp.obj	1ebe147e2282fae0
+5269	5377	7378762477496684	lib/libgmock.a	87d81064a7e31cbf
+33	542	7378762429082728	src/CMakeFiles/punto.dir/punto.cpp.obj	e0e8e99031afbb9f
+28	5146	7378762475121344	extern/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	953d2316b13a26
+5360	5745	7378762481161878	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PoligonoTests[1]_tests.cmake	bc2c9a6fd5f95598
+5356	5753	7378762481241871	test/VectorTests[1]_tests.cmake	13211488a0914e0d
+5364	5744	7378762481141875	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GiftWrappingTests[1]_tests.cmake	29f1b7ff5abd6b1a
+667	1267	7378762436328640	src/CMakeFiles/experimentFuncs.dir/ExperimentFunctions.cpp.obj	d4b889a8aeae151
+5377	5488	7378762478616679	lib/libgmock_main.a	21de8f0a6b22ce13
+686	2112	7378762444819394	test/CMakeFiles/PuntoTests.dir/testPuntoClassFixtures.cpp.obj	e9c38d10dd03c690
+5367	5771	7378762481421885	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GrahamScanTests[1]_tests.cmake	2fc98060fe372a6e
+26	1584	7378762439558974	extern/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	420e29b6e88d6917
+30	1243	7378762436148616	extern/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	70b7648381b3f53e
+5360	5745	7378762481161878	test/PoligonoTests[1]_tests.cmake	bc2c9a6fd5f95598
+598	732	7378762431008622	src/libpoligono.a	c0b3d8ca6a953b18
+35	503	7378763167427115	src/CMakeFiles/vector.dir/vector.cpp.obj	bf275e65d88ea0c6
+32	528	7378763167667113	src/CMakeFiles/punto.dir/punto.cpp.obj	e0e8e99031afbb9f
+37	572	7378763168137110	src/CMakeFiles/poligono.dir/poligono.cpp.obj	ffb894a5644e6b7d
+504	632	7378763168727109	src/libvector.a	a77fbd3157ed1913
+528	641	7378763168807111	src/libpunto.a	dc1e93c4edaba1c0
+573	684	7378763169267105	src/libpoligono.a	c0b3d8ca6a953b18
+42	712	7378763169527103	src/CMakeFiles/giftWrapping.dir/GiftWrapping.cpp.obj	89a6d4a786441cd1
+45	832	7378763170607109	src/CMakeFiles/grahamScan.dir/GrahamScan.cpp.obj	28dec9c3855f121c
+712	856	7378763170857111	src/libgiftWrapping.a	637ca1fa2ebdd768
+833	971	7378763172092668	src/libgrahamScan.a	f693c2e6fdce0ea1
+20	1109	7378763173494897	CMakeFiles/structures.dir/main.cpp.obj	3e6a76559170e7c
+30	1258	7378763174914889	extern/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	70b7648381b3f53e
+632	1285	7378763175214885	src/CMakeFiles/experimentFuncs.dir/ExperimentFunctions.cpp.obj	d4b889a8aeae151
+1289	1449	7378763176864886	src/libexperimentFuncs.a	c7ef8c5a8ca72bea
+25	1571	7378763178104896	extern/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	420e29b6e88d6917
+1452	1641	7378763178734897	structures.exe	9a8022675ed88973
+641	2106	7378763183460179	test/CMakeFiles/PuntoTests.dir/testPuntoClassFixtures.cpp.obj	e9c38d10dd03c690
+685	2166	7378763184060164	test/CMakeFiles/VectorTests.dir/testVectorClassFixtures.cpp.obj	300751cfa2610f6a
+972	2357	7378763185990153	test/CMakeFiles/GiftWrappingTests.dir/testGiftWrappingClassFixtures.cpp.obj	1ebe147e2282fae0
+856	2383	7378763186230165	test/CMakeFiles/PoligonoTests.dir/testPoligonoClassFixtures.cpp.obj	598721f85c1dccba
+1259	2463	7378763187050334	test/CMakeFiles/ExpFuncsTests.dir/expFuncsClassFixtures.cpp.obj	bff2c096cae997ef
+23	2532	7378763187720353	extern/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	359edc0f6667a5b6
+1110	2541	7378763187830322	test/CMakeFiles/GrahamScanTests.dir/testGrahamScanClassFixtures.cpp.obj	f3f27450bbb8720f
+28	5056	7378763212910135	extern/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	953d2316b13a26
+5056	5181	7378763214230935	lib/libgtest.a	687f5e138198ebf3
+5185	5274	7378763215172002	lib/libgtest_main.a	bb69e2a06dcce292
+5181	5302	7378763215272324	lib/libgmock.a	87d81064a7e31cbf
+5303	5414	7378763216562342	lib/libgmock_main.a	21de8f0a6b22ce13
+5274	5662	7378763219002349	test/PuntoTests.exe	73a5453a0c00a917
+5274	5662	7378763219002349	test/PuntoTests[1]_tests.cmake	73a5453a0c00a917
+5274	5662	7378763219002349	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PuntoTests[1]_tests.cmake	73a5453a0c00a917
+5297	5689	7378763219302339	test/ExpFuncsTests.exe	b484f24aec4de95b
+5297	5689	7378763219302339	test/ExpFuncsTests[1]_tests.cmake	b484f24aec4de95b
+5297	5689	7378763219302339	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/ExpFuncsTests[1]_tests.cmake	b484f24aec4de95b
+5279	5691	7378763219322328	test/VectorTests.exe	13211488a0914e0d
+5279	5691	7378763219322328	test/VectorTests[1]_tests.cmake	13211488a0914e0d
+5279	5691	7378763219322328	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests[1]_tests.cmake	13211488a0914e0d
+5287	5706	7378763219462335	test/GiftWrappingTests.exe	29f1b7ff5abd6b1a
+5287	5706	7378763219462335	test/GiftWrappingTests[1]_tests.cmake	29f1b7ff5abd6b1a
+5287	5706	7378763219462335	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GiftWrappingTests[1]_tests.cmake	29f1b7ff5abd6b1a
+5292	5706	7378763219472330	test/GrahamScanTests.exe	2fc98060fe372a6e
+5292	5706	7378763219472330	test/GrahamScanTests[1]_tests.cmake	2fc98060fe372a6e
+5292	5706	7378763219472330	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GrahamScanTests[1]_tests.cmake	2fc98060fe372a6e
+5283	5708	7378763219492324	test/PoligonoTests.exe	bc2c9a6fd5f95598
+5283	5708	7378763219492324	test/PoligonoTests[1]_tests.cmake	bc2c9a6fd5f95598
+5283	5708	7378763219492324	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PoligonoTests[1]_tests.cmake	bc2c9a6fd5f95598
+30	507	7378765481037716	src/CMakeFiles/punto.dir/punto.cpp.obj	e0e8e99031afbb9f
+33	536	7378765481247717	src/CMakeFiles/vector.dir/vector.cpp.obj	bf275e65d88ea0c6
+35	561	7378765481547709	src/CMakeFiles/poligono.dir/poligono.cpp.obj	ffb894a5644e6b7d
+507	631	7378765482247718	src/libpunto.a	dc1e93c4edaba1c0
+536	656	7378765482453308	src/libvector.a	a77fbd3157ed1913
+561	686	7378765482766823	src/libpoligono.a	c0b3d8ca6a953b18
+38	713	7378765483054799	src/CMakeFiles/giftWrapping.dir/GiftWrapping.cpp.obj	89a6d4a786441cd1
+41	847	7378765484422766	src/CMakeFiles/grahamScan.dir/GrahamScan.cpp.obj	28dec9c3855f121c
+714	865	7378765484567940	src/libgiftWrapping.a	637ca1fa2ebdd768
+847	966	7378765485577940	src/libgrahamScan.a	f693c2e6fdce0ea1
+19	1123	7378765487087940	CMakeFiles/structures.dir/main.cpp.obj	3e6a76559170e7c
+28	1207	7378765488013609	extern/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	70b7648381b3f53e
+631	1240	7378765488333600	src/CMakeFiles/experimentFuncs.dir/ExperimentFunctions.cpp.obj	d4b889a8aeae151
+1240	1361	7378765489553603	src/libexperimentFuncs.a	c7ef8c5a8ca72bea
+24	1526	7378765491213609	extern/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	420e29b6e88d6917
+1361	1536	7378765491263609	structures.exe	9a8022675ed88973
+656	2095	7378765496903977	test/CMakeFiles/PuntoTests.dir/testPuntoClassFixtures.cpp.obj	e9c38d10dd03c690
+686	2162	7378765497573961	test/CMakeFiles/VectorTests.dir/testVectorClassFixtures.cpp.obj	300751cfa2610f6a
+967	2336	7378765499323966	test/CMakeFiles/GiftWrappingTests.dir/testGiftWrappingClassFixtures.cpp.obj	1ebe147e2282fae0
+866	2393	7378765499893987	test/CMakeFiles/PoligonoTests.dir/testPoligonoClassFixtures.cpp.obj	598721f85c1dccba
+1208	2420	7378765500173969	test/CMakeFiles/ExpFuncsTests.dir/expFuncsClassFixtures.cpp.obj	bff2c096cae997ef
+22	2515	7378765501093967	extern/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	359edc0f6667a5b6
+1126	2564	7378765501603970	test/CMakeFiles/GrahamScanTests.dir/testGrahamScanClassFixtures.cpp.obj	f3f27450bbb8720f
+26	5031	7378765526188474	extern/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	953d2316b13a26
+5031	5159	7378765527571281	lib/libgtest.a	687f5e138198ebf3
+5163	5239	7378765528378854	lib/libgtest_main.a	bb69e2a06dcce292
+5160	5264	7378765528568860	lib/libgmock.a	87d81064a7e31cbf
+5264	5372	7378765529688863	lib/libgmock_main.a	21de8f0a6b22ce13
+5239	5614	7378765532088860	test/PuntoTests.exe	73a5453a0c00a917
+5239	5614	7378765532088860	test/PuntoTests[1]_tests.cmake	73a5453a0c00a917
+5239	5614	7378765532088860	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PuntoTests[1]_tests.cmake	73a5453a0c00a917
+5246	5638	7378765532348860	test/PoligonoTests.exe	bc2c9a6fd5f95598
+5246	5638	7378765532348860	test/PoligonoTests[1]_tests.cmake	bc2c9a6fd5f95598
+5246	5638	7378765532348860	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PoligonoTests[1]_tests.cmake	bc2c9a6fd5f95598
+5250	5638	7378765532338867	test/GiftWrappingTests.exe	29f1b7ff5abd6b1a
+5250	5638	7378765532338867	test/GiftWrappingTests[1]_tests.cmake	29f1b7ff5abd6b1a
+5250	5638	7378765532338867	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GiftWrappingTests[1]_tests.cmake	29f1b7ff5abd6b1a
+5242	5640	7378765532368854	test/VectorTests.exe	13211488a0914e0d
+5242	5640	7378765532368854	test/VectorTests[1]_tests.cmake	13211488a0914e0d
+5242	5640	7378765532368854	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/VectorTests[1]_tests.cmake	13211488a0914e0d
+5254	5659	7378765532548881	test/GrahamScanTests.exe	2fc98060fe372a6e
+5254	5659	7378765532548881	test/GrahamScanTests[1]_tests.cmake	2fc98060fe372a6e
+5254	5659	7378765532548881	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GrahamScanTests[1]_tests.cmake	2fc98060fe372a6e
+5259	5660	7378765532568882	test/ExpFuncsTests.exe	b484f24aec4de95b
+5259	5660	7378765532568882	test/ExpFuncsTests[1]_tests.cmake	b484f24aec4de95b
+5259	5660	7378765532568882	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/ExpFuncsTests[1]_tests.cmake	b484f24aec4de95b

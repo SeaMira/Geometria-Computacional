@@ -9,3 +9,4 @@ include("D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computaciona
 include("D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/PoligonoTests[1]_include.cmake")
 include("D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GiftWrappingTests[1]_include.cmake")
 include("D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/GrahamScanTests[1]_include.cmake")
+include("D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/ExpFuncsTests[1]_include.cmake")

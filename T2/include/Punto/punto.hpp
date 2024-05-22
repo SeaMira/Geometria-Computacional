@@ -8,12 +8,14 @@ class Punto {
         std::pair<T, T> par;
     public:
 
+        Punto() {}
+
         Punto(T x, T y) {
             this->par.first = x; this->par.second = y;
         }
 
         ~Punto() {
-            std::cout<<"Deleted Punto"<<std::endl;
+            // std::cout<<"Deleted Punto"<<std::endl;
         }
 
         void SetX(T x) {

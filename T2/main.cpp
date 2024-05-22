@@ -1,120 +1,92 @@
 #include<iostream>
-#include"Poligono/poligono.hpp"
+#include <chrono>
+#include <fstream>
+#include <filesystem>
+// #include"src/ExperimentFunctions.cpp"
+#include"src/GrahamScan.cpp"
 // #include"Punto/punto.hpp"
 // #include"Vector/vector.hpp"
 
+struct Times {
+  long execution;
+  long total() { return execution; }
+};
+
+Times t_gw;
+Times t_gs;
+
 int main(int argc, char const *argv[])
 {
-    Punto<int> p1{0, 0}, p2{0, 1}, p3{1, 0}, p4{2, 3};
-    Punto<double> p5{0.0, 0.0}, p6{0.0, 1.5}, p7{1.5, 2.5}, p8{2.5, 3.5};
+    using std::chrono::microseconds;
+    std::filesystem::path pth = std::filesystem::current_path();
+    std::cout << pth << std::endl;
 
-    std::cout << "Get x p1: " << p1.GetX() << std::endl;
-    std::cout << "Get y p1: " << p1.GetY() << std::endl;
-    std::cout << "Get x p8: " << p8.GetX() << std::endl;
-    std::cout << "Get y p8: " << p8.GetY() << std::endl;
+    // CSV de los experimentos de Gift Wrapping
+    std::ofstream gw_file("gift_wrapping_results.csv"); // Open the file for writing
+    if (!gw_file.is_open()) {
+        std::cerr << "Failed to open 'gift_wrapping_results' file\n";
+        return 1;
+    }
+    // CSV de los experimentos de Graham Scan
+    std::ofstream gs_file("graham_scan_results.csv"); // Open the file for writing
+    if (!gs_file.is_open()) {
+        std::cerr << "Failed to open 'graham_scan_results' file\n";
+        return 1;
+    }
 
-    p1.SetX(1);
-    p1.SetY(1);
-    p8.SetX(1.5);
-    p8.SetY(1.5);
-    std::cout << "Set x p1 from 0 to 1: " << p1.GetX() << std::endl;
-    std::cout << "Set y p1 from 0 to 1: " << p1.GetY() << std::endl;
-    std::cout << "Set x p8 from 2.5 to 1.5: " << p1.GetX() << std::endl;
-    std::cout << "Set y p8 from 3.5 to 1.5: " << p1.GetY() << std::endl;
+    std::ofstream debug_gw_file("poligons_gw.csv"); // Open the file for writing
+    if (!debug_gw_file.is_open()) {
+        std::cerr << "Failed to open 'debug_file' file\n";
+        return 1;
+    }
 
-    double dist1 = p1.DistToPoint(p3);
-    std::cout << "Distance from p1 (1, 1) to p3 (0, 1): " << dist1 << std::endl;
-    double dist2 = p5.DistToPoint(p6);
-    std::cout << "Distance from p5 (0.0, 0.0) to p6 (0.0, 1.5): " << dist2 << std::endl;
-
-    std::cout << "p1 "<< p1 <<" equal to p2 (0, 1)?: " << (p1 == p2) << std::endl;
-    std::cout << "Setting p2 to (1, 1) " << std::endl;
-    p2.SetX(1);
-    std::cout << "p1 "<< p1 <<" equal to p2 "<< p2 <<": " << (p1 == p2) << std::endl;
+    std::ofstream debug_gs_file("poligons_gs.csv"); // Open the file for writing
+    if (!debug_gs_file.is_open()) {
+        std::cerr << "Failed to open 'debug_file' file\n";
+        return 1;
+    }
     
-    std::cout << "p8 (1.5, 1.5) equal to p6 (0.0, 1.5)?: " << (p8 == p6) << std::endl;
-    std::cout << "Setting p6 to (1.5, 1.5) " << std::endl;
-    p6.SetX(1.5);
-    std::cout << "p8 "<< p8 <<" equal to p6 "<< p6 <<": " << (p8 == p6) << std::endl;
+    int size = 10;
+    for (int i = 0; i < 3; i++) {
+        
+        for (int times = 0; times < 1; times++) {
+            std::cout << "Time " << times+1 << " Size " << size << std::endl;
+            float range = 100;
+            Punto<float>* p = nPointList(size, range);
 
-    std::cout << "Printing points: " << std::endl;
-    std::cout << p1 << std::endl;
-    std::cout << p4 << std::endl;
-    std::cout << p5 << std::endl;
-    std::cout << p7 << std::endl;
+            auto t_start = std::chrono::high_resolution_clock::now();
+            Poligono<float> pol_gw = giftWrapping(p, size);
+            auto t_end = std::chrono::high_resolution_clock::now();
+            t_gw.execution = std::chrono::duration_cast<microseconds>(t_end - t_start).count();
 
-    std::cout << std::endl;
+            t_start = std::chrono::high_resolution_clock::now();
+            Poligono<float> pol_gs = grahamScan(p, size);
+            t_end = std::chrono::high_resolution_clock::now();
+            t_gs.execution = std::chrono::duration_cast<microseconds>(t_end - t_start).count();
 
-    Vector<int> v1{0, 0}, v2{0,1}, v3{1,1}, v4{1,0};
-    Vector<float> v5{0.0, 0.0}, v6{0.0,1.5}, v7{1.5,1.5}, v8{1.5,0.0};
-    std::cout << "Get x v1: " << v1.GetX() << std::endl;
-    std::cout << "Get y v1: " << v1.GetY() << std::endl;
-    std::cout << "Get x v8: " << v8.GetX() << std::endl;
-    std::cout << "Get y v8: " << v8.GetY() << std::endl;
+            bool poligon_comparison_result = equalPolygons(pol_gw, pol_gs);
+            // los csv serán de la forma n , tiempo, cantidad_vertices, igualdad_resultados (por ahora...)
+            gw_file << size << "," << t_gw.execution << "," << pol_gw.GetPointsAmount() << "," << poligon_comparison_result << "\n";
+            gs_file << size << "," << t_gs.execution << "," << pol_gs.GetPointsAmount() << "," << poligon_comparison_result << "\n";
 
-    v1.SetX(1);
-    v1.SetY(1);
-    v8.SetX(2.5);
-    v8.SetY(1.5);
-    std::cout << "Set x v1 from 0 to 1: " << v1.GetX() << std::endl;
-    std::cout << "Set y v1 from 0 to 1: " << v1.GetY() << std::endl;
-    std::cout << "Set x v8 from 1.5 to 2.5: " << v1.GetX() << std::endl;
-    std::cout << "Set y v8 from 0.0 to 1.5: " << v1.GetY() << std::endl;
+            if (!poligon_comparison_result) {
+                for (int i = 0; i < pol_gw.GetPointsAmount(); i++) {
+                    debug_gw_file << pol_gw[i].GetX() << "," << pol_gw[i].GetY() << "\n";
+                }
 
-    std::cout << "v2 " << v2 << " size: " << v2.Size() << std::endl;
-    std::cout << "point product between v2 " << v2 << " and v3 "<< v3 << ": " << v2.PointProduct(v3) << std::endl;
-    std::cout << "Same as 0*1+1*1: " << 0*1+1*1 << std::endl;
+                for (int i = 0; i < pol_gs.GetPointsAmount(); i++) {
+                    debug_gs_file << pol_gs[i].GetX() << "," << pol_gs[i].GetY() << "\n";
+                }
+            }
 
-    std::cout << "v6 " << v6 << " size: " << v6.Size() << std::endl;
-    std::cout << "point product between v8 " << v8 << " and v7 "<< v7 << ": " << v8.PointProduct(v7) << std::endl;
-    std::cout << "Same as 2.5*1.5+1.5*1.5: " << 2.5*1.5+1.5*1.5 << std::endl;
+        }
+        size *= 10;
+    }
 
-    std::cout << "cross product between v2 " << v2 << " and v3 "<< v3 << ": " << v2.CrossProduct(v3) << std::endl;
-    std::cout << "Same as 0*1-1*1: " << 0*1-1*1 << std::endl;
-
-    std::cout << "cross product between v8 " << v8 << " and v7 "<< v7 << ": " << v8.CrossProduct(v7) << std::endl;
-    std::cout << "Same as 2.5*1.5-1.5*1.5: " << 2.5*1.5-1.5*1.5 << std::endl;
-
-    std::cout << "Adding v2 " << v2 << " and v3 "<< v3 << ": " << v2+v3 << std::endl;
-    std::cout << "Same as {0+1, 1+1}" << std::endl;
-
-    std::cout << "Adding v8 " << v8 << " and v7 "<< v7 << ": " << v8+v7 << std::endl;
-    std::cout << "Same as {1.5+2.5, 1.5+1.5}" << std::endl;
-
-    std::cout << "Set x v2 from 0 to 1: " << v2.GetX() << std::endl;
-    v2.SetX(1);
-    std::cout << "equivalence between v2 " << v2 << " and v3 "<< v3 << ": " << (v2==v3) << std::endl;
-
-    std::cout << "Set x v8 from 2.5 to 1.5: " << v1.GetX() << std::endl;
-    v8.SetX(1.5);
-    std::cout << "equivalence between v8 " << v8 << " and v7 "<< v7 << ": " << (v8==v7) << std::endl;
-
-    std::cout << "Scalar multiplication to v2 by 3: " << v2*3 << std::endl;
-    std::cout << "Scalar multiplication to v7 by 2: " << v7*2 << std::endl;
-
-
-    Poligono<int> pol1({Punto<int>(0,0), Punto<int>(1,0), Punto<int>(1,1), Punto<int>(0,1)}),
-    pol2({Punto<int>(0,0), Punto<int>(0,1), Punto<int>(1,1), Punto<int>(1,0)});
-    Poligono<float> pol3({Punto<float>(0.0f,0.0f), Punto<float>(1.1f,0), Punto<float>(1.1f,1.1f), Punto<float>(0,1.1f)}),
-    pol4({Punto<float>(0.0f,0.0f), Punto<float>(0,1.1f), Punto<float>(1.1f,1.1f), Punto<float>(1.1f,0.0f)});
-
-    std::cout << "Showing polygons:" << std::endl;
-    std::cout << "pol1: " << pol1 << std::endl;
-    std::cout << "pol2: " << pol2 << std::endl;
-    std::cout << "pol3: " << pol3 << std::endl;
-    std::cout << "pol4: " << pol4 << std::endl;
-
-    std::cout << "Amount of points of pol1: " << pol1.GetPointsAmount() << std::endl;
-    std::cout << "Amount of points of pol3: " << pol3.GetPointsAmount() << std::endl;
-    
-    std::cout << "[] operator on pol1 for point 2: " << pol1[1] << std::endl;
-    std::cout << "[] operator on pol3 for point 2: " << pol3[1] << std::endl;
-
-    std::cout << "pol1 is given in counterclockwise order of points: " << pol1.isCounterclockwise() << std::endl;
-    std::cout << "pol2 is given in counterclockwise order of points: " << pol2.isCounterclockwise() << std::endl;
-    std::cout << "pol3 is given in counterclockwise order of points: " << pol3.isCounterclockwise() << std::endl;
-    std::cout << "pol4 is given in counterclockwise order of points: " << pol4.isCounterclockwise() << std::endl;
+    gw_file.close();
+    gs_file.close();
+    debug_gw_file.close();
+    debug_gs_file.close();
     return 0;
 
 }
-
