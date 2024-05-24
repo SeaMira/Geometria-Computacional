@@ -17,13 +17,12 @@ Punto<float>* nPointList(int n, float rnge) {
 
 
 Punto<float>* pointsInRCirc(int n, float r) {
-    srand(time(0));
     Punto<float>* p = new Punto<float>[n];
+    float angleIncrement = 2 * M_PI / n;
     for (int i = 0; i < n; i++) {
-        float sign = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-        float x = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/(2.0f*r))) - r;
-        float y = std::sqrt(std::pow(r,2) - std::pow(x,2));
-        if (sign >= 0.5) y*= -1;
+        float angle = i * angleIncrement;
+        float x = r * cos(angle);
+        float y = r * sin(angle);
         p[i] = Punto<float>(x, y);
     }
     return p;
@@ -40,15 +39,13 @@ Punto<float>* concatPointsArray(Punto<float>* p1, int s1, Punto<float>* p2, int 
     return p;
 }
 
-Punto<float>* pcntConvexFromNPoints(int n, float pcnt, float rnge) {
+Punto<float>* pcntConvexFromNPoints(int n, float pcnt, float r) {
     srand(time(0));
     int m = (int) (pcnt*(float)n);
     int k = n - m; 
 
-    float r = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/rnge));
-
     Punto<float>* convexPoints = pointsInRCirc(m, r);
-    Punto<float>* interiorPoints = nPointList(k, r);
+    Punto<float>* interiorPoints = pointsInRCirc(k, r*0.9);
  
     return concatPointsArray(convexPoints, m, interiorPoints, k);
 }
@@ -59,14 +56,14 @@ bool equalPolygons(Poligono<float> p1, Poligono<float> p2) {
     bool equal = true;
     for (int i = 0; i< n; i++) {
         if (!p2.PointIsIn(p1[i])) {
-            std::cout << p1[i] << i << " p1" << std::endl;
+            // std::cout << p1[i] << i << " p1" << std::endl;
             equal = false;
         }
     }
     // std::cout << "Puntos de p1 están en p2" << std::endl;
     for (int j  = 0; j< m; j++) {
         if (!p1.PointIsIn(p2[j])) {
-            std::cout << p2[j] << j << " p2" << std::endl;
+            // std::cout << p2[j] << j << " p2" << std::endl;
             equal = false;
         }
     }

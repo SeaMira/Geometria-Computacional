@@ -22,7 +22,7 @@ void swap(Punto<float> &p1, Punto<float> &p2) {
     p2 = temp;
 }
 
-int distSq(Punto<float> p1, Punto<float> p2)
+float distSq(Punto<float> p1, Punto<float> p2)
 {
     return (p1.GetX() - p2.GetX())*(p1.GetX() - p2.GetX()) +
           (p1.GetY() - p2.GetY())*(p1.GetY() - p2.GetY());
@@ -46,7 +46,7 @@ int compare(const void *vp1, const void *vp2)
  
    int o = orientation(p0, *p1, *p2);
    if (o == 0)
-     return (onSegment(p0, *p1, *p2))? -1 : 1;
+     return (distSq(p0, *p2) >= distSq(p0, *p1))? -1 : 1;
  
    return (o == 2)? -1: 1;
 }

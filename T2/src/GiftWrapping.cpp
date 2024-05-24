@@ -14,11 +14,11 @@ float Min(float x, float y) {
 
 int orientation(Punto<float> p, Punto<float> q, Punto<float> r)
 {
-    int val = (q.GetY() - p.GetY()) * (r.GetX() - q.GetX()) -
+    float val = (q.GetY() - p.GetY()) * (r.GetX() - q.GetX()) -
               (q.GetX() - p.GetX()) * (r.GetY() - q.GetY());
  
-    if (val == 0) return 0;  // collinear
-    return (val > 0)? 1: 2; // clock or counterclock wise
+    if (val == 0.0f) return 0;  // collinear
+    return (val > 0.0f)? 1: 2; // clock or counterclock wise
 }
 
 bool onSegment(Punto<float> p, Punto<float> q, Punto<float> r) 
