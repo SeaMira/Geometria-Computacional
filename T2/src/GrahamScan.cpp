@@ -7,8 +7,7 @@
 Punto<float> p0(0.0f,0.0f);
 
 
-Punto<float> nextToTop(std::stack<Punto<float>> &S)
-{
+Punto<float> nextToTop(std::stack<Punto<float>> &S) {
     Punto<float> p = S.top();
     S.pop();
     Punto<float> res = S.top();
@@ -22,10 +21,12 @@ void swap(Punto<float> &p1, Punto<float> &p2) {
     p2 = temp;
 }
 
-float distSq(Punto<float> p1, Punto<float> p2)
-{
-    return (p1.GetX() - p2.GetX())*(p1.GetX() - p2.GetX()) +
-          (p1.GetY() - p2.GetY())*(p1.GetY() - p2.GetY());
+float distSq(Punto<float> p1, Punto<float> p2) {
+    float dx = (p1.GetX() - p2.GetX());
+    float dx2 = dx*dx;
+    float dy = (p1.GetY() - p2.GetY());
+    float dy2 = dy*dy;
+    return dx2 + dy2;
 }
  
 
@@ -76,8 +77,6 @@ Poligono<float> grahamScan(Punto<float> puntos[], int n) {
     
     std::qsort(&puntos[1], n-1, sizeof(Punto<float>), compare);
     
-
-
     int m = 1; // Initialize size of modified array
     for (int i=1; i<n; i++) {
         

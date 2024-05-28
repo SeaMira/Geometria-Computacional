@@ -1,5 +1,0 @@
-if(EXISTS "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/ExpFuncsTests[1]_tests.cmake")
-  include("D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/T2/build/test/ExpFuncsTests[1]_tests.cmake")
-else()
-  add_test(ExpFuncsTests_NOT_BUILT ExpFuncsTests_NOT_BUILT)
-endif()

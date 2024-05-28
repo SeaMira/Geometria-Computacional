@@ -19,6 +19,8 @@ class GrahamScanClass2 : public ::testing::Test {
 
 };
 
+
+
 TEST_F(GrahamScanClass2, GrahamScan5Points) {
     Poligono<float> pol2 = grahamScan(puntos1, 5);
     // std::cout << pol2;
@@ -50,7 +52,5 @@ TEST_F(GrahamScanClass2, GrahamScan22Points) {
     ASSERT_TRUE(pol3.PointIsIn(Punto<float>(10.0f, 0.0f)));
     ASSERT_TRUE(pol3.PointIsIn(Punto<float>(10.0f, 5.0f)));
     ASSERT_TRUE(pol3.PointIsIn(Punto<float>(0.0f, 5.0f)));
-    
-    
     
 }

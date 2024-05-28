@@ -48,6 +48,10 @@ class Punto {
             return (this->GetX() == p.GetX()) && (this->GetY() == p.GetY());
         } 
 
+        bool operator< (const Punto<T>& p) const {
+            return (this->GetX() < p.GetX()) || (this->GetX() == p.GetX() && this->GetY() < p.GetY());
+        }
+
         friend std::ostream& operator<<(std::ostream& out, const Punto<T>& p) {
             out << "(" << p.GetX() << " , " << p.GetY() << ")";
             return out;

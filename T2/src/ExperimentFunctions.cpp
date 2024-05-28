@@ -8,8 +8,8 @@ Punto<float>* nPointList(int n, float rnge) {
     srand(time(0));
     Punto<float>* p = new Punto<float>[n];
     for (int i = 0; i < n; i++) {
-        float r = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/rnge));
-        float r2 = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/rnge));
+        float r = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/(2.0f*rnge))) - rnge;
+        float r2 = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/(2.0f*rnge))) - rnge;
         p[i] = Punto<float>(r, r2);
     }
     return p;
@@ -45,7 +45,7 @@ Punto<float>* pcntConvexFromNPoints(int n, float pcnt, float r) {
     int k = n - m; 
 
     Punto<float>* convexPoints = pointsInRCirc(m, r);
-    Punto<float>* interiorPoints = pointsInRCirc(k, r*0.9);
+    Punto<float>* interiorPoints = nPointList(k, r*cos(M_PI/4) - 0.1);
  
     return concatPointsArray(convexPoints, m, interiorPoints, k);
 }
