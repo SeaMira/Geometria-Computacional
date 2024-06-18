@@ -1,5 +1,5 @@
-D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/BBNLKXYIZR/moc_image_interface.cpp: C:/msys64/ucrt64/include/CGAL/Qt/image_interface.h \
-  D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
+C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/BBNLKXYIZR/moc_image_interface.cpp: C:/msys64/ucrt64/include/CGAL/Qt/image_interface.h \
+  C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
   C:/msys64/ucrt64/include/CGAL/Installation/internal/enable_third_party_libraries.h \
   C:/msys64/ucrt64/include/CGAL/auto_link/CGAL.h \
   C:/msys64/ucrt64/include/CGAL/auto_link/auto_link.h \
@@ -12,8 +12,6 @@ D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/CGAL
   C:/msys64/ucrt64/include/CGAL/license/lgpl.h \
   C:/msys64/ucrt64/include/CGAL/version.h \
   C:/msys64/ucrt64/include/CGAL/version_macros.h \
-  C:/msys64/ucrt64/include/QtCore/QVariant \
-  C:/msys64/ucrt64/include/QtCore/qabstractitemmodel.h \
   C:/msys64/ucrt64/include/QtCore/qalgorithms.h \
   C:/msys64/ucrt64/include/QtCore/qarraydata.h \
   C:/msys64/ucrt64/include/QtCore/qatomic.h \
@@ -57,7 +55,6 @@ D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/CGAL
   C:/msys64/ucrt64/include/QtCore/qrect.h \
   C:/msys64/ucrt64/include/QtCore/qrefcount.h \
   C:/msys64/ucrt64/include/QtCore/qregexp.h \
-  C:/msys64/ucrt64/include/QtCore/qregularexpression.h \
   C:/msys64/ucrt64/include/QtCore/qscopedpointer.h \
   C:/msys64/ucrt64/include/QtCore/qshareddata.h \
   C:/msys64/ucrt64/include/QtCore/qsharedpointer.h \
@@ -84,7 +81,6 @@ D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/CGAL
   C:/msys64/ucrt64/include/QtGui/qfontinfo.h \
   C:/msys64/ucrt64/include/QtGui/qfontmetrics.h \
   C:/msys64/ucrt64/include/QtGui/qguiapplication.h \
-  C:/msys64/ucrt64/include/QtGui/qicon.h \
   C:/msys64/ucrt64/include/QtGui/qimage.h \
   C:/msys64/ucrt64/include/QtGui/qinputmethod.h \
   C:/msys64/ucrt64/include/QtGui/qkeysequence.h \
@@ -100,45 +96,14 @@ D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/CGAL
   C:/msys64/ucrt64/include/QtGui/qtgui-config.h \
   C:/msys64/ucrt64/include/QtGui/qtguiglobal.h \
   C:/msys64/ucrt64/include/QtGui/qtransform.h \
-  C:/msys64/ucrt64/include/QtGui/qvalidator.h \
   C:/msys64/ucrt64/include/QtGui/qwindowdefs.h \
   C:/msys64/ucrt64/include/QtGui/qwindowdefs_win.h \
   C:/msys64/ucrt64/include/QtWidgets/QApplication \
-  C:/msys64/ucrt64/include/QtWidgets/QCheckBox \
-  C:/msys64/ucrt64/include/QtWidgets/QComboBox \
   C:/msys64/ucrt64/include/QtWidgets/QDialog \
-  C:/msys64/ucrt64/include/QtWidgets/QDoubleSpinBox \
-  C:/msys64/ucrt64/include/QtWidgets/QGridLayout \
-  C:/msys64/ucrt64/include/QtWidgets/QHBoxLayout \
-  C:/msys64/ucrt64/include/QtWidgets/QLabel \
-  C:/msys64/ucrt64/include/QtWidgets/QPushButton \
-  C:/msys64/ucrt64/include/QtWidgets/QSpacerItem \
-  C:/msys64/ucrt64/include/QtWidgets/QSpinBox \
-  C:/msys64/ucrt64/include/QtWidgets/QVBoxLayout \
   C:/msys64/ucrt64/include/QtWidgets/QWidget \
-  C:/msys64/ucrt64/include/QtWidgets/qabstractbutton.h \
-  C:/msys64/ucrt64/include/QtWidgets/qabstractitemdelegate.h \
-  C:/msys64/ucrt64/include/QtWidgets/qabstractslider.h \
-  C:/msys64/ucrt64/include/QtWidgets/qabstractspinbox.h \
   C:/msys64/ucrt64/include/QtWidgets/qapplication.h \
-  C:/msys64/ucrt64/include/QtWidgets/qboxlayout.h \
-  C:/msys64/ucrt64/include/QtWidgets/qcheckbox.h \
-  C:/msys64/ucrt64/include/QtWidgets/qcombobox.h \
   C:/msys64/ucrt64/include/QtWidgets/qdialog.h \
-  C:/msys64/ucrt64/include/QtWidgets/qframe.h \
-  C:/msys64/ucrt64/include/QtWidgets/qgridlayout.h \
-  C:/msys64/ucrt64/include/QtWidgets/qlabel.h \
-  C:/msys64/ucrt64/include/QtWidgets/qlayout.h \
-  C:/msys64/ucrt64/include/QtWidgets/qlayoutitem.h \
-  C:/msys64/ucrt64/include/QtWidgets/qpushbutton.h \
-  C:/msys64/ucrt64/include/QtWidgets/qrubberband.h \
   C:/msys64/ucrt64/include/QtWidgets/qsizepolicy.h \
-  C:/msys64/ucrt64/include/QtWidgets/qslider.h \
-  C:/msys64/ucrt64/include/QtWidgets/qspinbox.h \
-  C:/msys64/ucrt64/include/QtWidgets/qstyle.h \
-  C:/msys64/ucrt64/include/QtWidgets/qstyleoption.h \
-  C:/msys64/ucrt64/include/QtWidgets/qtabbar.h \
-  C:/msys64/ucrt64/include/QtWidgets/qtabwidget.h \
   C:/msys64/ucrt64/include/QtWidgets/qtwidgets-config.h \
   C:/msys64/ucrt64/include/QtWidgets/qtwidgetsglobal.h \
   C:/msys64/ucrt64/include/QtWidgets/qwidget.h \
@@ -509,5 +474,4 @@ D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/CGAL
   C:/msys64/ucrt64/include/wchar.h \
   C:/msys64/ucrt64/include/wctype.h \
   C:/msys64/ucrt64/include/winapifamily.h \
-  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mm_malloc.h \
-  D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/ui_ImageInterface.h
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mm_malloc.h

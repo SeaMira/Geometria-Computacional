@@ -1,5 +1,5 @@
-D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/BBNLKXYIZR/moc_GraphicsItem.cpp: C:/msys64/ucrt64/include/CGAL/Qt/GraphicsItem.h \
-  D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
+C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/BBNLKXYIZR/moc_GraphicsItem.cpp: C:/msys64/ucrt64/include/CGAL/Qt/GraphicsItem.h \
+  C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
   C:/msys64/ucrt64/include/CGAL/Installation/internal/enable_third_party_libraries.h \
   C:/msys64/ucrt64/include/CGAL/auto_link/CGAL.h \
   C:/msys64/ucrt64/include/CGAL/auto_link/Qt.h \

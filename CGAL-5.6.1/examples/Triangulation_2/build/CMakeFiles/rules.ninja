@@ -555,7 +555,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -S"D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2" -B"D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build"
+  command = C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -S"C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2" -B"C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build"
   description = Re-running CMake...
   generator = 1
 

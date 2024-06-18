@@ -34,7 +34,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/
+cmake_ninja_workdir = C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target CGAL_Qt5_moc_and_resources
 
@@ -44,45 +44,55 @@ cmake_ninja_workdir = D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geome
 
 build cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources: phony || CGAL_Qt5_moc_and_resources_autogen CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp CGAL_Qt5_moc_and_resources_autogen/timestamp CGAL_Qt5_moc_and_resources_autogen_timestamp_deps qrc_CGAL.cpp qrc_File.cpp qrc_Input.cpp qrc_Triangulation_2.cpp ui_ImageInterface.h
 
-build CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__CGAL_Qt5_moc_and_resources_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
+build CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__CGAL_Qt5_moc_and_resources_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
   DEFINES = -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\CGAL_Qt5_moc_and_resources.dir\CGAL_Qt5_moc_and_resources_autogen\mocs_compilation.cpp.obj.d
   FLAGS = -frounding-math
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/include" -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/include" -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\CGAL_Qt5_moc_and_resources.dir
   OBJECT_FILE_DIR = CMakeFiles\CGAL_Qt5_moc_and_resources.dir\CGAL_Qt5_moc_and_resources_autogen
+  TARGET_COMPILE_PDB = CMakeFiles\CGAL_Qt5_moc_and_resources.dir\CGAL_Qt5_moc_and_resources.pdb
+  TARGET_PDB = libCGAL_Qt5_moc_and_resources.pdb
 
-build CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.obj: CXX_COMPILER__CGAL_Qt5_moc_and_resources_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_CGAL.cpp || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
+build CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.obj: CXX_COMPILER__CGAL_Qt5_moc_and_resources_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_CGAL.cpp || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
   DEFINES = -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\CGAL_Qt5_moc_and_resources.dir\qrc_CGAL.cpp.obj.d
   FLAGS = -frounding-math
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/include" -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/include" -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\CGAL_Qt5_moc_and_resources.dir
   OBJECT_FILE_DIR = CMakeFiles\CGAL_Qt5_moc_and_resources.dir
+  TARGET_COMPILE_PDB = CMakeFiles\CGAL_Qt5_moc_and_resources.dir\CGAL_Qt5_moc_and_resources.pdb
+  TARGET_PDB = libCGAL_Qt5_moc_and_resources.pdb
 
-build CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.obj: CXX_COMPILER__CGAL_Qt5_moc_and_resources_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_Input.cpp || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
+build CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.obj: CXX_COMPILER__CGAL_Qt5_moc_and_resources_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_Input.cpp || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
   DEFINES = -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\CGAL_Qt5_moc_and_resources.dir\qrc_Input.cpp.obj.d
   FLAGS = -frounding-math
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/include" -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/include" -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\CGAL_Qt5_moc_and_resources.dir
   OBJECT_FILE_DIR = CMakeFiles\CGAL_Qt5_moc_and_resources.dir
+  TARGET_COMPILE_PDB = CMakeFiles\CGAL_Qt5_moc_and_resources.dir\CGAL_Qt5_moc_and_resources.pdb
+  TARGET_PDB = libCGAL_Qt5_moc_and_resources.pdb
 
-build CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.obj: CXX_COMPILER__CGAL_Qt5_moc_and_resources_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_File.cpp || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
+build CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.obj: CXX_COMPILER__CGAL_Qt5_moc_and_resources_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_File.cpp || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
   DEFINES = -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\CGAL_Qt5_moc_and_resources.dir\qrc_File.cpp.obj.d
   FLAGS = -frounding-math
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/include" -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/include" -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\CGAL_Qt5_moc_and_resources.dir
   OBJECT_FILE_DIR = CMakeFiles\CGAL_Qt5_moc_and_resources.dir
+  TARGET_COMPILE_PDB = CMakeFiles\CGAL_Qt5_moc_and_resources.dir\CGAL_Qt5_moc_and_resources.pdb
+  TARGET_PDB = libCGAL_Qt5_moc_and_resources.pdb
 
-build CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.obj: CXX_COMPILER__CGAL_Qt5_moc_and_resources_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_Triangulation_2.cpp || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
+build CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.obj: CXX_COMPILER__CGAL_Qt5_moc_and_resources_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_Triangulation_2.cpp || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
   DEFINES = -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\CGAL_Qt5_moc_and_resources.dir\qrc_Triangulation_2.cpp.obj.d
   FLAGS = -frounding-math
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/include" -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/include" -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\CGAL_Qt5_moc_and_resources.dir
   OBJECT_FILE_DIR = CMakeFiles\CGAL_Qt5_moc_and_resources.dir
+  TARGET_COMPILE_PDB = CMakeFiles\CGAL_Qt5_moc_and_resources.dir\CGAL_Qt5_moc_and_resources.pdb
+  TARGET_PDB = libCGAL_Qt5_moc_and_resources.pdb
 
 
 # =============================================================================
@@ -96,8 +106,9 @@ build libCGAL_Qt5_moc_and_resources.a: CXX_STATIC_LIBRARY_LINKER__CGAL_Qt5_moc_a
   OBJECT_DIR = CMakeFiles\CGAL_Qt5_moc_and_resources.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\CGAL_Qt5_moc_and_resources.dir\CGAL_Qt5_moc_and_resources.pdb
   TARGET_FILE = libCGAL_Qt5_moc_and_resources.a
-  TARGET_PDB = CGAL_Qt5_moc_and_resources.a.dbg
+  TARGET_PDB = libCGAL_Qt5_moc_and_resources.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target adding_handles
@@ -108,13 +119,15 @@ build libCGAL_Qt5_moc_and_resources.a: CXX_STATIC_LIBRARY_LINKER__CGAL_Qt5_moc_a
 
 build cmake_object_order_depends_target_adding_handles: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/adding_handles.dir/adding_handles.cpp.obj: CXX_COMPILER__adding_handles_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/adding_handles.cpp || cmake_object_order_depends_target_adding_handles
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/adding_handles.dir/adding_handles.cpp.obj: CXX_COMPILER__adding_handles_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/adding_handles.cpp || cmake_object_order_depends_target_adding_handles
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\adding_handles.dir\adding_handles.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\adding_handles.dir
   OBJECT_FILE_DIR = CMakeFiles\adding_handles.dir
+  TARGET_COMPILE_PDB = CMakeFiles\adding_handles.dir\
+  TARGET_PDB = adding_handles.pdb
 
 
 # =============================================================================
@@ -129,9 +142,10 @@ build adding_handles.exe: CXX_EXECUTABLE_LINKER__adding_handles_ CMakeFiles/addi
   OBJECT_DIR = CMakeFiles\adding_handles.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\adding_handles.dir\
   TARGET_FILE = adding_handles.exe
   TARGET_IMPLIB = libadding_handles.dll.a
-  TARGET_PDB = adding_handles.exe.dbg
+  TARGET_PDB = adding_handles.pdb
 
 
 #############################################
@@ -154,13 +168,15 @@ build cgal_check_build_system: phony
 
 build cmake_object_order_depends_target_colored_face: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/colored_face.dir/colored_face.cpp.obj: CXX_COMPILER__colored_face_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/colored_face.cpp || cmake_object_order_depends_target_colored_face
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/colored_face.dir/colored_face.cpp.obj: CXX_COMPILER__colored_face_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/colored_face.cpp || cmake_object_order_depends_target_colored_face
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\colored_face.dir\colored_face.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\colored_face.dir
   OBJECT_FILE_DIR = CMakeFiles\colored_face.dir
+  TARGET_COMPILE_PDB = CMakeFiles\colored_face.dir\
+  TARGET_PDB = colored_face.pdb
 
 
 # =============================================================================
@@ -175,9 +191,10 @@ build colored_face.exe: CXX_EXECUTABLE_LINKER__colored_face_ CMakeFiles/colored_
   OBJECT_DIR = CMakeFiles\colored_face.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\colored_face.dir\
   TARGET_FILE = colored_face.exe
   TARGET_IMPLIB = libcolored_face.dll.a
-  TARGET_PDB = colored_face.exe.dbg
+  TARGET_PDB = colored_face.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target constrained
@@ -188,13 +205,15 @@ build colored_face.exe: CXX_EXECUTABLE_LINKER__colored_face_ CMakeFiles/colored_
 
 build cmake_object_order_depends_target_constrained: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/constrained.dir/constrained.cpp.obj: CXX_COMPILER__constrained_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/constrained.cpp || cmake_object_order_depends_target_constrained
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/constrained.dir/constrained.cpp.obj: CXX_COMPILER__constrained_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/constrained.cpp || cmake_object_order_depends_target_constrained
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\constrained.dir\constrained.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\constrained.dir
   OBJECT_FILE_DIR = CMakeFiles\constrained.dir
+  TARGET_COMPILE_PDB = CMakeFiles\constrained.dir\
+  TARGET_PDB = constrained.pdb
 
 
 # =============================================================================
@@ -209,9 +228,10 @@ build constrained.exe: CXX_EXECUTABLE_LINKER__constrained_ CMakeFiles/constraine
   OBJECT_DIR = CMakeFiles\constrained.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\constrained.dir\
   TARGET_FILE = constrained.exe
   TARGET_IMPLIB = libconstrained.dll.a
-  TARGET_PDB = constrained.exe.dbg
+  TARGET_PDB = constrained.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target constrained_hierarchy_plus
@@ -222,13 +242,15 @@ build constrained.exe: CXX_EXECUTABLE_LINKER__constrained_ CMakeFiles/constraine
 
 build cmake_object_order_depends_target_constrained_hierarchy_plus: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/constrained_hierarchy_plus.dir/constrained_hierarchy_plus.cpp.obj: CXX_COMPILER__constrained_hierarchy_plus_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/constrained_hierarchy_plus.cpp || cmake_object_order_depends_target_constrained_hierarchy_plus
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/constrained_hierarchy_plus.dir/constrained_hierarchy_plus.cpp.obj: CXX_COMPILER__constrained_hierarchy_plus_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/constrained_hierarchy_plus.cpp || cmake_object_order_depends_target_constrained_hierarchy_plus
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\constrained_hierarchy_plus.dir\constrained_hierarchy_plus.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\constrained_hierarchy_plus.dir
   OBJECT_FILE_DIR = CMakeFiles\constrained_hierarchy_plus.dir
+  TARGET_COMPILE_PDB = CMakeFiles\constrained_hierarchy_plus.dir\
+  TARGET_PDB = constrained_hierarchy_plus.pdb
 
 
 # =============================================================================
@@ -243,9 +265,10 @@ build constrained_hierarchy_plus.exe: CXX_EXECUTABLE_LINKER__constrained_hierarc
   OBJECT_DIR = CMakeFiles\constrained_hierarchy_plus.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\constrained_hierarchy_plus.dir\
   TARGET_FILE = constrained_hierarchy_plus.exe
   TARGET_IMPLIB = libconstrained_hierarchy_plus.dll.a
-  TARGET_PDB = constrained_hierarchy_plus.exe.dbg
+  TARGET_PDB = constrained_hierarchy_plus.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target constrained_plus
@@ -256,13 +279,15 @@ build constrained_hierarchy_plus.exe: CXX_EXECUTABLE_LINKER__constrained_hierarc
 
 build cmake_object_order_depends_target_constrained_plus: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/constrained_plus.dir/constrained_plus.cpp.obj: CXX_COMPILER__constrained_plus_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/constrained_plus.cpp || cmake_object_order_depends_target_constrained_plus
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/constrained_plus.dir/constrained_plus.cpp.obj: CXX_COMPILER__constrained_plus_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/constrained_plus.cpp || cmake_object_order_depends_target_constrained_plus
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\constrained_plus.dir\constrained_plus.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\constrained_plus.dir
   OBJECT_FILE_DIR = CMakeFiles\constrained_plus.dir
+  TARGET_COMPILE_PDB = CMakeFiles\constrained_plus.dir\
+  TARGET_PDB = constrained_plus.pdb
 
 
 # =============================================================================
@@ -277,9 +302,10 @@ build constrained_plus.exe: CXX_EXECUTABLE_LINKER__constrained_plus_ CMakeFiles/
   OBJECT_DIR = CMakeFiles\constrained_plus.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\constrained_plus.dir\
   TARGET_FILE = constrained_plus.exe
   TARGET_IMPLIB = libconstrained_plus.dll.a
-  TARGET_PDB = constrained_plus.exe.dbg
+  TARGET_PDB = constrained_plus.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target copy_triangulation_2
@@ -290,13 +316,15 @@ build constrained_plus.exe: CXX_EXECUTABLE_LINKER__constrained_plus_ CMakeFiles/
 
 build cmake_object_order_depends_target_copy_triangulation_2: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/copy_triangulation_2.dir/copy_triangulation_2.cpp.obj: CXX_COMPILER__copy_triangulation_2_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/copy_triangulation_2.cpp || cmake_object_order_depends_target_copy_triangulation_2
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/copy_triangulation_2.dir/copy_triangulation_2.cpp.obj: CXX_COMPILER__copy_triangulation_2_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/copy_triangulation_2.cpp || cmake_object_order_depends_target_copy_triangulation_2
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\copy_triangulation_2.dir\copy_triangulation_2.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\copy_triangulation_2.dir
   OBJECT_FILE_DIR = CMakeFiles\copy_triangulation_2.dir
+  TARGET_COMPILE_PDB = CMakeFiles\copy_triangulation_2.dir\
+  TARGET_PDB = copy_triangulation_2.pdb
 
 
 # =============================================================================
@@ -311,9 +339,10 @@ build copy_triangulation_2.exe: CXX_EXECUTABLE_LINKER__copy_triangulation_2_ CMa
   OBJECT_DIR = CMakeFiles\copy_triangulation_2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\copy_triangulation_2.dir\
   TARGET_FILE = copy_triangulation_2.exe
   TARGET_IMPLIB = libcopy_triangulation_2.dll.a
-  TARGET_PDB = copy_triangulation_2.exe.dbg
+  TARGET_PDB = copy_triangulation_2.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target draw_surface_mesh
@@ -324,13 +353,15 @@ build copy_triangulation_2.exe: CXX_EXECUTABLE_LINKER__copy_triangulation_2_ CMa
 
 build cmake_object_order_depends_target_draw_surface_mesh: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/draw_surface_mesh.dir/draw_surface_mesh.cpp.obj: CXX_COMPILER__draw_surface_mesh_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/draw_surface_mesh.cpp || cmake_object_order_depends_target_draw_surface_mesh
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_BASIC_VIEWER -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/draw_surface_mesh.dir/draw_surface_mesh.cpp.obj: CXX_COMPILER__draw_surface_mesh_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/draw_surface_mesh.cpp || cmake_object_order_depends_target_draw_surface_mesh
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_BASIC_VIEWER -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\draw_surface_mesh.dir\draw_surface_mesh.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\draw_surface_mesh.dir
   OBJECT_FILE_DIR = CMakeFiles\draw_surface_mesh.dir
+  TARGET_COMPILE_PDB = CMakeFiles\draw_surface_mesh.dir\
+  TARGET_PDB = draw_surface_mesh.pdb
 
 
 # =============================================================================
@@ -345,9 +376,10 @@ build draw_surface_mesh.exe: CXX_EXECUTABLE_LINKER__draw_surface_mesh_ CMakeFile
   OBJECT_DIR = CMakeFiles\draw_surface_mesh.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\draw_surface_mesh.dir\
   TARGET_FILE = draw_surface_mesh.exe
   TARGET_IMPLIB = libdraw_surface_mesh.dll.a
-  TARGET_PDB = draw_surface_mesh.exe.dbg
+  TARGET_PDB = draw_surface_mesh.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target draw_triangulation_2
@@ -358,13 +390,15 @@ build draw_surface_mesh.exe: CXX_EXECUTABLE_LINKER__draw_surface_mesh_ CMakeFile
 
 build cmake_object_order_depends_target_draw_triangulation_2: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/draw_triangulation_2.dir/draw_triangulation_2.cpp.obj: CXX_COMPILER__draw_triangulation_2_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/draw_triangulation_2.cpp || cmake_object_order_depends_target_draw_triangulation_2
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_BASIC_VIEWER -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/draw_triangulation_2.dir/draw_triangulation_2.cpp.obj: CXX_COMPILER__draw_triangulation_2_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/draw_triangulation_2.cpp || cmake_object_order_depends_target_draw_triangulation_2
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_BASIC_VIEWER -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\draw_triangulation_2.dir\draw_triangulation_2.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\draw_triangulation_2.dir
   OBJECT_FILE_DIR = CMakeFiles\draw_triangulation_2.dir
+  TARGET_COMPILE_PDB = CMakeFiles\draw_triangulation_2.dir\
+  TARGET_PDB = draw_triangulation_2.pdb
 
 
 # =============================================================================
@@ -379,9 +413,10 @@ build draw_triangulation_2.exe: CXX_EXECUTABLE_LINKER__draw_triangulation_2_ CMa
   OBJECT_DIR = CMakeFiles\draw_triangulation_2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\draw_triangulation_2.dir\
   TARGET_FILE = draw_triangulation_2.exe
   TARGET_IMPLIB = libdraw_triangulation_2.dll.a
-  TARGET_PDB = draw_triangulation_2.exe.dbg
+  TARGET_PDB = draw_triangulation_2.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target for_loop_2
@@ -392,13 +427,15 @@ build draw_triangulation_2.exe: CXX_EXECUTABLE_LINKER__draw_triangulation_2_ CMa
 
 build cmake_object_order_depends_target_for_loop_2: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/for_loop_2.dir/for_loop_2.cpp.obj: CXX_COMPILER__for_loop_2_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/for_loop_2.cpp || cmake_object_order_depends_target_for_loop_2
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/for_loop_2.dir/for_loop_2.cpp.obj: CXX_COMPILER__for_loop_2_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/for_loop_2.cpp || cmake_object_order_depends_target_for_loop_2
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\for_loop_2.dir\for_loop_2.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\for_loop_2.dir
   OBJECT_FILE_DIR = CMakeFiles\for_loop_2.dir
+  TARGET_COMPILE_PDB = CMakeFiles\for_loop_2.dir\
+  TARGET_PDB = for_loop_2.pdb
 
 
 # =============================================================================
@@ -413,9 +450,10 @@ build for_loop_2.exe: CXX_EXECUTABLE_LINKER__for_loop_2_ CMakeFiles/for_loop_2.d
   OBJECT_DIR = CMakeFiles\for_loop_2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\for_loop_2.dir\
   TARGET_FILE = for_loop_2.exe
   TARGET_IMPLIB = libfor_loop_2.dll.a
-  TARGET_PDB = for_loop_2.exe.dbg
+  TARGET_PDB = for_loop_2.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target hierarchy
@@ -426,13 +464,15 @@ build for_loop_2.exe: CXX_EXECUTABLE_LINKER__for_loop_2_ CMakeFiles/for_loop_2.d
 
 build cmake_object_order_depends_target_hierarchy: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/hierarchy.dir/hierarchy.cpp.obj: CXX_COMPILER__hierarchy_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/hierarchy.cpp || cmake_object_order_depends_target_hierarchy
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/hierarchy.dir/hierarchy.cpp.obj: CXX_COMPILER__hierarchy_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/hierarchy.cpp || cmake_object_order_depends_target_hierarchy
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\hierarchy.dir\hierarchy.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\hierarchy.dir
   OBJECT_FILE_DIR = CMakeFiles\hierarchy.dir
+  TARGET_COMPILE_PDB = CMakeFiles\hierarchy.dir\
+  TARGET_PDB = hierarchy.pdb
 
 
 # =============================================================================
@@ -447,9 +487,10 @@ build hierarchy.exe: CXX_EXECUTABLE_LINKER__hierarchy_ CMakeFiles/hierarchy.dir/
   OBJECT_DIR = CMakeFiles\hierarchy.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\hierarchy.dir\
   TARGET_FILE = hierarchy.exe
   TARGET_IMPLIB = libhierarchy.dll.a
-  TARGET_PDB = hierarchy.exe.dbg
+  TARGET_PDB = hierarchy.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target info_insert_with_pair_iterator_2
@@ -460,13 +501,15 @@ build hierarchy.exe: CXX_EXECUTABLE_LINKER__hierarchy_ CMakeFiles/hierarchy.dir/
 
 build cmake_object_order_depends_target_info_insert_with_pair_iterator_2: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/info_insert_with_pair_iterator_2.dir/info_insert_with_pair_iterator_2.cpp.obj: CXX_COMPILER__info_insert_with_pair_iterator_2_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/info_insert_with_pair_iterator_2.cpp || cmake_object_order_depends_target_info_insert_with_pair_iterator_2
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/info_insert_with_pair_iterator_2.dir/info_insert_with_pair_iterator_2.cpp.obj: CXX_COMPILER__info_insert_with_pair_iterator_2_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/info_insert_with_pair_iterator_2.cpp || cmake_object_order_depends_target_info_insert_with_pair_iterator_2
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\info_insert_with_pair_iterator_2.dir\info_insert_with_pair_iterator_2.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\info_insert_with_pair_iterator_2.dir
   OBJECT_FILE_DIR = CMakeFiles\info_insert_with_pair_iterator_2.dir
+  TARGET_COMPILE_PDB = CMakeFiles\info_insert_with_pair_iterator_2.dir\
+  TARGET_PDB = info_insert_with_pair_iterator_2.pdb
 
 
 # =============================================================================
@@ -481,9 +524,10 @@ build info_insert_with_pair_iterator_2.exe: CXX_EXECUTABLE_LINKER__info_insert_w
   OBJECT_DIR = CMakeFiles\info_insert_with_pair_iterator_2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\info_insert_with_pair_iterator_2.dir\
   TARGET_FILE = info_insert_with_pair_iterator_2.exe
   TARGET_IMPLIB = libinfo_insert_with_pair_iterator_2.dll.a
-  TARGET_PDB = info_insert_with_pair_iterator_2.exe.dbg
+  TARGET_PDB = info_insert_with_pair_iterator_2.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target info_insert_with_pair_iterator_regular_2
@@ -494,13 +538,15 @@ build info_insert_with_pair_iterator_2.exe: CXX_EXECUTABLE_LINKER__info_insert_w
 
 build cmake_object_order_depends_target_info_insert_with_pair_iterator_regular_2: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/info_insert_with_pair_iterator_regular_2.dir/info_insert_with_pair_iterator_regular_2.cpp.obj: CXX_COMPILER__info_insert_with_pair_iterator_regular_2_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/info_insert_with_pair_iterator_regular_2.cpp || cmake_object_order_depends_target_info_insert_with_pair_iterator_regular_2
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/info_insert_with_pair_iterator_regular_2.dir/info_insert_with_pair_iterator_regular_2.cpp.obj: CXX_COMPILER__info_insert_with_pair_iterator_regular_2_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/info_insert_with_pair_iterator_regular_2.cpp || cmake_object_order_depends_target_info_insert_with_pair_iterator_regular_2
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\info_insert_with_pair_iterator_regular_2.dir\info_insert_with_pair_iterator_regular_2.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\info_insert_with_pair_iterator_regular_2.dir
   OBJECT_FILE_DIR = CMakeFiles\info_insert_with_pair_iterator_regular_2.dir
+  TARGET_COMPILE_PDB = CMakeFiles\info_insert_with_pair_iterator_regular_2.dir\
+  TARGET_PDB = info_insert_with_pair_iterator_regular_2.pdb
 
 
 # =============================================================================
@@ -515,9 +561,10 @@ build info_insert_with_pair_iterator_regular_2.exe: CXX_EXECUTABLE_LINKER__info_
   OBJECT_DIR = CMakeFiles\info_insert_with_pair_iterator_regular_2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\info_insert_with_pair_iterator_regular_2.dir\
   TARGET_FILE = info_insert_with_pair_iterator_regular_2.exe
   TARGET_IMPLIB = libinfo_insert_with_pair_iterator_regular_2.dll.a
-  TARGET_PDB = info_insert_with_pair_iterator_regular_2.exe.dbg
+  TARGET_PDB = info_insert_with_pair_iterator_regular_2.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target info_insert_with_transform_iterator_2
@@ -528,13 +575,15 @@ build info_insert_with_pair_iterator_regular_2.exe: CXX_EXECUTABLE_LINKER__info_
 
 build cmake_object_order_depends_target_info_insert_with_transform_iterator_2: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/info_insert_with_transform_iterator_2.dir/info_insert_with_transform_iterator_2.cpp.obj: CXX_COMPILER__info_insert_with_transform_iterator_2_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/info_insert_with_transform_iterator_2.cpp || cmake_object_order_depends_target_info_insert_with_transform_iterator_2
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/info_insert_with_transform_iterator_2.dir/info_insert_with_transform_iterator_2.cpp.obj: CXX_COMPILER__info_insert_with_transform_iterator_2_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/info_insert_with_transform_iterator_2.cpp || cmake_object_order_depends_target_info_insert_with_transform_iterator_2
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\info_insert_with_transform_iterator_2.dir\info_insert_with_transform_iterator_2.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\info_insert_with_transform_iterator_2.dir
   OBJECT_FILE_DIR = CMakeFiles\info_insert_with_transform_iterator_2.dir
+  TARGET_COMPILE_PDB = CMakeFiles\info_insert_with_transform_iterator_2.dir\
+  TARGET_PDB = info_insert_with_transform_iterator_2.pdb
 
 
 # =============================================================================
@@ -549,9 +598,10 @@ build info_insert_with_transform_iterator_2.exe: CXX_EXECUTABLE_LINKER__info_ins
   OBJECT_DIR = CMakeFiles\info_insert_with_transform_iterator_2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\info_insert_with_transform_iterator_2.dir\
   TARGET_FILE = info_insert_with_transform_iterator_2.exe
   TARGET_IMPLIB = libinfo_insert_with_transform_iterator_2.dll.a
-  TARGET_PDB = info_insert_with_transform_iterator_2.exe.dbg
+  TARGET_PDB = info_insert_with_transform_iterator_2.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target info_insert_with_zip_iterator_2
@@ -562,13 +612,15 @@ build info_insert_with_transform_iterator_2.exe: CXX_EXECUTABLE_LINKER__info_ins
 
 build cmake_object_order_depends_target_info_insert_with_zip_iterator_2: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/info_insert_with_zip_iterator_2.dir/info_insert_with_zip_iterator_2.cpp.obj: CXX_COMPILER__info_insert_with_zip_iterator_2_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/info_insert_with_zip_iterator_2.cpp || cmake_object_order_depends_target_info_insert_with_zip_iterator_2
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/info_insert_with_zip_iterator_2.dir/info_insert_with_zip_iterator_2.cpp.obj: CXX_COMPILER__info_insert_with_zip_iterator_2_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/info_insert_with_zip_iterator_2.cpp || cmake_object_order_depends_target_info_insert_with_zip_iterator_2
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\info_insert_with_zip_iterator_2.dir\info_insert_with_zip_iterator_2.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\info_insert_with_zip_iterator_2.dir
   OBJECT_FILE_DIR = CMakeFiles\info_insert_with_zip_iterator_2.dir
+  TARGET_COMPILE_PDB = CMakeFiles\info_insert_with_zip_iterator_2.dir\
+  TARGET_PDB = info_insert_with_zip_iterator_2.pdb
 
 
 # =============================================================================
@@ -583,9 +635,10 @@ build info_insert_with_zip_iterator_2.exe: CXX_EXECUTABLE_LINKER__info_insert_wi
   OBJECT_DIR = CMakeFiles\info_insert_with_zip_iterator_2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\info_insert_with_zip_iterator_2.dir\
   TARGET_FILE = info_insert_with_zip_iterator_2.exe
   TARGET_IMPLIB = libinfo_insert_with_zip_iterator_2.dll.a
-  TARGET_PDB = info_insert_with_zip_iterator_2.exe.dbg
+  TARGET_PDB = info_insert_with_zip_iterator_2.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target low_dimensional
@@ -596,13 +649,15 @@ build info_insert_with_zip_iterator_2.exe: CXX_EXECUTABLE_LINKER__info_insert_wi
 
 build cmake_object_order_depends_target_low_dimensional: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/low_dimensional.dir/low_dimensional.cpp.obj: CXX_COMPILER__low_dimensional_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/low_dimensional.cpp || cmake_object_order_depends_target_low_dimensional
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/low_dimensional.dir/low_dimensional.cpp.obj: CXX_COMPILER__low_dimensional_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/low_dimensional.cpp || cmake_object_order_depends_target_low_dimensional
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\low_dimensional.dir\low_dimensional.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\low_dimensional.dir
   OBJECT_FILE_DIR = CMakeFiles\low_dimensional.dir
+  TARGET_COMPILE_PDB = CMakeFiles\low_dimensional.dir\
+  TARGET_PDB = low_dimensional.pdb
 
 
 # =============================================================================
@@ -617,9 +672,10 @@ build low_dimensional.exe: CXX_EXECUTABLE_LINKER__low_dimensional_ CMakeFiles/lo
   OBJECT_DIR = CMakeFiles\low_dimensional.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\low_dimensional.dir\
   TARGET_FILE = low_dimensional.exe
   TARGET_IMPLIB = liblow_dimensional.dll.a
-  TARGET_PDB = low_dimensional.exe.dbg
+  TARGET_PDB = low_dimensional.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target polygon_triangulation
@@ -630,13 +686,15 @@ build low_dimensional.exe: CXX_EXECUTABLE_LINKER__low_dimensional_ CMakeFiles/lo
 
 build cmake_object_order_depends_target_polygon_triangulation: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/polygon_triangulation.dir/polygon_triangulation.cpp.obj: CXX_COMPILER__polygon_triangulation_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/polygon_triangulation.cpp || cmake_object_order_depends_target_polygon_triangulation
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_BASIC_VIEWER -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/polygon_triangulation.dir/polygon_triangulation.cpp.obj: CXX_COMPILER__polygon_triangulation_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/polygon_triangulation.cpp || cmake_object_order_depends_target_polygon_triangulation
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_BASIC_VIEWER -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\polygon_triangulation.dir\polygon_triangulation.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\polygon_triangulation.dir
   OBJECT_FILE_DIR = CMakeFiles\polygon_triangulation.dir
+  TARGET_COMPILE_PDB = CMakeFiles\polygon_triangulation.dir\
+  TARGET_PDB = polygon_triangulation.pdb
 
 
 # =============================================================================
@@ -651,9 +709,10 @@ build polygon_triangulation.exe: CXX_EXECUTABLE_LINKER__polygon_triangulation_ C
   OBJECT_DIR = CMakeFiles\polygon_triangulation.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\polygon_triangulation.dir\
   TARGET_FILE = polygon_triangulation.exe
   TARGET_IMPLIB = libpolygon_triangulation.dll.a
-  TARGET_PDB = polygon_triangulation.exe.dbg
+  TARGET_PDB = polygon_triangulation.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target polylines_triangulation
@@ -664,13 +723,15 @@ build polygon_triangulation.exe: CXX_EXECUTABLE_LINKER__polygon_triangulation_ C
 
 build cmake_object_order_depends_target_polylines_triangulation: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/polylines_triangulation.dir/polylines_triangulation.cpp.obj: CXX_COMPILER__polylines_triangulation_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/polylines_triangulation.cpp || cmake_object_order_depends_target_polylines_triangulation
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/polylines_triangulation.dir/polylines_triangulation.cpp.obj: CXX_COMPILER__polylines_triangulation_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/polylines_triangulation.cpp || cmake_object_order_depends_target_polylines_triangulation
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\polylines_triangulation.dir\polylines_triangulation.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\polylines_triangulation.dir
   OBJECT_FILE_DIR = CMakeFiles\polylines_triangulation.dir
+  TARGET_COMPILE_PDB = CMakeFiles\polylines_triangulation.dir\
+  TARGET_PDB = polylines_triangulation.pdb
 
 
 # =============================================================================
@@ -685,9 +746,10 @@ build polylines_triangulation.exe: CXX_EXECUTABLE_LINKER__polylines_triangulatio
   OBJECT_DIR = CMakeFiles\polylines_triangulation.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\polylines_triangulation.dir\
   TARGET_FILE = polylines_triangulation.exe
   TARGET_IMPLIB = libpolylines_triangulation.dll.a
-  TARGET_PDB = polylines_triangulation.exe.dbg
+  TARGET_PDB = polylines_triangulation.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target print_cropped_voronoi
@@ -698,13 +760,15 @@ build polylines_triangulation.exe: CXX_EXECUTABLE_LINKER__polylines_triangulatio
 
 build cmake_object_order_depends_target_print_cropped_voronoi: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/print_cropped_voronoi.dir/print_cropped_voronoi.cpp.obj: CXX_COMPILER__print_cropped_voronoi_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/print_cropped_voronoi.cpp || cmake_object_order_depends_target_print_cropped_voronoi
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/print_cropped_voronoi.dir/print_cropped_voronoi.cpp.obj: CXX_COMPILER__print_cropped_voronoi_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/print_cropped_voronoi.cpp || cmake_object_order_depends_target_print_cropped_voronoi
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\print_cropped_voronoi.dir\print_cropped_voronoi.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\print_cropped_voronoi.dir
   OBJECT_FILE_DIR = CMakeFiles\print_cropped_voronoi.dir
+  TARGET_COMPILE_PDB = CMakeFiles\print_cropped_voronoi.dir\
+  TARGET_PDB = print_cropped_voronoi.pdb
 
 
 # =============================================================================
@@ -719,9 +783,10 @@ build print_cropped_voronoi.exe: CXX_EXECUTABLE_LINKER__print_cropped_voronoi_ C
   OBJECT_DIR = CMakeFiles\print_cropped_voronoi.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\print_cropped_voronoi.dir\
   TARGET_FILE = print_cropped_voronoi.exe
   TARGET_IMPLIB = libprint_cropped_voronoi.dll.a
-  TARGET_PDB = print_cropped_voronoi.exe.dbg
+  TARGET_PDB = print_cropped_voronoi.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target regular
@@ -732,13 +797,15 @@ build print_cropped_voronoi.exe: CXX_EXECUTABLE_LINKER__print_cropped_voronoi_ C
 
 build cmake_object_order_depends_target_regular: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/regular.dir/regular.cpp.obj: CXX_COMPILER__regular_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/regular.cpp || cmake_object_order_depends_target_regular
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/regular.dir/regular.cpp.obj: CXX_COMPILER__regular_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/regular.cpp || cmake_object_order_depends_target_regular
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\regular.dir\regular.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\regular.dir
   OBJECT_FILE_DIR = CMakeFiles\regular.dir
+  TARGET_COMPILE_PDB = CMakeFiles\regular.dir\
+  TARGET_PDB = regular.pdb
 
 
 # =============================================================================
@@ -753,9 +820,10 @@ build regular.exe: CXX_EXECUTABLE_LINKER__regular_ CMakeFiles/regular.dir/regula
   OBJECT_DIR = CMakeFiles\regular.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\regular.dir\
   TARGET_FILE = regular.exe
   TARGET_IMPLIB = libregular.dll.a
-  TARGET_PDB = regular.exe.dbg
+  TARGET_PDB = regular.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target segment_soup_to_polylines
@@ -766,13 +834,15 @@ build regular.exe: CXX_EXECUTABLE_LINKER__regular_ CMakeFiles/regular.dir/regula
 
 build cmake_object_order_depends_target_segment_soup_to_polylines: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/segment_soup_to_polylines.dir/segment_soup_to_polylines.cpp.obj: CXX_COMPILER__segment_soup_to_polylines_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/segment_soup_to_polylines.cpp || cmake_object_order_depends_target_segment_soup_to_polylines
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/segment_soup_to_polylines.dir/segment_soup_to_polylines.cpp.obj: CXX_COMPILER__segment_soup_to_polylines_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/segment_soup_to_polylines.cpp || cmake_object_order_depends_target_segment_soup_to_polylines
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\segment_soup_to_polylines.dir\segment_soup_to_polylines.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\segment_soup_to_polylines.dir
   OBJECT_FILE_DIR = CMakeFiles\segment_soup_to_polylines.dir
+  TARGET_COMPILE_PDB = CMakeFiles\segment_soup_to_polylines.dir\
+  TARGET_PDB = segment_soup_to_polylines.pdb
 
 
 # =============================================================================
@@ -787,9 +857,10 @@ build segment_soup_to_polylines.exe: CXX_EXECUTABLE_LINKER__segment_soup_to_poly
   OBJECT_DIR = CMakeFiles\segment_soup_to_polylines.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\segment_soup_to_polylines.dir\
   TARGET_FILE = segment_soup_to_polylines.exe
   TARGET_IMPLIB = libsegment_soup_to_polylines.dll.a
-  TARGET_PDB = segment_soup_to_polylines.exe.dbg
+  TARGET_PDB = segment_soup_to_polylines.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target star_conflict_zone
@@ -800,13 +871,15 @@ build segment_soup_to_polylines.exe: CXX_EXECUTABLE_LINKER__segment_soup_to_poly
 
 build cmake_object_order_depends_target_star_conflict_zone: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/star_conflict_zone.dir/star_conflict_zone.cpp.obj: CXX_COMPILER__star_conflict_zone_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/star_conflict_zone.cpp || cmake_object_order_depends_target_star_conflict_zone
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_BASIC_VIEWER -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/star_conflict_zone.dir/star_conflict_zone.cpp.obj: CXX_COMPILER__star_conflict_zone_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/star_conflict_zone.cpp || cmake_object_order_depends_target_star_conflict_zone
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_BASIC_VIEWER -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\star_conflict_zone.dir\star_conflict_zone.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\star_conflict_zone.dir
   OBJECT_FILE_DIR = CMakeFiles\star_conflict_zone.dir
+  TARGET_COMPILE_PDB = CMakeFiles\star_conflict_zone.dir\
+  TARGET_PDB = star_conflict_zone.pdb
 
 
 # =============================================================================
@@ -821,9 +894,10 @@ build star_conflict_zone.exe: CXX_EXECUTABLE_LINKER__star_conflict_zone_ CMakeFi
   OBJECT_DIR = CMakeFiles\star_conflict_zone.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\star_conflict_zone.dir\
   TARGET_FILE = star_conflict_zone.exe
   TARGET_IMPLIB = libstar_conflict_zone.dll.a
-  TARGET_PDB = star_conflict_zone.exe.dbg
+  TARGET_PDB = star_conflict_zone.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target terr_trian
@@ -834,13 +908,15 @@ build star_conflict_zone.exe: CXX_EXECUTABLE_LINKER__star_conflict_zone_ CMakeFi
 
 build cmake_object_order_depends_target_terr_trian: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/terr_trian.dir/terr_trian.cpp.obj: CXX_COMPILER__terr_trian_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/terr_trian.cpp || cmake_object_order_depends_target_terr_trian
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/terr_trian.dir/terr_trian.cpp.obj: CXX_COMPILER__terr_trian_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/terr_trian.cpp || cmake_object_order_depends_target_terr_trian
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\terr_trian.dir\terr_trian.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\terr_trian.dir
   OBJECT_FILE_DIR = CMakeFiles\terr_trian.dir
+  TARGET_COMPILE_PDB = CMakeFiles\terr_trian.dir\
+  TARGET_PDB = terr_trian.pdb
 
 
 # =============================================================================
@@ -855,9 +931,10 @@ build terr_trian.exe: CXX_EXECUTABLE_LINKER__terr_trian_ CMakeFiles/terr_trian.d
   OBJECT_DIR = CMakeFiles\terr_trian.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\terr_trian.dir\
   TARGET_FILE = terr_trian.exe
   TARGET_IMPLIB = libterr_trian.dll.a
-  TARGET_PDB = terr_trian.exe.dbg
+  TARGET_PDB = terr_trian.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target terrain
@@ -868,13 +945,15 @@ build terr_trian.exe: CXX_EXECUTABLE_LINKER__terr_trian_ CMakeFiles/terr_trian.d
 
 build cmake_object_order_depends_target_terrain: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/terrain.dir/terrain.cpp.obj: CXX_COMPILER__terrain_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/terrain.cpp || cmake_object_order_depends_target_terrain
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/terrain.dir/terrain.cpp.obj: CXX_COMPILER__terrain_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/terrain.cpp || cmake_object_order_depends_target_terrain
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\terrain.dir\terrain.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\terrain.dir
   OBJECT_FILE_DIR = CMakeFiles\terrain.dir
+  TARGET_COMPILE_PDB = CMakeFiles\terrain.dir\
+  TARGET_PDB = terrain.pdb
 
 
 # =============================================================================
@@ -889,9 +968,10 @@ build terrain.exe: CXX_EXECUTABLE_LINKER__terrain_ CMakeFiles/terrain.dir/terrai
   OBJECT_DIR = CMakeFiles\terrain.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\terrain.dir\
   TARGET_FILE = terrain.exe
   TARGET_IMPLIB = libterrain.dll.a
-  TARGET_PDB = terrain.exe.dbg
+  TARGET_PDB = terrain.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target terrain_with_info
@@ -902,13 +982,15 @@ build terrain.exe: CXX_EXECUTABLE_LINKER__terrain_ CMakeFiles/terrain.dir/terrai
 
 build cmake_object_order_depends_target_terrain_with_info: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/terrain_with_info.dir/terrain_with_info.cpp.obj: CXX_COMPILER__terrain_with_info_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/terrain_with_info.cpp || cmake_object_order_depends_target_terrain_with_info
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/terrain_with_info.dir/terrain_with_info.cpp.obj: CXX_COMPILER__terrain_with_info_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/terrain_with_info.cpp || cmake_object_order_depends_target_terrain_with_info
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\terrain_with_info.dir\terrain_with_info.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\terrain_with_info.dir
   OBJECT_FILE_DIR = CMakeFiles\terrain_with_info.dir
+  TARGET_COMPILE_PDB = CMakeFiles\terrain_with_info.dir\
+  TARGET_PDB = terrain_with_info.pdb
 
 
 # =============================================================================
@@ -923,9 +1005,10 @@ build terrain_with_info.exe: CXX_EXECUTABLE_LINKER__terrain_with_info_ CMakeFile
   OBJECT_DIR = CMakeFiles\terrain_with_info.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\terrain_with_info.dir\
   TARGET_FILE = terrain_with_info.exe
   TARGET_IMPLIB = libterrain_with_info.dll.a
-  TARGET_PDB = terrain_with_info.exe.dbg
+  TARGET_PDB = terrain_with_info.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target triangulation_prog1
@@ -936,13 +1019,15 @@ build terrain_with_info.exe: CXX_EXECUTABLE_LINKER__terrain_with_info_ CMakeFile
 
 build cmake_object_order_depends_target_triangulation_prog1: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/triangulation_prog1.dir/triangulation_prog1.cpp.obj: CXX_COMPILER__triangulation_prog1_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/triangulation_prog1.cpp || cmake_object_order_depends_target_triangulation_prog1
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/triangulation_prog1.dir/triangulation_prog1.cpp.obj: CXX_COMPILER__triangulation_prog1_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/triangulation_prog1.cpp || cmake_object_order_depends_target_triangulation_prog1
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\triangulation_prog1.dir\triangulation_prog1.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\triangulation_prog1.dir
   OBJECT_FILE_DIR = CMakeFiles\triangulation_prog1.dir
+  TARGET_COMPILE_PDB = CMakeFiles\triangulation_prog1.dir\
+  TARGET_PDB = triangulation_prog1.pdb
 
 
 # =============================================================================
@@ -957,9 +1042,10 @@ build triangulation_prog1.exe: CXX_EXECUTABLE_LINKER__triangulation_prog1_ CMake
   OBJECT_DIR = CMakeFiles\triangulation_prog1.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\triangulation_prog1.dir\
   TARGET_FILE = triangulation_prog1.exe
   TARGET_IMPLIB = libtriangulation_prog1.dll.a
-  TARGET_PDB = triangulation_prog1.exe.dbg
+  TARGET_PDB = triangulation_prog1.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target triangulation_projection_traits
@@ -970,13 +1056,15 @@ build triangulation_prog1.exe: CXX_EXECUTABLE_LINKER__triangulation_prog1_ CMake
 
 build cmake_object_order_depends_target_triangulation_projection_traits: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/triangulation_projection_traits.dir/triangulation_projection_traits.cpp.obj: CXX_COMPILER__triangulation_projection_traits_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/triangulation_projection_traits.cpp || cmake_object_order_depends_target_triangulation_projection_traits
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/triangulation_projection_traits.dir/triangulation_projection_traits.cpp.obj: CXX_COMPILER__triangulation_projection_traits_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/triangulation_projection_traits.cpp || cmake_object_order_depends_target_triangulation_projection_traits
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\triangulation_projection_traits.dir\triangulation_projection_traits.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\triangulation_projection_traits.dir
   OBJECT_FILE_DIR = CMakeFiles\triangulation_projection_traits.dir
+  TARGET_COMPILE_PDB = CMakeFiles\triangulation_projection_traits.dir\
+  TARGET_PDB = triangulation_projection_traits.pdb
 
 
 # =============================================================================
@@ -991,9 +1079,10 @@ build triangulation_projection_traits.exe: CXX_EXECUTABLE_LINKER__triangulation_
   OBJECT_DIR = CMakeFiles\triangulation_projection_traits.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\triangulation_projection_traits.dir\
   TARGET_FILE = triangulation_projection_traits.exe
   TARGET_IMPLIB = libtriangulation_projection_traits.dll.a
-  TARGET_PDB = triangulation_projection_traits.exe.dbg
+  TARGET_PDB = triangulation_projection_traits.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target voronoi
@@ -1004,13 +1093,15 @@ build triangulation_projection_traits.exe: CXX_EXECUTABLE_LINKER__triangulation_
 
 build cmake_object_order_depends_target_voronoi: phony || cmake_object_order_depends_target_CGAL_Qt5_moc_and_resources
 
-build CMakeFiles/voronoi.dir/voronoi.cpp.obj: CXX_COMPILER__voronoi_unscanned_ D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/voronoi.cpp || cmake_object_order_depends_target_voronoi
-  DEFINES = -DCGAL_DATA_DIR="\"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
+build CMakeFiles/voronoi.dir/voronoi.cpp.obj: CXX_COMPILER__voronoi_unscanned_ C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/voronoi.cpp || cmake_object_order_depends_target_voronoi
+  DEFINES = -DCGAL_DATA_DIR="\"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/../data\"" -DCGAL_USE_GMPXX=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_SVG_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\voronoi.dir\voronoi.cpp.obj.d
   FLAGS = -frounding-math -Wno-deprecated-copy -Wno-cast-function-type
-  INCLUDES = -I"D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
+  INCLUDES = -I"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" -isystem C:/msys64/ucrt64/include/QtWidgets -isystem C:/msys64/ucrt64/include/QtGui -isystem C:/msys64/ucrt64/include/QtCore -isystem C:/msys64/ucrt64/share/qt5/mkspecs/win32-g++ -isystem C:/msys64/ucrt64/include/QtOpenGL -isystem C:/msys64/ucrt64/include/QtSvg
   OBJECT_DIR = CMakeFiles\voronoi.dir
   OBJECT_FILE_DIR = CMakeFiles\voronoi.dir
+  TARGET_COMPILE_PDB = CMakeFiles\voronoi.dir\
+  TARGET_PDB = voronoi.pdb
 
 
 # =============================================================================
@@ -1025,18 +1116,18 @@ build voronoi.exe: CXX_EXECUTABLE_LINKER__voronoi_ CMakeFiles/voronoi.dir/vorono
   OBJECT_DIR = CMakeFiles\voronoi.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\voronoi.dir\
   TARGET_FILE = voronoi.exe
   TARGET_IMPLIB = libvoronoi.dll.a
-  TARGET_PDB = voronoi.exe.dbg
+  TARGET_PDB = voronoi.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\cmake-gui.exe -S"D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2" -B"D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build""
-  DESC = Running CMake cache editor...
-  pool = console
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
@@ -1046,7 +1137,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -S"D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2" -B"D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\cmake.exe --regenerate-during-build -S"C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2" -B"C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -1070,7 +1161,7 @@ build CGAL_Qt5_moc_and_resources_autogen: phony CMakeFiles/CGAL_Qt5_moc_and_reso
 # Custom command for ui_ImageInterface.h
 
 build ui_ImageInterface.h | ${cmake_ninja_workdir}ui_ImageInterface.h: CUSTOM_COMMAND C$:/msys64/ucrt64/include/CGAL/Qt/ImageInterface.ui || CGAL_Qt5_moc_and_resources_autogen CGAL_Qt5_moc_and_resources_autogen_timestamp_deps
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\uic.exe -o "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/ui_ImageInterface.h" C:/msys64/ucrt64/include/CGAL/Qt/ImageInterface.ui"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\uic.exe -o "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/ui_ImageInterface.h" C:/msys64/ucrt64/include/CGAL/Qt/ImageInterface.ui"
   DESC = Generating ui_ImageInterface.h
   restat = 1
 
@@ -1079,7 +1170,7 @@ build ui_ImageInterface.h | ${cmake_ninja_workdir}ui_ImageInterface.h: CUSTOM_CO
 # Custom command for qrc_CGAL.cpp
 
 build qrc_CGAL.cpp | ${cmake_ninja_workdir}qrc_CGAL.cpp: CUSTOM_COMMAND resources/CGAL.qrc resources/about_CGAL.html resources/cgal_logo_ipe_2013.png resources/cgal_logo_ipe_2013.png resources/cgal_logo.xpm resources/CGAL.qrc.depends || CGAL_Qt5_moc_and_resources_autogen CGAL_Qt5_moc_and_resources_autogen_timestamp_deps
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\rcc.exe --name CGAL --output "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_CGAL.cpp" "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/resources/CGAL.qrc""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\rcc.exe --name CGAL --output "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_CGAL.cpp" "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/resources/CGAL.qrc""
   DESC = Generating qrc_CGAL.cpp
   restat = 1
 
@@ -1088,7 +1179,7 @@ build qrc_CGAL.cpp | ${cmake_ninja_workdir}qrc_CGAL.cpp: CUSTOM_COMMAND resource
 # Custom command for qrc_Input.cpp
 
 build qrc_Input.cpp | ${cmake_ninja_workdir}qrc_Input.cpp: CUSTOM_COMMAND icons/Input.qrc icons/inputPoint.png icons/fit-page-32.png icons/inputPolyline.png icons/Input.qrc.depends || CGAL_Qt5_moc_and_resources_autogen CGAL_Qt5_moc_and_resources_autogen_timestamp_deps
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\rcc.exe --name Input --output "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_Input.cpp" "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/icons/Input.qrc""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\rcc.exe --name Input --output "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_Input.cpp" "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/icons/Input.qrc""
   DESC = Generating qrc_Input.cpp
   restat = 1
 
@@ -1097,7 +1188,7 @@ build qrc_Input.cpp | ${cmake_ninja_workdir}qrc_Input.cpp: CUSTOM_COMMAND icons/
 # Custom command for qrc_File.cpp
 
 build qrc_File.cpp | ${cmake_ninja_workdir}qrc_File.cpp: CUSTOM_COMMAND icons/File.qrc icons/fileNew.png icons/fileOpen.png icons/fileSave.png icons/File.qrc.depends || CGAL_Qt5_moc_and_resources_autogen CGAL_Qt5_moc_and_resources_autogen_timestamp_deps
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\rcc.exe --name File --output "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_File.cpp" "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/icons/File.qrc""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\rcc.exe --name File --output "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_File.cpp" "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/icons/File.qrc""
   DESC = Generating qrc_File.cpp
   restat = 1
 
@@ -1106,7 +1197,7 @@ build qrc_File.cpp | ${cmake_ninja_workdir}qrc_File.cpp: CUSTOM_COMMAND icons/Fi
 # Custom command for qrc_Triangulation_2.cpp
 
 build qrc_Triangulation_2.cpp | ${cmake_ninja_workdir}qrc_Triangulation_2.cpp: CUSTOM_COMMAND icons/Triangulation_2.qrc icons/Delaunay_triangulation_2.png icons/Voronoi_diagram_2.png icons/Triangulation_2.qrc.depends || CGAL_Qt5_moc_and_resources_autogen CGAL_Qt5_moc_and_resources_autogen_timestamp_deps
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\rcc.exe --name Triangulation_2 --output "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_Triangulation_2.cpp" "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/icons/Triangulation_2.qrc""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\rcc.exe --name Triangulation_2 --output "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/qrc_Triangulation_2.cpp" "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/icons/Triangulation_2.qrc""
   DESC = Generating qrc_Triangulation_2.cpp
   restat = 1
 
@@ -1115,16 +1206,16 @@ build qrc_Triangulation_2.cpp | ${cmake_ninja_workdir}qrc_Triangulation_2.cpp: C
 # Custom command for CGAL_Qt5_moc_and_resources_autogen\timestamp
 
 build CGAL_Qt5_moc_and_resources_autogen/timestamp CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}CGAL_Qt5_moc_and_resources_autogen/timestamp ${cmake_ninja_workdir}CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp: CUSTOM_COMMAND C$:/msys64/ucrt64/bin/moc.exe || CGAL_Qt5_moc_and_resources_autogen_timestamp_deps
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "D:\Users\Escritorio\U\Otoño 2024 - 9no semestre\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\cmake.exe -E cmake_autogen "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/AutogenInfo.json" "" && C:\msys64\ucrt64\bin\cmake.exe -E touch "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/timestamp" && C:\msys64\ucrt64\bin\cmake.exe -E cmake_transform_depfile Ninja gccdepfile "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2" "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2" "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/deps" "D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CMakeFiles/d/f71f5b4fbb65248a4d307e1e193f635b7ccb69aee6d3d59f10854d4da84746f5.d""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\Public\Documents\U\9no Semestre Primavera\Geometria-Computacional\CGAL-5.6.1\examples\Triangulation_2\build" && C:\msys64\ucrt64\bin\cmake.exe -E cmake_autogen "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/AutogenInfo.json" "" && C:\msys64\ucrt64\bin\cmake.exe -E touch "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/timestamp" && C:\msys64\ucrt64\bin\cmake.exe -E cmake_transform_depfile Ninja gccdepfile "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2" "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2" "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build" "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CGAL_Qt5_moc_and_resources_autogen/deps" "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CMakeFiles/d/d8bb7659ef42a0ef369b41dd0a8d8acba744dca871f375051bad9e9d31035079.d""
   DESC = Automatic MOC for target CGAL_Qt5_moc_and_resources
-  depfile = D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CMakeFiles/d/f71f5b4fbb65248a4d307e1e193f635b7ccb69aee6d3d59f10854d4da84746f5.d
+  depfile = C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build/CMakeFiles/d/d8bb7659ef42a0ef369b41dd0a8d8acba744dca871f375051bad9e9d31035079.d
   restat = 1
 
 
 #############################################
 # Phony custom command for CMakeFiles\CGAL_Qt5_moc_and_resources_autogen_timestamp_deps
 
-build CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps: phony C$:/msys64/ucrt64/bin/moc.exe C$:/msys64/ucrt64/lib/libQt5Svg.dll.a C$:/msys64/ucrt64/lib/libQt5OpenGL.dll.a C$:/msys64/ucrt64/lib/libQt5Widgets.dll.a
+build CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps: phony C$:/msys64/ucrt64/bin/moc.exe C$:/msys64/ucrt64/lib/libQt5Svg.dll.a C$:/msys64/ucrt64/lib/libQt5Widgets.dll.a C$:/msys64/ucrt64/lib/libQt5OpenGL.dll.a
 
 
 #############################################
@@ -1197,7 +1288,7 @@ build voronoi: phony voronoi.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build
+# Folder: C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/build
 
 build all: phony adding_handles.exe colored_face.exe constrained.exe constrained_hierarchy_plus.exe constrained_plus.exe copy_triangulation_2.exe draw_surface_mesh.exe draw_triangulation_2.exe for_loop_2.exe hierarchy.exe info_insert_with_pair_iterator_2.exe info_insert_with_pair_iterator_regular_2.exe info_insert_with_transform_iterator_2.exe info_insert_with_zip_iterator_2.exe low_dimensional.exe polygon_triangulation.exe polylines_triangulation.exe print_cropped_voronoi.exe regular.exe segment_soup_to_polylines.exe star_conflict_zone.exe terr_trian.exe terrain.exe terrain_with_info.exe triangulation_prog1.exe triangulation_projection_traits.exe voronoi.exe
 
@@ -1208,14 +1299,14 @@ build all: phony adding_handles.exe colored_face.exe constrained.exe constrained
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfig.cmake C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGALConfig.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGALConfigBuildVersion.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGALConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_Common.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_CreateSingleSourceCGALProgram.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_GeneratorSpecificSettings.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_Macros.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_Qt5_moc_and_resource_files.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SCM.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupBoost.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupCGALDependencies.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupCGAL_Qt5Dependencies.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupGMP.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupVLD.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_TweakFindBoost.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_VersionUtils.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_add_test.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_enable_end_of_configuration_hook.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_setup_target_dependencies.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_target_use_TBB.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/FindGMP.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/FindGMPXX.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/FindMPFR.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QJp2Plugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QMngPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Svg/Qt5SvgConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Svg/Qt5SvgConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5/Qt5Config.cmake C$:/msys64/ucrt64/lib/cmake/Qt5/Qt5ConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5/Qt5ModuleLocation.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseArguments.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindBoost.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/CMakeLists.txt icons/File.qrc icons/Input.qrc icons/Triangulation_2.qrc resources/CGAL.qrc
+build build.ninja: RERUN_CMAKE | C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/CMakeLists.txt C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfig.cmake C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGALConfig.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGALConfigBuildVersion.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGALConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_Common.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_CreateSingleSourceCGALProgram.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_GeneratorSpecificSettings.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_Macros.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_Qt5_moc_and_resource_files.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SCM.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupBoost.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupCGALDependencies.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupCGAL_Qt5Dependencies.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupGMP.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupVLD.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_TweakFindBoost.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_VersionUtils.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_add_test.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_enable_end_of_configuration_hook.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_setup_target_dependencies.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_target_use_TBB.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/FindGMP.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/FindGMPXX.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/FindMPFR.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QJp2Plugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QMngPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Svg/Qt5SvgConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Svg/Qt5SvgConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5/Qt5Config.cmake C$:/msys64/ucrt64/lib/cmake/Qt5/Qt5ConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5/Qt5ModuleLocation.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseArguments.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystem.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindBoost.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake icons/File.qrc icons/Input.qrc icons/Triangulation_2.qrc resources/CGAL.qrc
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfig.cmake C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGALConfig.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGALConfigBuildVersion.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGALConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_Common.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_CreateSingleSourceCGALProgram.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_GeneratorSpecificSettings.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_Macros.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_Qt5_moc_and_resource_files.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SCM.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupBoost.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupCGALDependencies.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupCGAL_Qt5Dependencies.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupGMP.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupVLD.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_TweakFindBoost.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_VersionUtils.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_add_test.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_enable_end_of_configuration_hook.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_setup_target_dependencies.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_target_use_TBB.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/FindGMP.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/FindGMPXX.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/FindMPFR.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QJp2Plugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QMngPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Svg/Qt5SvgConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Svg/Qt5SvgConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5/Qt5Config.cmake C$:/msys64/ucrt64/lib/cmake/Qt5/Qt5ConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5/Qt5ModuleLocation.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseArguments.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindBoost.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/Users/Escritorio/U/Otoño$ 2024$ -$ 9no$ semestre/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/CMakeLists.txt icons/File.qrc icons/Input.qrc icons/Triangulation_2.qrc resources/CGAL.qrc: phony
+build C$:/Users/Public/Documents/U/9no$ Semestre$ Primavera/Geometria-Computacional/CGAL-5.6.1/examples/Triangulation_2/CMakeLists.txt C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfig.cmake C$:/msys64/ucrt64/lib/cmake/Boost-1.84.0/BoostConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGALConfig.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGALConfigBuildVersion.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGALConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_Common.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_CreateSingleSourceCGALProgram.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_GeneratorSpecificSettings.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_Macros.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_Qt5_moc_and_resource_files.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SCM.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupBoost.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupCGALDependencies.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupCGAL_Qt5Dependencies.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupGMP.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_SetupVLD.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_TweakFindBoost.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_VersionUtils.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_add_test.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_enable_end_of_configuration_hook.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_setup_target_dependencies.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/CGAL_target_use_TBB.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/FindGMP.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/FindGMPXX.cmake C$:/msys64/ucrt64/lib/cmake/CGAL/FindMPFR.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QJp2Plugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QMngPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Svg/Qt5SvgConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Svg/Qt5SvgConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake C$:/msys64/ucrt64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake C$:/msys64/ucrt64/lib/cmake/Qt5/Qt5Config.cmake C$:/msys64/ucrt64/lib/cmake/Qt5/Qt5ConfigVersion.cmake C$:/msys64/ucrt64/lib/cmake/Qt5/Qt5ModuleLocation.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config-version.cmake C$:/msys64/ucrt64/lib/cmake/boost_headers-1.84.0/boost_headers-config.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseArguments.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystem.cmake.in C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindBoost.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake icons/File.qrc icons/Input.qrc icons/Triangulation_2.qrc resources/CGAL.qrc: phony
 
 
 #############################################
