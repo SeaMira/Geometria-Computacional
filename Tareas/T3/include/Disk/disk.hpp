@@ -48,6 +48,7 @@ class DiskTriangulation {
         int points = 0;
         CDT disk;
         std::list<Segment_2> cropped_vd_disk;
+        std::vector<std::vector<Segment_2>> voronoi_segments;
 
     public:
         DiskTriangulation(float radius, int points, float pcnt);

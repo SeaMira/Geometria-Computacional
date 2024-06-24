@@ -36,7 +36,8 @@ typedef CGAL::Constrained_Delaunay_triangulation_2<K, TDS, Itag> CDT;
 
 
 
-void getRectTriangulation(float b_side, float l_side, int points, int bd_points, CDT* t, std::unordered_map<CDT::Face_handle, bool>& in_domain_map);
+void getRectTriangulation(float b_side, float l_side, int points, int bd_points, CDT* t, std::unordered_map<CDT::Face_handle, 
+bool>& in_domain_map);
 
 class RectangleTriangulation {
     private:

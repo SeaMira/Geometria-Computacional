@@ -1,4 +1,38 @@
 #include <Disk/disk.hpp>
+Segment_2 crop_and_extract_segment(const Segment_2& s, float radius, int points, float pcnt);
+
+bool isInDisk(Point_2 p, float r, int points, float pcnt) {
+    int amountBorder = pcnt * (float)points;
+    float angleIncrement = 2 * M_PI / (float)amountBorder;
+
+    for (int i = 0; i < amountBorder; i++) {
+        float angle1 = i * angleIncrement;
+        float angle2 = (i + 1) * angleIncrement;
+
+        float x1 = r * cos(angle1);
+        float y1 = r * sin(angle1);
+
+        float x2 = r * cos(angle2);
+        float y2 = r * sin(angle2);
+
+        // Convert the segment endpoints to vectors
+        float dx1 = x2 - x1;
+        float dy1 = y2 - y1;
+        
+        // Convert the point relative to the segment start point to a vector
+        float dx2 = p.x() - x1;
+        float dy2 = p.y() - y1;
+        
+        // Calculate the cross product
+        float cross_product = dx1 * dy2 - dy1 * dx2;
+
+        // If the cross product is negative, the point is to the right of the segment
+        if (cross_product < 0) {
+            return false;
+        }
+    }
+    return true;
+}
 
 // Creates a disk of radius r with a pointsA amount of points. A percentage (pcnt) of them are on the border and the rest are randomly inside.
 CDT getCircleTriangulation(float r, int pointsA, float pcnt) {
@@ -38,18 +72,64 @@ CDT getCircleTriangulation(float r, int pointsA, float pcnt) {
 }
 
 void DiskTriangulation::compute_voronoi() {
-    Cropped_voronoi_from_delaunay voronoi_cropped;
-    for (auto fit = disk.finite_faces_begin(); fit != disk.finite_faces_end(); ++fit) {
-        Point_2 circ_center = CGAL::circumcenter(disk.triangle(fit));
-        for (int i = 0; i < 3; ++i) {
-            CDT::Face_handle neighbor = fit->neighbor(i);
-            if (disk.is_infinite(neighbor)) continue;
-            Point_2 neighbor_circ_center = CGAL::circumcenter(disk.triangle(neighbor));
-            Segment_2 voronoi_edge(circ_center, neighbor_circ_center);
-            voronoi_cropped.crop_and_extract_segment(voronoi_edge, radius, points, pcnt);
+    for (auto vit = disk.finite_vertices_begin(); vit != disk.finite_vertices_end(); ++vit) {
+        std::vector<Point_2> circ_centers;
+        std::vector<Segment_2> sector_segments;
+
+        std::cout << "---- " << vit->point().x() << " " << vit->point().y() << std::endl;
+        // Use Face_circulator to iterate over incident faces in cyclic order
+        CDT::Face_circulator fcirc = disk.incident_faces(vit), done(fcirc);
+        bool is_on_border = false;
+        if (fcirc != 0) {
+            do {
+                if (!disk.is_infinite(fcirc)) {
+                    Point_2 circ_center = CGAL::circumcenter(disk.triangle(fcirc));
+                    std::cout << circ_center.x() << " " << circ_center.y() << std::endl;
+
+                    bool has_infinite_neighbour = false;
+                    // Check if the face has an infinite neighbor and the circumcenter is inside the disk
+                    for (int i = 0; i < 3; ++i) {
+                        if (disk.is_infinite(fcirc->neighbor(i))) {
+                            if (isInDisk(circ_center, radius, points, pcnt)) {
+                                // Calculate the intersection point
+                                Point_2 v1 = fcirc->vertex((i + 1) % 3)->point();
+                                Point_2 v2 = fcirc->vertex((i + 2) % 3)->point();
+                                Point_2 midpoint = CGAL::midpoint(v1, v2);
+
+                                // Determine if points are in counter-clockwise order
+                                float determinant = (vit->point().x() * (circ_center.y() - midpoint.y())) +
+                                                    (circ_center.x() * (midpoint.y() - vit->point().y())) +
+                                                    (midpoint.x() * (vit->point().y() - circ_center.y()));
+
+                                if (determinant > 0) {
+                                    circ_centers.push_back(circ_center);
+                                    circ_centers.push_back(midpoint);
+                                } else {
+                                    circ_centers.push_back(midpoint);
+                                    circ_centers.push_back(circ_center);
+                                }
+                                has_infinite_neighbour = true;
+                            }
+                        }
+                    }
+                    if (!has_infinite_neighbour) circ_centers.push_back(circ_center);
+                } else {
+                    is_on_border = true;
+                    circ_centers.push_back(Point_2(vit->point()));
+                }
+            } while (++fcirc != done);
         }
+
+        for (size_t i = 0; i < circ_centers.size(); ++i) {
+            Point_2 source = circ_centers[i];
+            Point_2 target = circ_centers[(i + 1) % circ_centers.size()];
+
+            Segment_2 voronoi_edge(source, target);
+            Segment_2 newSeg = crop_and_extract_segment(voronoi_edge, radius, points, pcnt);
+            sector_segments.push_back(newSeg);
+        }
+        voronoi_segments.push_back(sector_segments);
     }
-    cropped_vd_disk = voronoi_cropped.m_cropped_vd;
 }
 
 DiskTriangulation::DiskTriangulation(float radius, int points, float pcnt) : radius(radius), points(points), pcnt(pcnt) {
@@ -100,35 +180,39 @@ void DiskTriangulation::write_voronoi_off(const std::string& filename) {
     // Crear un mapa para los vértices únicos
     std::map<Point_2, int> vertex_map;
     int index = 0;
-    for (const auto& seg : cropped_vd_disk) {
-        if (vertex_map.find(seg.source()) == vertex_map.end()) {
-            vertex_map[seg.source()] = index++;
-        }
-        if (vertex_map.find(seg.target()) == vertex_map.end()) {
-            vertex_map[seg.target()] = index++;
+    for (const auto& sector : voronoi_segments) {
+        for (const auto& seg : sector) {
+            if (vertex_map.find(seg.source()) == vertex_map.end()) {
+                vertex_map[seg.source()] = index++;
+            }
+            if (vertex_map.find(seg.target()) == vertex_map.end()) {
+                vertex_map[seg.target()] = index++;
+            }
         }
     }
 
-    // Escribir el número de vértices y aristas
-    out << vertex_map.size() << " " << cropped_vd_disk.size()/2 << " 0\n";
+    // Escribir el número de vértices y caras
+    out << vertex_map.size() << " " << voronoi_segments.size() << " 0\n";
 
     // Escribir los vértices
     for (const auto& entry : vertex_map) {
         out << entry.first.x() << " " << entry.first.y() << " 0\n";
     }
 
-    // Usar un set para almacenar aristas únicas
-    std::set<std::pair<int, int>> edges;
-    for (const auto& seg : cropped_vd_disk) {
-        int v1 = vertex_map[seg.source()];
-        int v2 = vertex_map[seg.target()];
-        if (v1 > v2) std::swap(v1, v2); // Asegurar que el menor índice esté primero
-        edges.insert(std::make_pair(v1, v2));
-    }
+    // Escribir los sectores como caras, evitando índices repetidos
+    for (const auto& sector : voronoi_segments) {
+        std::set<int> unique_indices;
+        for (const auto& seg : sector) {
+            unique_indices.insert(vertex_map[seg.source()]);
+            unique_indices.insert(vertex_map[seg.target()]);
+        }
 
-    // Escribir las aristas únicas
-    for (const auto& edge : edges) {
-        out << "2 " << edge.first << " " << edge.second << "\n";
+        // Escribir la cara con los índices únicos
+        out << unique_indices.size();
+        for (int idx : unique_indices) {
+            out << " " << idx;
+        }
+        out << "\n";
     }
 
     out.close();
@@ -146,7 +230,7 @@ float angleFromPoint(Point_2 p) {
     
 }
 
-void Cropped_voronoi_from_delaunay::crop_and_extract_segment(const Segment_2& s, float radius, int points, float pcnt) {
+Segment_2 crop_and_extract_segment(const Segment_2& s, float radius, int points, float pcnt) {
     int amountBorder = pcnt*(float)points;
     float angleIncrement = 2 * M_PI / (float)amountBorder;
 
@@ -171,8 +255,7 @@ void Cropped_voronoi_from_delaunay::crop_and_extract_segment(const Segment_2& s,
             if (const Point_2* p = boost::get<Point_2>(&*result)) {
                 inters.push_back(*p);
             } else if (const Segment_2* seg = boost::get<Segment_2>(&*result)) {
-                m_cropped_vd.push_back(*seg);
-                return ;
+                return *seg;
             }
         }
     }
@@ -181,7 +264,7 @@ void Cropped_voronoi_from_delaunay::crop_and_extract_segment(const Segment_2& s,
         // Ambos extremos del segmento están dentro o fuera del círculo
         if (distance_source <= radius && distance_target <= radius) {
             // Ambos puntos están dentro del círculo
-            m_cropped_vd.push_back(s);
+            return s;
         }
         // Si ambos puntos están fuera, no hacemos nada
     } else if (inters.size() == 1) {
@@ -189,19 +272,17 @@ void Cropped_voronoi_from_delaunay::crop_and_extract_segment(const Segment_2& s,
         Point_2 intersection_point = inters.front();
         if (distance_source <= radius*cos(angleIncrement/2)) {
             // Source está dentro
-            m_cropped_vd.push_back(Segment_2(source, intersection_point));
+            return Segment_2(source, intersection_point);
         } else {
             // Target está dentro
-            m_cropped_vd.push_back(Segment_2(target, intersection_point));
+            return Segment_2(target, intersection_point);
         }
     } else if (inters.size() == 2) {
         // Ambos extremos del segmento cruzan el borde del círculo
         auto it = inters.begin();
         Point_2 inter1 = *it++;
         Point_2 inter2 = *it;
-        m_cropped_vd.push_back(Segment_2(inter1, inter2));
+        return Segment_2(inter1, inter2);
     }
+    return s;
 }
-
-
-

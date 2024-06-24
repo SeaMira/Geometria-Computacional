@@ -1,4 +1,14 @@
 CGAL_Qt5_moc_and_resources_autogen/timestamp: \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/CMakeLists.txt \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCCompiler.cmake \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeRCCompiler.cmake \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeSystem.cmake \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/icons/File.qrc \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/icons/Input.qrc \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/icons/Triangulation_2.qrc \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/resources/CGAL.qrc \
 	C:/msys64/ucrt64/include/CGAL/Installation/internal/enable_third_party_libraries.h \
 	C:/msys64/ucrt64/include/CGAL/Qt/DemosMainWindow.h \
 	C:/msys64/ucrt64/include/CGAL/Qt/DemosMainWindow_impl.h \
@@ -429,20 +439,15 @@ CGAL_Qt5_moc_and_resources_autogen/timestamp: \
 	C:/msys64/ucrt64/include/QtSvg/qtsvgglobal.h \
 	C:/msys64/ucrt64/include/QtWidgets/QAction \
 	C:/msys64/ucrt64/include/QtWidgets/QApplication \
-	C:/msys64/ucrt64/include/QtWidgets/QCheckBox \
 	C:/msys64/ucrt64/include/QtWidgets/QColorDialog \
-	C:/msys64/ucrt64/include/QtWidgets/QComboBox \
 	C:/msys64/ucrt64/include/QtWidgets/QCommonStyle \
 	C:/msys64/ucrt64/include/QtWidgets/QDesktopWidget \
 	C:/msys64/ucrt64/include/QtWidgets/QDialog \
-	C:/msys64/ucrt64/include/QtWidgets/QDoubleSpinBox \
 	C:/msys64/ucrt64/include/QtWidgets/QFileDialog \
 	C:/msys64/ucrt64/include/QtWidgets/QGraphicsItem \
 	C:/msys64/ucrt64/include/QtWidgets/QGraphicsRectItem \
 	C:/msys64/ucrt64/include/QtWidgets/QGraphicsScene \
 	C:/msys64/ucrt64/include/QtWidgets/QGraphicsView \
-	C:/msys64/ucrt64/include/QtWidgets/QGridLayout \
-	C:/msys64/ucrt64/include/QtWidgets/QHBoxLayout \
 	C:/msys64/ucrt64/include/QtWidgets/QLabel \
 	C:/msys64/ucrt64/include/QtWidgets/QLayout \
 	C:/msys64/ucrt64/include/QtWidgets/QMainWindow \
@@ -453,12 +458,9 @@ CGAL_Qt5_moc_and_resources_autogen/timestamp: \
 	C:/msys64/ucrt64/include/QtWidgets/QPushButton \
 	C:/msys64/ucrt64/include/QtWidgets/QScrollBar \
 	C:/msys64/ucrt64/include/QtWidgets/QScrollerProperties \
-	C:/msys64/ucrt64/include/QtWidgets/QSpacerItem \
-	C:/msys64/ucrt64/include/QtWidgets/QSpinBox \
 	C:/msys64/ucrt64/include/QtWidgets/QStatusBar \
 	C:/msys64/ucrt64/include/QtWidgets/QTabWidget \
 	C:/msys64/ucrt64/include/QtWidgets/QTextEdit \
-	C:/msys64/ucrt64/include/QtWidgets/QVBoxLayout \
 	C:/msys64/ucrt64/include/QtWidgets/QWidget \
 	C:/msys64/ucrt64/include/QtWidgets/QtWidgets \
 	C:/msys64/ucrt64/include/QtWidgets/QtWidgetsDepends \
@@ -1614,15 +1616,4 @@ CGAL_Qt5_moc_and_resources_autogen/timestamp: \
 	C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake \
 	C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake \
 	C:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/CMakeLists.txt \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCCompiler.cmake \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeRCCompiler.cmake \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeSystem.cmake \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/icons/File.qrc \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/icons/Input.qrc \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/icons/Triangulation_2.qrc \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/resources/CGAL.qrc \
-	D:/Users/Escritorio/U/Oto�o\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
-	D:/Users/Escritorio/U/Oto�o\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/ui_ImageInterface.h \
 	C:/msys64/ucrt64/bin/cmake.exe

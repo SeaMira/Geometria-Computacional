@@ -1,5 +1,5 @@
-D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/BBNLKXYIZR/moc_camera.cpp: C:/msys64/ucrt64/include/CGAL/Qt/camera.h \
-  D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
+C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/BBNLKXYIZR/moc_camera.cpp: C:/msys64/ucrt64/include/CGAL/Qt/camera.h \
+  C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
   C:/msys64/ucrt64/include/CGAL/Installation/internal/enable_third_party_libraries.h \
   C:/msys64/ucrt64/include/CGAL/Qt/quaternion.h \
   C:/msys64/ucrt64/include/CGAL/Qt/vec.h \
