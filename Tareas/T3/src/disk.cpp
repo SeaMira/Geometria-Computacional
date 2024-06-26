@@ -1,13 +1,31 @@
 #include <Disk/disk.hpp>
+
 Segment_2 crop_and_extract_segment(const Segment_2& s, float radius, int points, float pcnt);
+void removeDuplicates(std::vector<Point_2>& myVector);
+bool isInDisk(Point_2 p, float r, int points, float pcnt);
+bool arePointsIn(std::vector<Point_2>& vec, float radius, int points, float pcnt);
+std::vector<Point_2> extractValidSegments(std::vector<Point_2>& pts, float radius, int points, float pcnt);
+
+int orientation(Point_2 p1, Point_2 p2, Point_2 p3)
+{
+    // See 10th slides from following link for derivation
+    // of the formula
+    float val = (p2.y() - p1.y()) * (p3.x() - p2.x())
+              - (p2.x() - p1.x()) * (p3.y() - p2.y());
+ 
+    if (val == 0.0f)
+        return 0; // collinear
+ 
+    return (val > 0.0f) ? 1 : 2; // clock or counterclock wise
+}
 
 bool isInDisk(Point_2 p, float r, int points, float pcnt) {
     int amountBorder = pcnt * (float)points;
     float angleIncrement = 2 * M_PI / (float)amountBorder;
-
+    if (p.x()*p.x()+p.y()*p.y() > r*r) return false;
     for (int i = 0; i < amountBorder; i++) {
-        float angle1 = i * angleIncrement;
-        float angle2 = (i + 1) * angleIncrement;
+        float angle1 = (float)i * angleIncrement;
+        float angle2 = (float)(i + 1) * angleIncrement;
 
         float x1 = r * cos(angle1);
         float y1 = r * sin(angle1);
@@ -15,19 +33,8 @@ bool isInDisk(Point_2 p, float r, int points, float pcnt) {
         float x2 = r * cos(angle2);
         float y2 = r * sin(angle2);
 
-        // Convert the segment endpoints to vectors
-        float dx1 = x2 - x1;
-        float dy1 = y2 - y1;
-        
-        // Convert the point relative to the segment start point to a vector
-        float dx2 = p.x() - x1;
-        float dy2 = p.y() - y1;
-        
-        // Calculate the cross product
-        float cross_product = dx1 * dy2 - dy1 * dx2;
-
-        // If the cross product is negative, the point is to the right of the segment
-        if (cross_product < 0) {
+        // If the cross product is positive, the point is to the right of the segment
+        if (orientation(Point_2(x1,y1), Point_2(x2,y2), p) == 1) {
             return false;
         }
     }
@@ -44,7 +51,7 @@ CDT getCircleTriangulation(float r, int pointsA, float pcnt) {
 
     float angleIncrement = 2 * M_PI / (float)amountBorder;
     for (int i = 0; i < amountBorder-1; i++) {
-        float angle = i * angleIncrement;
+        float angle = (float)i * angleIncrement;
         float x1 = r * cos(angle);
         float y1 = r * sin(angle);
 
@@ -57,7 +64,7 @@ CDT getCircleTriangulation(float r, int pointsA, float pcnt) {
     assert(t.is_valid());
 
     for (int i = 0; i < amountInnerPoints; i++) {
-        float x = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/r*cos(angleIncrement/2)));
+        float x = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/abs(r*cos(angleIncrement/2) - 0.01)));
         float y_range = sqrt(pow(r*cos(angleIncrement/2), 2) - pow(x, 2)); 
         float y = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/y_range));
         float x_sign = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);;
@@ -76,7 +83,7 @@ void DiskTriangulation::compute_voronoi() {
         std::vector<Point_2> circ_centers;
         std::vector<Segment_2> sector_segments;
 
-        std::cout << "---- " << vit->point().x() << " " << vit->point().y() << std::endl;
+        // std::cout << "------------ " << vit->point().x() << " " << vit->point().y() << std::endl;
         // Use Face_circulator to iterate over incident faces in cyclic order
         CDT::Face_circulator fcirc = disk.incident_faces(vit), done(fcirc);
         bool is_on_border = false;
@@ -84,29 +91,26 @@ void DiskTriangulation::compute_voronoi() {
             do {
                 if (!disk.is_infinite(fcirc)) {
                     Point_2 circ_center = CGAL::circumcenter(disk.triangle(fcirc));
-                    std::cout << circ_center.x() << " " << circ_center.y() << std::endl;
-
+                    
                     bool has_infinite_neighbour = false;
                     // Check if the face has an infinite neighbor and the circumcenter is inside the disk
                     for (int i = 0; i < 3; ++i) {
-                        if (disk.is_infinite(fcirc->neighbor(i))) {
+                        Point_2 v1 = fcirc->vertex((i + 1) % 3)->point();
+                        Point_2 v2 = fcirc->vertex((i + 2) % 3)->point();
+                        if (disk.is_infinite(fcirc->neighbor(i)) && (v1 == vit->point() || v2 == vit->point())) {
                             if (isInDisk(circ_center, radius, points, pcnt)) {
                                 // Calculate the intersection point
-                                Point_2 v1 = fcirc->vertex((i + 1) % 3)->point();
-                                Point_2 v2 = fcirc->vertex((i + 2) % 3)->point();
                                 Point_2 midpoint = CGAL::midpoint(v1, v2);
 
                                 // Determine if points are in counter-clockwise order
-                                float determinant = (vit->point().x() * (circ_center.y() - midpoint.y())) +
-                                                    (circ_center.x() * (midpoint.y() - vit->point().y())) +
-                                                    (midpoint.x() * (vit->point().y() - circ_center.y()));
+                                int orient = orientation(vit->point(), midpoint, circ_center);
 
-                                if (determinant > 0) {
-                                    circ_centers.push_back(circ_center);
+                                if (orient == 2) { // 2 indicates counter-clockwise
                                     circ_centers.push_back(midpoint);
+                                    if (std::find(circ_centers.begin(), circ_centers.end(), circ_center) == circ_centers.end()) circ_centers.push_back(circ_center);
                                 } else {
+                                    if (std::find(circ_centers.begin(), circ_centers.end(), circ_center) == circ_centers.end()) circ_centers.push_back(circ_center);
                                     circ_centers.push_back(midpoint);
-                                    circ_centers.push_back(circ_center);
                                 }
                                 has_infinite_neighbour = true;
                             }
@@ -119,18 +123,35 @@ void DiskTriangulation::compute_voronoi() {
                 }
             } while (++fcirc != done);
         }
+        
+        removeDuplicates(circ_centers);
 
-        for (size_t i = 0; i < circ_centers.size(); ++i) {
-            Point_2 source = circ_centers[i];
-            Point_2 target = circ_centers[(i + 1) % circ_centers.size()];
+        // Eliminate duplicate points while maintaining order
+        // std::vector<Point_2> unique_circ_centers;
+        // std::set<Point_2> seen;
+        // for (const auto& point : circ_centers) {
+        //     if (seen.insert(point).second) {
+        //         unique_circ_centers.push_back(point);
+        //     }
+        // }
 
-            Segment_2 voronoi_edge(source, target);
-            Segment_2 newSeg = crop_and_extract_segment(voronoi_edge, radius, points, pcnt);
-            sector_segments.push_back(newSeg);
-        }
-        voronoi_segments.push_back(sector_segments);
+        std::vector<Point_2> cropped_segments = extractValidSegments(circ_centers, radius, points, pcnt);
+        // while (!arePointsIn(cropped_segments, radius, points, pcnt)) {
+        //     cropped_segments = extractValidSegments(cropped_segments, radius, points, pcnt);
+        // }
+        removeDuplicates(cropped_segments);
+        // for (int i = 0; i < circ_centers.size(); i++) {
+        //     std::cout << circ_centers[i].x() << " " << circ_centers[i].y() << std::endl;
+        // }
+        // for (int i = 0; i < cropped_segments.size(); i++) {
+        //     std::cout << cropped_segments[i].x() << " " << cropped_segments[i].y() << std::endl;
+        // }
+        // std::cout << circ_centers.size() << std::endl;
+        voronoi_segments.push_back(cropped_segments);
     }
 }
+
+
 
 DiskTriangulation::DiskTriangulation(float radius, int points, float pcnt) : radius(radius), points(points), pcnt(pcnt) {
     disk = getCircleTriangulation(radius, points, pcnt);
@@ -177,43 +198,69 @@ void DiskTriangulation::write_voronoi_off(const std::string& filename) {
     std::ofstream out(filename);
     out << "OFF\n";
 
-    // Crear un mapa para los vértices únicos
-    std::map<Point_2, int> vertex_map;
+    // // Crear un mapa para los vértices únicos
+    // std::map<Point_2, int> vertex_map;
+    // int index = 0;
+    // for (const auto& sector : voronoi_segments) {
+    //     for (const auto& seg : sector) {
+    //         if (vertex_map.find(seg.source()) == vertex_map.end()) {
+    //             vertex_map[seg.source()] = index++;
+    //         }
+    //         if (vertex_map.find(seg.target()) == vertex_map.end()) {
+    //             vertex_map[seg.target()] = index++;
+    //         }
+    //     }
+    // }
+
+    // // Escribir el número de vértices y caras
+    // out << vertex_map.size() << " " << voronoi_segments.size() << " 0\n";
+
+    // // Escribir los vértices
+    // for (const auto& entry : vertex_map) {
+    //     out << entry.first.x() << " " << entry.first.y() << " 0\n";
+    // }
+
+    // // Escribir los sectores como caras, evitando índices repetidos
+    // for (const auto& sector : voronoi_segments) {
+    //     std::set<int> unique_indices;
+    //     for (const auto& seg : sector) {
+    //         unique_indices.insert(vertex_map[seg.source()]);
+    //         unique_indices.insert(vertex_map[seg.target()]);
+    //     }
+
+    //     // Escribir la cara con los índices únicos
+    //     out << unique_indices.size();
+    //     for (int idx : unique_indices) {
+    //         out << " " << idx;
+    //     }
+    //     out << "\n";
+    // }
+
     int index = 0;
+    int vertex_amount = 0;
     for (const auto& sector : voronoi_segments) {
-        for (const auto& seg : sector) {
-            if (vertex_map.find(seg.source()) == vertex_map.end()) {
-                vertex_map[seg.source()] = index++;
-            }
-            if (vertex_map.find(seg.target()) == vertex_map.end()) {
-                vertex_map[seg.target()] = index++;
-            }
+        for (const auto& vert : sector) {
+            vertex_amount++;
         }
     }
 
-    // Escribir el número de vértices y caras
-    out << vertex_map.size() << " " << voronoi_segments.size() << " 0\n";
+    out << vertex_amount << " " << voronoi_segments.size() << " 0\n";
 
-    // Escribir los vértices
-    for (const auto& entry : vertex_map) {
-        out << entry.first.x() << " " << entry.first.y() << " 0\n";
+
+    for (const auto& sector : voronoi_segments) {
+        for (const auto& vert : sector) {
+            out << vert.x() << " " << vert.y() << " 0\n";
+        }
     }
 
-    // Escribir los sectores como caras, evitando índices repetidos
     for (const auto& sector : voronoi_segments) {
-        std::set<int> unique_indices;
-        for (const auto& seg : sector) {
-            unique_indices.insert(vertex_map[seg.source()]);
-            unique_indices.insert(vertex_map[seg.target()]);
-        }
-
-        // Escribir la cara con los índices únicos
-        out << unique_indices.size();
-        for (int idx : unique_indices) {
-            out << " " << idx;
+        out << sector.size();
+        for (const auto& vert : sector) {
+            out << " " << index++;
         }
         out << "\n";
     }
+    
 
     out.close();
 }
@@ -231,58 +278,112 @@ float angleFromPoint(Point_2 p) {
 }
 
 Segment_2 crop_and_extract_segment(const Segment_2& s, float radius, int points, float pcnt) {
-    int amountBorder = pcnt*(float)points;
+    int amountBorder = pcnt * (float)points;
     float angleIncrement = 2 * M_PI / (float)amountBorder;
 
     Point_2 source = s.source();
     Point_2 target = s.target();
 
-    float angle_source = angleFromPoint(source);
-    int init = static_cast<int>(angle_source / angleIncrement);
-    float distance_source = static_cast<float>(std::sqrt(CGAL::squared_distance(source, Point_2(0, 0))));
+    std::vector<Point_2> inters;
 
-    float angle_target = angleFromPoint(target);
-    int end = static_cast<int>(angle_target / angleIncrement);
-    float distance_target = static_cast<float>(sqrt(CGAL::squared_distance(target, Point_2(0, 0))));
-    std::list<Point_2> inters;
-    for (int i = init; i < end+1; i++) {
-        Point_2 diskp1 = Point_2(cos(angleIncrement*i), sin(angleIncrement*i));
-        Point_2 diskp2 = Point_2(cos(angleIncrement*(i+1)), sin(angleIncrement*(i+1)));
-        // calcular intersecciones entre segment y el segmento formado por diskp1 y diskp2
-        Segment_2 disk_segment(diskp1, diskp2);
-        auto result = CGAL::intersection(s, disk_segment);
-        if (result) {
-            if (const Point_2* p = boost::get<Point_2>(&*result)) {
-                inters.push_back(*p);
-            } else if (const Segment_2* seg = boost::get<Segment_2>(&*result)) {
-                return *seg;
+    // Function to find the intersection of a segment with a border segment
+    auto intersect_with_segment = [](const Segment_2& s1, const Segment_2& s2) -> std::vector<Point_2> {
+        std::vector<Point_2> result;
+        auto res = CGAL::intersection(s1, s2);
+        if (res) {
+            if (const Point_2* ip = boost::get<Point_2>(&*res)) {
+                result.push_back(*ip);
+            } else if (const Segment_2* sp = boost::get<Segment_2>(&*res)) {
+                result.push_back(sp->source());
+                result.push_back(sp->target());
             }
         }
+        return result;
+    };
+
+    // Iterate over the border segments
+    for (int i = 0; i < amountBorder; ++i) {
+        float angle1 = (float)i * angleIncrement;
+        float angle2 = (float)(i + 1) * angleIncrement;
+        Point_2 p1 = Point_2(radius * cos(angle1), radius * sin(angle1));
+        Point_2 p2 = Point_2(radius * cos(angle2), radius * sin(angle2));
+        Segment_2 border_segment(p1, p2);
+
+        auto intersection_points = intersect_with_segment(s, border_segment);
+        inters.insert(inters.end(), intersection_points.begin(), intersection_points.end());
     }
 
     if (inters.empty()) {
-        // Ambos extremos del segmento están dentro o fuera del círculo
-        if (distance_source <= radius && distance_target <= radius) {
-            // Ambos puntos están dentro del círculo
-            return s;
+        // Ambos extremos del segmento están dentro o fuera del disco
+        if (isInDisk(source, radius, points, pcnt) && isInDisk(target, radius, points, pcnt)) return s;
+        else {
+            std::cout << "Source están afuera " << source.x() << " " << source.y() << " tar " << target.x() << " " << target.y() << std::endl;
+            return Segment_2(Point_2(1, 1), Point_2(1, 1));
         }
-        // Si ambos puntos están fuera, no hacemos nada
     } else if (inters.size() == 1) {
         // Un extremo está dentro y el otro está fuera
         Point_2 intersection_point = inters.front();
-        if (distance_source <= radius*cos(angleIncrement/2)) {
+        if (isInDisk(source, radius, points, pcnt)) {
             // Source está dentro
+            std::cout << "Source está dentro " << source.x() << " " << source.y() << " inter " << intersection_point.x() << " " << intersection_point.y() << std::endl;
             return Segment_2(source, intersection_point);
-        } else {
+        } else if (isInDisk(target, radius, points, pcnt)) {
             // Target está dentro
-            return Segment_2(target, intersection_point);
-        }
-    } else if (inters.size() == 2) {
-        // Ambos extremos del segmento cruzan el borde del círculo
-        auto it = inters.begin();
-        Point_2 inter1 = *it++;
-        Point_2 inter2 = *it;
-        return Segment_2(inter1, inter2);
+            std::cout << "Target está dentro " << target.x() << " " << target.y() << " inter " << intersection_point.x() << " " << intersection_point.y() << std::endl;
+            return Segment_2(intersection_point, target);
+        } else return Segment_2(intersection_point, intersection_point);
+    } else if (inters.size() >= 2) {
+        // Ambos extremos del segmento cruzan el borde del disco
+        std::cout << "ambos cruzan borde " << inters.front().x() << " " << inters.front().y() << " inter " << inters.back().x() << " " << inters.back().y() << std::endl;
+        return Segment_2(inters.front(), inters.back());
     }
-    return s;
+    return Segment_2(Point_2(0, 0), Point_2(0, 0)); // Return an invalid segment by default
+}
+
+
+void removeDuplicates(std::vector<Point_2>& myVector) { 
+    std::unordered_set<Point_2> seen; 
+  
+    // Using remove_if to eliminate duplicates and get the 
+    // new end iterator 
+    auto newEnd = remove_if( 
+        myVector.begin(), myVector.end(), 
+        [&seen](Point_2& value) { 
+            // Checking if value has been seen; if not, add 
+            // to seen and keep in vector 
+            if (seen.find(value) == seen.end()) { 
+                seen.insert(value); 
+                return false; // Don't remove the item 
+            } 
+            return true; // Remove the item 
+        }); 
+  
+    // Erase the non-unique elements 
+    myVector.erase(newEnd, myVector.end()); 
+} 
+
+bool arePointsIn(std::vector<Point_2>& vec, float radius, int points, float pcnt) {
+    for (int i = 0; i< vec.size(); i++) {
+        if (!isInDisk(vec[i], radius, points, pcnt)) return false;
+    }
+    return true;
+}
+
+std::vector<Point_2> extractValidSegments(std::vector<Point_2>& pts, float radius, int points, float pcnt) {
+    std::vector<Point_2> cropped_segments;
+        for (size_t i = 0; i < pts.size(); ++i) {
+            Point_2 source = pts[i];
+            Point_2 target = pts[(i + 1) % pts.size()];
+
+            Segment_2 voronoi_edge(source, target);
+            Segment_2 newSeg = crop_and_extract_segment(voronoi_edge, radius, points, pcnt);
+            if (newSeg.source() != Point_2(0, 0) || newSeg.target() != Point_2(0, 0)) { // Ensure valid segment
+                if (newSeg.source() == Point_2(1, 1) && newSeg.target() == Point_2(1, 1)) {
+                    continue;
+                }
+                cropped_segments.push_back(newSeg.source());
+                if (newSeg.source() != newSeg.target()) cropped_segments.push_back(newSeg.target());
+            }
+        }
+    return cropped_segments;
 }

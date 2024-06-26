@@ -45,6 +45,7 @@ class RectangleTriangulation {
         int points = 0;
 
         std::list<Segment_2> cropped_vd_rec;
+        std::vector<std::vector<Point_2>> voronoi_segments;
         std::unordered_map<CDT::Face_handle, bool> in_domain_map;
         boost::associative_property_map< std::unordered_map<CDT::Face_handle,bool>> in_domain;
 

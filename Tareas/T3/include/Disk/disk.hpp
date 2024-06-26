@@ -14,6 +14,8 @@
 #include <map>
 #include <set>
 #include <unordered_map>
+#include <unordered_set> 
+#include <algorithm> 
 #include <boost/property_map/property_map.hpp>
 
 typedef CGAL::Exact_predicates_inexact_constructions_kernel       K;
@@ -48,7 +50,7 @@ class DiskTriangulation {
         int points = 0;
         CDT disk;
         std::list<Segment_2> cropped_vd_disk;
-        std::vector<std::vector<Segment_2>> voronoi_segments;
+        std::vector<std::vector<Point_2>> voronoi_segments;
 
     public:
         DiskTriangulation(float radius, int points, float pcnt);

@@ -1,15 +1,15 @@
 {
-	"BUILD_DIR" : "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3",
+	"BUILD_DIR" : "D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen",
+	"CMAKE_BINARY_DIR" : "D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3",
 	"CMAKE_EXECUTABLE" : "C:/msys64/ucrt64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/CMakeLists.txt",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/CMakeLists.txt",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeSystem.cmake.in",
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeSystem.cmake",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeSystem.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeNinjaFindMake.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake",
@@ -64,7 +64,7 @@
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeCCompiler.cmake.in",
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCCompiler.cmake",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCCompiler.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompiler.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake",
@@ -115,7 +115,7 @@
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompiler.cmake.in",
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake",
@@ -130,7 +130,7 @@
 		"C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeRCCompiler.cmake.in",
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeRCCompiler.cmake",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeRCCompiler.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeTestRCCompiler.cmake",
@@ -146,7 +146,7 @@
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/Internal/FeatureTesting.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeCCompiler.cmake.in",
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCCompiler.cmake",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCCompiler.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake",
@@ -166,7 +166,7 @@
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/Internal/FeatureTesting.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompiler.cmake.in",
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake",
 		"C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
 		"C:/msys64/ucrt64/lib/cmake/CGAL/CGALConfigVersion.cmake",
 		"C:/msys64/ucrt64/lib/cmake/CGAL/CGALConfigBuildVersion.cmake",
@@ -279,14 +279,14 @@
 		"C:/msys64/ucrt64/lib/cmake/Qt5Svg/Qt5SvgConfigVersion.cmake",
 		"C:/msys64/ucrt64/lib/cmake/Qt5Svg/Qt5SvgConfig.cmake",
 		"C:/msys64/ucrt64/lib/cmake/CGAL/CGAL_Qt5_moc_and_resource_files.cmake",
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/resources/CGAL.qrc",
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/icons/Input.qrc",
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/icons/File.qrc",
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/icons/Triangulation_2.qrc",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/resources/CGAL.qrc",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/icons/Input.qrc",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/icons/File.qrc",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/icons/Triangulation_2.qrc",
 		"C:/msys64/ucrt64/lib/cmake/CGAL/CGAL_setup_target_dependencies.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3",
-	"DEP_FILE" : "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/deps",
+	"CMAKE_SOURCE_DIR" : "D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3",
+	"DEP_FILE" : "D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "CGAL_Qt5_moc_and_resources_autogen/timestamp",
 	"HEADERS" : 
 	[
@@ -358,8 +358,8 @@
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/include",
+	"MOC_COMPILATION_FILE" : "D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"CGAL_USE_BASIC_VIEWER",
@@ -381,7 +381,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build",
 		"C:/msys64/ucrt64/include/QtWidgets",
 		"C:/msys64/ucrt64/include/QtGui",
 		"C:/msys64/ucrt64/include/QtCore",
@@ -407,24 +407,24 @@
 		"-c",
 		"C:/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/qrc_CGAL.cpp",
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/qrc_File.cpp",
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/qrc_Input.cpp",
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/qrc_Triangulation_2.cpp",
-		"C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/ui_ImageInterface.h"
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/qrc_CGAL.cpp",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/qrc_File.cpp",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/qrc_Input.cpp",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/qrc_Triangulation_2.cpp",
+		"D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/ui_ImageInterface.h"
 	],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 4,
-	"PARSE_CACHE_FILE" : "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/ParseCache.txt",
+	"PARALLEL" : 6,
+	"PARSE_CACHE_FILE" : "D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/msys64/ucrt64/bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 15,
-	"SETTINGS_FILE" : "C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "D:/Users/Escritorio/U/Oto\u00f1o 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : [],
 	"VERBOSITY" : 0
 }

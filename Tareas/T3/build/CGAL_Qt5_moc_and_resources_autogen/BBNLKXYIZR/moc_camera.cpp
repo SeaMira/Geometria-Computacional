@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../../../../../../../../../../msys64/ucrt64/include/CGAL/Qt/camera.h"
+#include "C:/msys64/ucrt64/include/CGAL/Qt/camera.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)

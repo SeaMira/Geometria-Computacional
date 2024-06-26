@@ -11,6 +11,6 @@ int main(int argc, char const *argv[])
     RectangleTriangulation recT(b_side, l_side, points, bd_points);
     recT.draw_delaunay();
     recT.write_delaunay_off("delaunay_rec.off");
-    // diskT.write_voronoi_off("voronoi.off");
+    recT.write_voronoi_off("voronoi_rec.off");
     return 0;
 }

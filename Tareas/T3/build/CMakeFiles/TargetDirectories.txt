@@ -1,15 +1,15 @@
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/CGAL_Qt5_moc_and_resources.dir
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/diskTV.dir
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/ALL_CGAL_TARGETS.dir
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/cgal_check_build_system.dir
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/rectangleTV.dir
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/pikachuTV.dir
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/edit_cache.dir
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/rebuild_cache.dir
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/src/CMakeFiles/disk.dir
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/src/CMakeFiles/rectangle.dir
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/src/CMakeFiles/pikachu.dir
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/src/CMakeFiles/edit_cache.dir
-C:/Users/Public/Documents/U/9no Semestre Primavera/Geometria-Computacional/Tareas/T3/build/src/CMakeFiles/rebuild_cache.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/CGAL_Qt5_moc_and_resources.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/diskTV.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/ALL_CGAL_TARGETS.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/cgal_check_build_system.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/rectangleTV.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/pikachuTV.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/edit_cache.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/rebuild_cache.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen_timestamp_deps.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/src/CMakeFiles/disk.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/src/CMakeFiles/rectangle.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/src/CMakeFiles/pikachu.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/src/CMakeFiles/edit_cache.dir
+D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/src/CMakeFiles/rebuild_cache.dir

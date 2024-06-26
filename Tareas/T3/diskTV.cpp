@@ -6,6 +6,7 @@ int main(int argc, char const *argv[])
     float radius = std::stof(argv[1]);
     int points = std::stoi(argv[2]);
     float pcnt = std::stof(argv[3]);
+    std::cout << "radius " << radius << " points " << points << " pcnt " << pcnt << std::endl;
 
     DiskTriangulation diskT(radius, points, pcnt);
     diskT.draw_delaunay();
