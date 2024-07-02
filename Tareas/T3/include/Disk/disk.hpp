@@ -13,6 +13,8 @@
 #include <fstream>
 #include <map>
 #include <set>
+#include <random>
+#include <stack>
 #include <unordered_map>
 #include <unordered_set> 
 #include <algorithm> 
@@ -51,6 +53,10 @@ class DiskTriangulation {
         CDT disk;
         std::list<Segment_2> cropped_vd_disk;
         std::vector<std::vector<Point_2>> voronoi_segments;
+        std::vector<Point_2> bd_points;
+
+        std::unordered_map<CDT::Face_handle, std::pair<bool, Segment_2>> in_domain_map;
+        boost::associative_property_map< std::unordered_map<CDT::Face_handle,std::pair<bool, Segment_2>>> in_domain;
 
     public:
         DiskTriangulation(float radius, int points, float pcnt);
@@ -58,4 +64,6 @@ class DiskTriangulation {
         void write_delaunay_off(const std::string& filename);
         void write_voronoi_off(const std::string& filename);
         void draw_delaunay();
+        void getCircleTriangulation(CDT& t, float r, int pointsA, float pcnt);
+        // std::vector<Point_2> extractValidSegments(std::vector<CDT::Face_handle>& pts);
 };

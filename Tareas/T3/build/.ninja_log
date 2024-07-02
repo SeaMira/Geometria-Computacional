@@ -1,48 +1,33 @@
 # ninja log v5
-15	2503	7410735868633606	CGAL_Qt5_moc_and_resources_autogen/timestamp	68de63be928344d5
-15	2503	7410735868633606	CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp	68de63be928344d5
-15	2503	7410735868633606	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/timestamp	68de63be928344d5
-15	2503	7410735868633606	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp	68de63be928344d5
-2503	2550	7410735869993598	ui_ImageInterface.h	a25d664e18b38485
-2503	2550	7410735869993598	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/ui_ImageInterface.h	a25d664e18b38485
-2513	2556	7410735870063598	qrc_Input.cpp	8a2e6ef84e368324
-2513	2556	7410735870063598	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/qrc_Input.cpp	8a2e6ef84e368324
-2518	2557	7410735870063598	qrc_File.cpp	4e9e90c02e936748
-2518	2557	7410735870063598	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/qrc_File.cpp	4e9e90c02e936748
-2524	2565	7410735870153609	qrc_Triangulation_2.cpp	8465b0c4913e60d8
-2524	2565	7410735870153609	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/qrc_Triangulation_2.cpp	8465b0c4913e60d8
-2508	2574	7410735870243619	qrc_CGAL.cpp	87127a075d18ddbc
-2508	2574	7410735870243619	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/qrc_CGAL.cpp	87127a075d18ddbc
-2584	2707	7410735871563630	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.obj	6d84228d635e9df
-2581	2717	7410735871563630	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.obj	f7c50affaaf77d10
-2587	2726	7410735871723606	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.obj	833868de91b94417
-2578	2767	7410735872163593	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.obj	a4816008c90c7ae8
-2574	11088	7410735955308839	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.obj	36e4f0e85af3329a
-11100	11248	7410735956988840	libCGAL_Qt5_moc_and_resources.a	fb85a6efbbb32c8b
-2590	16946	7410736013871138	CMakeFiles/diskTV.dir/diskTV.cpp.obj	32c26bbb2684acd9
-2595	16998	7410736014391159	CMakeFiles/pikachuTV.dir/pikachuTV.cpp.obj	432c38c779b55f51
-2708	20194	7410736046239458	src/CMakeFiles/pikachu.dir/pikachu.cpp.obj	b25e69a203f9862d
-2601	20486	7410736049134577	src/CMakeFiles/rectangle.dir/rectangle.cpp.obj	f8db4af9ae8dd7d3
-2598	20570	7410736049989738	src/CMakeFiles/disk.dir/disk.cpp.obj	b6ac5761e48c183b
-49	2792	7410736128057541	CGAL_Qt5_moc_and_resources_autogen/timestamp	68de63be928344d5
-49	2792	7410736128057541	CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp	68de63be928344d5
-49	2792	7410736128057541	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/timestamp	68de63be928344d5
-49	2792	7410736128057541	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp	68de63be928344d5
-2799	2923	7410736130277712	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.obj	f7c50affaaf77d10
-2805	2929	7410736130317716	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.obj	833868de91b94417
-2802	2932	7410736130347705	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.obj	6d84228d635e9df
-2796	2992	7410736130967706	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.obj	a4816008c90c7ae8
-2793	11688	7410736217853796	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.obj	36e4f0e85af3329a
-11688	11840	7410736219433796	libCGAL_Qt5_moc_and_resources.a	fb85a6efbbb32c8b
-2816	17536	7410736276280312	CMakeFiles/pikachuTV.dir/pikachuTV.cpp.obj	432c38c779b55f51
-2808	17624	7410736277200320	CMakeFiles/diskTV.dir/diskTV.cpp.obj	32c26bbb2684acd9
-2811	17765	7410736278610314	CMakeFiles/rectangleTV.dir/rectangleTV.cpp.obj	84335d8a3cc33f6d
-2924	20933	7410736310155095	src/CMakeFiles/pikachu.dir/pikachu.cpp.obj	b25e69a203f9862d
-20933	21217	7410736313229228	src/libpikachu.a	e6845016b37605f4
-2824	21230	7410736313119231	src/CMakeFiles/rectangle.dir/rectangle.cpp.obj	f8db4af9ae8dd7d3
-2819	21311	7410736313889223	src/CMakeFiles/disk.dir/disk.cpp.obj	b6ac5761e48c183b
-21231	21558	7410736316629261	src/librectangle.a	29eceefaa7d59aa7
-21311	21660	7410736317646430	src/libdisk.a	8d258aa450e88d3e
-21217	21855	7410736319356438	pikachuTV.exe	2db54054b53f2fc7
-21558	22068	7410736321536572	rectangleTV.exe	1b65b7b296e78381
-21661	22158	7410736322356679	diskTV.exe	8b529ad9dc508f9d
+15	2544	7415836223551826	CGAL_Qt5_moc_and_resources_autogen/timestamp	68de63be928344d5
+15	2544	7415836223551826	CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp	68de63be928344d5
+15	2544	7415836223551826	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/timestamp	68de63be928344d5
+15	2544	7415836223551826	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp	68de63be928344d5
+2544	2589	7415836224951816	ui_ImageInterface.h	a25d664e18b38485
+2544	2589	7415836224951816	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/ui_ImageInterface.h	a25d664e18b38485
+2558	2595	7415836225051817	qrc_File.cpp	4e9e90c02e936748
+2558	2595	7415836225051817	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/qrc_File.cpp	4e9e90c02e936748
+2563	2599	7415836225081828	qrc_Triangulation_2.cpp	8465b0c4913e60d8
+2563	2599	7415836225081828	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/qrc_Triangulation_2.cpp	8465b0c4913e60d8
+2549	2603	7415836225131816	qrc_CGAL.cpp	87127a075d18ddbc
+2549	2603	7415836225131816	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/qrc_CGAL.cpp	87127a075d18ddbc
+2553	2604	7415836225131816	qrc_Input.cpp	8a2e6ef84e368324
+2553	2604	7415836225131816	D:/Users/Escritorio/U/Otoño 2024 - 9no semestre/Geometria-Computacional/Tareas/T3/build/qrc_Input.cpp	8a2e6ef84e368324
+2613	2726	7415836226321837	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_File.cpp.obj	6d84228d635e9df
+2610	2731	7415836226361810	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Input.cpp.obj	f7c50affaaf77d10
+2615	2742	7415836226471810	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_Triangulation_2.cpp.obj	833868de91b94417
+2607	2779	7415836226881818	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/qrc_CGAL.cpp.obj	a4816008c90c7ae8
+2604	11857	7415836317570840	CMakeFiles/CGAL_Qt5_moc_and_resources.dir/CGAL_Qt5_moc_and_resources_autogen/mocs_compilation.cpp.obj	36e4f0e85af3329a
+11865	12020	7415836319290846	libCGAL_Qt5_moc_and_resources.a	fb85a6efbbb32c8b
+2622	18221	7415836381152363	CMakeFiles/rectangleTV.dir/rectangleTV.cpp.obj	84335d8a3cc33f6d
+2626	18235	7415836381212352	CMakeFiles/pikachuTV.dir/pikachuTV.cpp.obj	432c38c779b55f51
+2619	18360	7415836382582913	CMakeFiles/diskTV.dir/diskTV.cpp.obj	32c26bbb2684acd9
+2727	21721	7415836416078786	src/CMakeFiles/pikachu.dir/pikachu.cpp.obj	b25e69a203f9862d
+2633	22074	7415836419563924	src/CMakeFiles/rectangle.dir/rectangle.cpp.obj	f8db4af9ae8dd7d3
+2629	22186	7415836420563932	src/CMakeFiles/disk.dir/disk.cpp.obj	b6ac5761e48c183b
+21721	22340	7415836422479081	src/libpikachu.a	e6845016b37605f4
+22075	22412	7415836423199090	src/librectangle.a	29eceefaa7d59aa7
+22186	22501	7415836424079081	src/libdisk.a	8d258aa450e88d3e
+22340	22945	7415836428204774	pikachuTV.exe	2db54054b53f2fc7
+22412	22990	7415836428754776	rectangleTV.exe	1b65b7b296e78381
+22501	23065	7415836429504777	diskTV.exe	8b529ad9dc508f9d

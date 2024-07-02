@@ -6,6 +6,37 @@ bool isInDisk(Point_2 p, float r, int points, float pcnt);
 bool arePointsIn(std::vector<Point_2>& vec, float radius, int points, float pcnt);
 std::vector<Point_2> extractValidSegments(std::vector<Point_2>& pts, float radius, int points, float pcnt);
 
+
+Point_2 getCircumcenter(CDT::Face_handle face) {
+    return CGAL::circumcenter(face->vertex(0)->point(), face->vertex(1)->point(), face->vertex(2)->point());
+}
+
+std::vector<Point_2> getSharedPoints(CDT::Face_handle f, CDT::Face_handle f_next) {
+    std::vector<Point_2> shared_points;
+
+    // Itera sobre los vértices de la cara f
+    for (int i = 0; i < 3; ++i) {
+        CDT::Vertex_handle v = f->vertex(i);
+
+        // Verifica si este vértice está en f_next
+        for (int j = 0; j < 3; ++j) {
+            if (v == f_next->vertex(j)) {
+                shared_points.push_back(v->point());
+                break;
+            }
+        }
+    }
+
+    return shared_points;
+}
+
+Point_2 getMidpoint(const std::vector<Point_2>& points) {
+    if (points.size() != 2) {
+        throw std::runtime_error("Expected exactly two points to calculate the midpoint.");
+    }
+    return CGAL::midpoint(points[0], points[1]);
+}
+
 int orientation(Point_2 p1, Point_2 p2, Point_2 p3)
 {
     // See 10th slides from following link for derivation
@@ -42,84 +73,171 @@ bool isInDisk(Point_2 p, float r, int points, float pcnt) {
 }
 
 // Creates a disk of radius r with a pointsA amount of points. A percentage (pcnt) of them are on the border and the rest are randomly inside.
-CDT getCircleTriangulation(float r, int pointsA, float pcnt) {
-    srand(time(0));
+void DiskTriangulation::getCircleTriangulation(CDT& t, float r, int pointsA, float pcnt) {
     int amountBorder = pcnt*(float)pointsA;
     int amountInnerPoints = pointsA-amountBorder;
 
-    CDT t;
 
     float angleIncrement = 2 * M_PI / (float)amountBorder;
     for (int i = 0; i < amountBorder-1; i++) {
         float angle = (float)i * angleIncrement;
+        float angleInc = (float)(i+1) * angleIncrement;
         float x1 = r * cos(angle);
         float y1 = r * sin(angle);
 
-        float x2 = r * cos(angle+angleIncrement);
-        float y2 = r * sin(angle+angleIncrement);
+        float x2 = r * cos(angleInc);
+        float y2 = r * sin(angleInc);
+        bd_points.push_back(Point_2(x1,y1));
+        if (i == amountBorder-2) bd_points.push_back(Point_2(x2,y2));
 
         t.insert_constraint(Point_2(x1,y1), Point_2(x2,y2));
     }
 
     assert(t.is_valid());
 
+    std::default_random_engine gen;
+    gen.seed(std::time(0));
+    std::uniform_real_distribution<float> rad(0.0, r*cos(angleIncrement/2.0f)*0.95f);
+    std::uniform_real_distribution<float> theta(0.0, 2 * M_PI);
     for (int i = 0; i < amountInnerPoints; i++) {
-        float x = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/abs(r*cos(angleIncrement/2) - 0.01)));
-        float y_range = sqrt(pow(r*cos(angleIncrement/2), 2) - pow(x, 2)); 
-        float y = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/y_range));
-        float x_sign = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);;
-        float y_sign = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);;
-
-        x = x_sign > 0.5 ? x : -x;
-        y = y_sign > 0.5 ? y : -y;
+        
+        float R = rad(gen);
+        float angle = theta(gen);
+        float x = R * cos(angle);
+        float y = R * sin(angle);
         t.insert(Point_2(x,y));
     }
-    return t;
 
 }
+
+int findInd(Point_2 const & p, std::vector<Point_2>& v) {
+    for (int i = 0; i < v.size(); i++) {
+        if (v[i] == p) return i;
+    }
+    return -1;
+}
+
+// void tagBlindTriangles(CDT& t, std::unordered_map<CDT::Face_handle, std::pair<bool, Segment_2>>& is_blind) {
+
+//     // Initialize all faces as non-blind
+//     for (auto fit = t.all_faces_begin(); fit != t.all_faces_end(); ++fit) {
+//         is_blind[fit] = std::make_pair(false, Segment_2(Point_2(0.0f, 0.0f),Point_2(0.0f, 0.0f)));
+//     }
+
+//     // Iterate over each constrained edge
+//     for (auto eit = t.constrained_edges_begin(); eit != t.constrained_edges_end(); ++eit) {
+//         std::stack<CDT::Face_handle> triangles;
+
+//         CDT::Face_handle f1 = eit->first;
+//         int i1 = eit->second;
+
+//         Point_2 p1 = f1->vertex(f1->cw(i1))->point();
+//         Point_2 p2 = f1->vertex(f1->ccw(i1))->point();
+
+//         if (!is_blind[f1].first && !t.is_infinite(f1)) {
+//             triangles.push(f1);
+//             while (!triangles.empty()) {
+//                 CDT::Face_handle f = triangles.top();
+//                 triangles.pop();
+
+//                 if (orientation(p1, p2, getCircumcenter(f)) == 1) {
+//         std::cout << "p1 " << p1.x() << "," << p1.y() << " p2 " << p2.x() << "," << p2.y() << std::endl;
+//                     // Tag f as blind
+//                     is_blind[f].first = true;
+//                     is_blind[f].second = Segment_2(p1, p2);
+
+//                     // Push non-blind adjacent triangles with unconstrained common edge to the stack
+//                     for (int i = 0; i < 3; ++i) {
+//                         CDT::Face_handle f_adj = f->neighbor(i);
+//                         int adj_index = f->index(f_adj);
+//                         if (!t.is_infinite(f_adj) && !is_blind[f_adj].first && !t.is_constrained(std::make_pair(f, i))) {
+//                             triangles.push(f_adj);
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+
+//         CDT::Face_handle f2 = f1->neighbor(i1);
+
+//         // Push both adjacent triangles to the stack if they are non-blind
+//         if (!is_blind[f2].first && !t.is_infinite(f2)) {
+//             triangles.push(f2);
+        
+//             triangles.push(f1);
+//             while (!triangles.empty()) {
+//                 CDT::Face_handle f = triangles.top();
+//                 triangles.pop();
+
+//                 if (orientation(p1, p2, getCircumcenter(f)) == 1) {
+//                     // Tag f as blind
+//                     is_blind[f].first = true;
+//                     is_blind[f].second = Segment_2(p1, p2);
+
+//                     // Push non-blind adjacent triangles with unconstrained common edge to the stack
+//                     for (int i = 0; i < 3; ++i) {
+//                         CDT::Face_handle f_adj = f->neighbor(i);
+//                         int adj_index = f->index(f_adj);
+//                         if (!t.is_infinite(f_adj) && !is_blind[f_adj].first && !t.is_constrained(std::make_pair(f, i))) {
+//                             triangles.push(f_adj);
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 void DiskTriangulation::compute_voronoi() {
     for (auto vit = disk.finite_vertices_begin(); vit != disk.finite_vertices_end(); ++vit) {
         std::vector<Point_2> circ_centers;
-        std::vector<Segment_2> sector_segments;
 
         // std::cout << "------------ " << vit->point().x() << " " << vit->point().y() << std::endl;
         // Use Face_circulator to iterate over incident faces in cyclic order
         CDT::Face_circulator fcirc = disk.incident_faces(vit), done(fcirc);
-        bool is_on_border = false;
         if (fcirc != 0) {
             do {
                 if (!disk.is_infinite(fcirc)) {
                     Point_2 circ_center = CGAL::circumcenter(disk.triangle(fcirc));
                     
-                    bool has_infinite_neighbour = false;
-                    // Check if the face has an infinite neighbor and the circumcenter is inside the disk
-                    for (int i = 0; i < 3; ++i) {
-                        Point_2 v1 = fcirc->vertex((i + 1) % 3)->point();
-                        Point_2 v2 = fcirc->vertex((i + 2) % 3)->point();
-                        if (disk.is_infinite(fcirc->neighbor(i)) && (v1 == vit->point() || v2 == vit->point())) {
-                            if (isInDisk(circ_center, radius, points, pcnt)) {
-                                // Calculate the intersection point
-                                Point_2 midpoint = CGAL::midpoint(v1, v2);
+                    // bool has_infinite_neighbour = false;
+                    // // Check if the face has an infinite neighbor and the circumcenter is inside the disk
+                    // for (int i = 0; i < 3; ++i) {
+                    //     Point_2 v1 = fcirc->vertex((i + 1) % 3)->point();
+                    //     Point_2 v2 = fcirc->vertex((i + 2) % 3)->point();
+                    //     if (disk.is_infinite(fcirc->neighbor(i))  && (v1 == vit->point() || v2 == vit->point())) {
+                    //         // Calculate the intersection point
+                    //         Point_2 midpoint = CGAL::midpoint(v1, v2);
+                    //         if (isInDisk(circ_center, radius, points, pcnt)) {
 
-                                // Determine if points are in counter-clockwise order
-                                int orient = orientation(vit->point(), midpoint, circ_center);
+                    //             // Determine if points are in counter-clockwise order
+                    //             int orient = orientation(vit->point(), midpoint, circ_center);
 
-                                if (orient == 2) { // 2 indicates counter-clockwise
-                                    circ_centers.push_back(midpoint);
-                                    if (std::find(circ_centers.begin(), circ_centers.end(), circ_center) == circ_centers.end()) circ_centers.push_back(circ_center);
-                                } else {
-                                    if (std::find(circ_centers.begin(), circ_centers.end(), circ_center) == circ_centers.end()) circ_centers.push_back(circ_center);
-                                    circ_centers.push_back(midpoint);
-                                }
-                                has_infinite_neighbour = true;
-                            }
-                        }
-                    }
-                    if (!has_infinite_neighbour) circ_centers.push_back(circ_center);
+                    //             if (orient == 2) { // 2 indicates counter-clockwise
+                    //                 circ_centers.push_back(midpoint);
+                    //                 if (std::find(circ_centers.begin(), circ_centers.end(), circ_center) == circ_centers.end()) circ_centers.push_back(circ_center);
+                    //             } else {
+                    //                 if (std::find(circ_centers.begin(), circ_centers.end(), circ_center) == circ_centers.end()) circ_centers.push_back(circ_center);
+                    //                 circ_centers.push_back(midpoint);
+                    //             }
+                    //         } else {
+                    //             circ_centers.push_back(midpoint);
+                    //         }
+                    //         has_infinite_neighbour = true;
+                    //     }
+                    // }
+                    circ_centers.push_back(circ_center);
                 } else {
-                    is_on_border = true;
+                    int thisPind = findInd(Point_2(vit->point()), bd_points);
+                    int prevPind = thisPind == 0? bd_points.size()-1 :thisPind-1;
+                    int nextPind = (thisPind+1)%bd_points.size();
+
+                    Point_2 prevMidP = CGAL::midpoint(bd_points[thisPind], bd_points[prevPind]);
+                    Point_2 nextMidP = CGAL::midpoint(bd_points[thisPind], bd_points[nextPind]);
+
+                    circ_centers.push_back(prevMidP);
                     circ_centers.push_back(Point_2(vit->point()));
+                    circ_centers.push_back(nextMidP);
                 }
             } while (++fcirc != done);
         }
@@ -135,11 +253,11 @@ void DiskTriangulation::compute_voronoi() {
         //     }
         // }
 
-        std::vector<Point_2> cropped_segments = extractValidSegments(circ_centers, radius, points, pcnt);
+        // std::vector<Point_2> cropped_segments = extractValidSegments(circ_centers, radius, points, pcnt);
         // while (!arePointsIn(cropped_segments, radius, points, pcnt)) {
         //     cropped_segments = extractValidSegments(cropped_segments, radius, points, pcnt);
         // }
-        removeDuplicates(cropped_segments);
+        // removeDuplicates(cropped_segments);
         // for (int i = 0; i < circ_centers.size(); i++) {
         //     std::cout << circ_centers[i].x() << " " << circ_centers[i].y() << std::endl;
         // }
@@ -147,14 +265,161 @@ void DiskTriangulation::compute_voronoi() {
         //     std::cout << cropped_segments[i].x() << " " << cropped_segments[i].y() << std::endl;
         // }
         // std::cout << circ_centers.size() << std::endl;
-        voronoi_segments.push_back(cropped_segments);
+        voronoi_segments.push_back(circ_centers);
+
+        
     }
 }
 
+// std::vector<Point_2> DiskTriangulation::extractValidSegments(std::vector<CDT::Face_handle>& pts) {
+//     std::vector<Point_2> circ_centers;
+//     std::vector<Point_2> vertx;
+//     for (size_t i = 0; i < pts.size(); ++i) {
+//         if (!disk.is_infinite(pts[i])) {
+//             Point_2 circ_center = CGAL::circumcenter(disk.triangle(pts[i]));
+//             circ_centers.push_back(circ_center);
+//         } else {
+//             circ_centers.push_back(Point_2(radius, radius));
+//         }
+//     }
+
+//     for (size_t i = 0; i < pts.size(); ++i) {
+//         if (!disk.is_infinite(pts[i])) {
+
+//             if (!in_domain_map[pts[i]].first) {
+//                 vertx.push_back(circ_centers[i]);
+
+//                 if (disk.is_infinite(pts[(i+1) % pts.size()])) {
+//                     for (int j = 0; j<3; j++) {
+//                         CDT::Vertex_handle v1 = pts[i]->vertex((j + 1) % 3);
+//                         CDT::Vertex_handle v2 = pts[i]->vertex((j + 2) % 3);
+//                         if (disk.is_infinite(v1) && disk.is_infinite(v2)) {
+//                             Point_2 midpoint = CGAL::midpoint(v1->point(), v2->point());
+//                             vertx.push_back(midpoint);
+//                         }
+//                     }
+//                 } else if (in_domain_map[pts[(i+1) % pts.size()]].first) {
+//                     Segment_2 s_des(circ_centers[i], circ_centers[(i+1) % pts.size()]);
+//                     Segment_2 S_cons = in_domain_map[pts[(i+1) % pts.size()]].second;
+//                     auto intersection = CGAL::intersection(s_des, S_cons);
+//                     if (const Point_2* p3 = boost::get<Point_2>(&*intersection)) {
+//                         vertx.push_back(*p3);
+//                     }
+//                 }
+//             } else {
+//                 if (!in_domain_map[pts[(i+1) % pts.size()]].first) {
+//                     Segment_2 s_des(circ_centers[i], circ_centers[(i+1) % pts.size()]);
+//                     Segment_2 S_cons = in_domain_map[pts[i]].second;
+//                     auto intersection = CGAL::intersection(s_des, S_cons);
+//                     if (const Point_2* p3 = boost::get<Point_2>(&*intersection)) {
+//                         vertx.push_back(*p3);
+//                     }
+//                 }
+//             }
+
+//         } else {
+//             if (!in_domain_map[pts[(i+1) % pts.size()]].first) {
+//                 for (int j = 0; j<3; j++) {
+//                     CDT::Vertex_handle v1 = pts[(i+1) % pts.size()]->vertex((j + 1) % 3);
+//                     CDT::Vertex_handle v2 = pts[(i+1) % pts.size()]->vertex((j + 2) % 3);
+//                     if (disk.is_infinite(v1) && disk.is_infinite(v2)) {
+//                         Point_2 midpoint = CGAL::midpoint(v1->point(), v2->point());
+//                         vertx.push_back(midpoint);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     return vertx;
+// }
 
 
-DiskTriangulation::DiskTriangulation(float radius, int points, float pcnt) : radius(radius), points(points), pcnt(pcnt) {
-    disk = getCircleTriangulation(radius, points, pcnt);
+// void DiskTriangulation::compute_voronoi() {
+//     for (auto vit = disk.finite_vertices_begin(); vit != disk.finite_vertices_end(); ++vit) {
+//         std::vector<CDT::Point_2> circ_centers;
+//         std::vector<Point_2> vertx;
+
+//         CDT::Face_circulator fcirc = disk.incident_faces(vit), done(fcirc);
+//         if (fcirc != 0) {
+//             do {
+//                 if (!disk.is_infinite(fcirc)) {
+//                     Point_2 circ_center = CGAL::circumcenter(disk.triangle(fcirc));
+//                     circ_centers.push_back(circ_center);
+//                 } else {
+//                     circ_centers.push_back(Point_2(radius, radius));
+//                 }
+//             } while (++fcirc != done);
+//         }
+
+//         int size = circ_centers.size();
+//         CDT::Face_circulator f_init = disk.incident_faces(vit), done(f_init);
+//         CDT::Face_circulator f_c = disk.incident_faces(vit), done(f_c);
+//         CDT::Face_circulator f_next = disk.incident_faces(vit), done(f_c);
+
+//         for (size_t i = 0; i < size; ++i) {
+//             if (!disk.is_infinite(f_c)) {
+
+//                 if (!in_domain_map[f_c].first) {
+//                     vertx.push_back(circ_centers[i]);
+
+//                     if (disk.is_infinite(pts[(i+1) % pts.size()])) {
+//                         for (int j = 0; j<3; j++) {
+//                             CDT::Vertex_handle v1 = f_c->vertex((j + 1) % 3);
+//                             CDT::Vertex_handle v2 = f_c->vertex((j + 2) % 3);
+//                             if (disk.is_infinite(v1) && disk.is_infinite(v2)) {
+//                                 Point_2 midpoint = CGAL::midpoint(v1->point(), v2->point());
+//                                 vertx.push_back(midpoint);
+//                             }
+//                         }
+//                     } else if (in_domain_map[pts[(i+1) % pts.size()]].first) {
+//                         Segment_2 s_des(circ_centers[i], circ_centers[(i+1) % pts.size()]);
+//                         Segment_2 S_cons = in_domain_map[pts[(i+1) % pts.size()]].second;
+//                         auto intersection = CGAL::intersection(s_des, S_cons);
+//                         if (const Point_2* p3 = boost::get<Point_2>(&*intersection)) {
+//                             vertx.push_back(*p3);
+//                         }
+//                     }
+//                 } else {
+//                     if (!in_domain_map[pts[(i+1) % pts.size()]].first) {
+//                         Segment_2 s_des(circ_centers[i], circ_centers[(i+1) % pts.size()]);
+//                         Segment_2 S_cons = in_domain_map[f_c].second;
+//                         auto intersection = CGAL::intersection(s_des, S_cons);
+//                         if (const Point_2* p3 = boost::get<Point_2>(&*intersection)) {
+//                             vertx.push_back(*p3);
+//                         }
+//                     }
+//                 }
+
+//             } else {
+//                 if (!in_domain_map[pts[(i+1) % pts.size()]].first) {
+//                     for (int j = 0; j<3; j++) {
+//                         CDT::Vertex_handle v1 = pts[(i+1) % pts.size()]->vertex((j + 1) % 3);
+//                         CDT::Vertex_handle v2 = pts[(i+1) % pts.size()]->vertex((j + 2) % 3);
+//                         if (disk.is_infinite(v1) && disk.is_infinite(v2)) {
+//                             Point_2 midpoint = CGAL::midpoint(v1->point(), v2->point());
+//                             vertx.push_back(midpoint);
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+
+
+
+      
+//         std::vector<Point_2> cropped_segments = this->extractValidSegments(circ_centers);
+                
+//         voronoi_segments.push_back(cropped_segments);
+
+//     }
+// }
+
+
+DiskTriangulation::DiskTriangulation(float radius, int points, float pcnt) : radius(radius), points(points), pcnt(pcnt), in_domain(in_domain_map) {
+    getCircleTriangulation(disk, radius, points, pcnt);
+    // tagBlindTriangles(disk, in_domain_map);
+    // in_domain = boost::associative_property_map<std::unordered_map<CDT::Face_handle, std::pair<bool, Segment_2>>>(in_domain_map);
     compute_voronoi();
 }
 
