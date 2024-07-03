@@ -5,6 +5,7 @@
 
 #include <CGAL/intersections.h>
 #include <CGAL/Object.h>
+#include <CGAL/enum.h>
 
 #include <cassert>
 #include <cfloat>
@@ -14,6 +15,8 @@
 #include <fstream>
 #include <map>
 #include <set>
+#include <algorithm>
+#include <cmath>
 #include <vector>
 #include <unordered_map>
 #include <boost/property_map/property_map.hpp>
@@ -33,6 +36,17 @@ typedef CGAL::Triangulation_data_structure_2<Vb,Fb>               TDS;
 typedef CGAL::Exact_predicates_tag Itag;
 typedef CGAL::Constrained_Delaunay_triangulation_2<K, TDS, Itag> CDT;
 
+class VCP {  
+    public:           
+        bool is_out;
+        Point_2 circ;         
+        Segment_2 border; 
+        VCP(bool is_out, Point_2 circ, Segment_2 border): is_out(is_out), circ(circ), border(border) {} 
+        bool operator==(const VCP vcp) const {
+            return (this->is_out == vcp.is_out) && (this->circ == vcp.circ) && (this->border == vcp.border);
+        } 
+};       
+
 
 class PikachuTriangulation {
     private:
@@ -48,7 +62,8 @@ class PikachuTriangulation {
         std::unordered_map<CDT::Face_handle, bool> in_domain_map;
         boost::associative_property_map< std::unordered_map<CDT::Face_handle,bool>> in_domain;
         std::list<Segment_2> cropped_vd_rec;
-        
+        std::vector<std::vector<Point_2>> voronoi_segments;
+        std::vector<Segment_2> border;
 
     public:
 
@@ -57,4 +72,5 @@ class PikachuTriangulation {
         void draw_delaunay();
         void write_delaunay_off(const std::string& filename);
         void write_voronoi_off(const std::string& filename);
+        std::vector<Point_2> extractValidSegments(std::vector<Point_2>& vor_cell, Point_2 voronoi_sector);
 };
