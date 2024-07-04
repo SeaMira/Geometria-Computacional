@@ -1,4 +1,14 @@
 CGAL_Qt5_moc_and_resources_autogen/timestamp: \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/CMakeLists.txt \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCCompiler.cmake \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeRCCompiler.cmake \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeSystem.cmake \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/icons/File.qrc \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/icons/Input.qrc \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/icons/Triangulation_2.qrc \
+	C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/build/resources/CGAL.qrc \
 	C:/msys64/ucrt64/include/CGAL/Installation/internal/enable_third_party_libraries.h \
 	C:/msys64/ucrt64/include/CGAL/Qt/DemosMainWindow.h \
 	C:/msys64/ucrt64/include/CGAL/Qt/DemosMainWindow_impl.h \
@@ -1606,14 +1616,4 @@ CGAL_Qt5_moc_and_resources_autogen/timestamp: \
 	C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake \
 	C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake \
 	C:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/CMakeLists.txt \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCCompiler.cmake \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeRCCompiler.cmake \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/CMakeFiles/3.28.1/CMakeSystem.cmake \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/icons/File.qrc \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/icons/Input.qrc \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/icons/Triangulation_2.qrc \
-	D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/resources/CGAL.qrc \
-	D:/Users/Escritorio/U/Oto�o\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
 	C:/msys64/ucrt64/bin/cmake.exe

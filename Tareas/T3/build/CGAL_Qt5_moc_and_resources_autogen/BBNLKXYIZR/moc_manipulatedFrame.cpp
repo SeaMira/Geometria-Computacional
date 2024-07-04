@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "C:/msys64/ucrt64/include/CGAL/Qt/manipulatedFrame.h"
+#include "../../../../../../../../../../../msys64/ucrt64/include/CGAL/Qt/manipulatedFrame.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)

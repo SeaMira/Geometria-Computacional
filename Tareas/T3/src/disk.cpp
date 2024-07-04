@@ -198,6 +198,74 @@ void DiskTriangulation::write_voronoi_off(const std::string& filename) {
     out.close();
 }
 
+void DiskTriangulation::write_delaunay_node_ele(const std::string& node_filename, const std::string& ele_filename) {
+    // Escribir el archivo .node
+    std::ofstream node_out(node_filename);
+    node_out << disk.number_of_vertices() << " 2 0 0\n"; // número de puntos, dimensiones, atributos, marcas
+
+    std::map<Point_2, int> vertex_map;
+    int index = 0;
+    for (auto vit = disk.finite_vertices_begin(); vit != disk.finite_vertices_end(); ++vit) {
+        Point_2 p = vit->point();
+        node_out << index << " " << p.x() << " " << p.y() << "\n";
+        vertex_map[p] = index++;
+    }
+    node_out.close();
+
+    // Escribir el archivo .ele
+    std::ofstream ele_out(ele_filename);
+    ele_out << disk.number_of_faces() << " 3 0\n"; // número de elementos, nodos por elemento, atributos
+
+    index = 0;
+    for (auto fit = disk.finite_faces_begin(); fit != disk.finite_faces_end(); ++fit) {
+        ele_out << index << " ";
+        for (int i = 0; i < 3; ++i) {
+            Point_2 p = fit->vertex(i)->point();
+            ele_out << vertex_map[p] << " ";
+        }
+        ele_out << "\n";
+        ++index;
+    }
+    ele_out.close();
+}
+
+void DiskTriangulation::write_voronoi_node_ele(const std::string& node_filename, const std::string& ele_filename) {
+    // Escribir el archivo .node
+    std::ofstream node_out(node_filename);
+
+    int vertex_count = 0;
+    for (const auto& sector : voronoi_segments) {
+        vertex_count += sector.size();
+    }
+    node_out << vertex_count << " 2 0 0\n"; // número de puntos, dimensiones, atributos, marcas
+
+    int index = 0;
+    std::map<Point_2, int> vertex_map;
+    for (const auto& sector : voronoi_segments) {
+        for (const auto& vert : sector) {
+            node_out << index << " " << vert.x() << " " << vert.y() << "\n";
+            vertex_map[vert] = index++;
+        }
+    }
+    node_out.close();
+
+    // Escribir el archivo .ele
+    std::ofstream ele_out(ele_filename);
+    ele_out << voronoi_segments.size() << " " << 3 << " 0\n"; // número de elementos, nodos por elemento, atributos
+
+    index = 0;
+    for (const auto& sector : voronoi_segments) {
+        ele_out << index << " ";
+        for (const auto& vert : sector) {
+            ele_out << vertex_map[vert] << " ";
+        }
+        ele_out << "\n";
+        ++index;
+    }
+    ele_out.close();
+}
+
+
 // Elimina duplicados de un vector de puntos
 // Parámetros:
 // - myVector: Vector de puntos del cual se eliminarán duplicados

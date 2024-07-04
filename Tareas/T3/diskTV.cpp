@@ -12,6 +12,9 @@ int main(int argc, char const *argv[])
     diskT.draw_delaunay();
     diskT.write_delaunay_off("delaunay_disk.off");
     diskT.write_voronoi_off("voronoi_disk.off");
+    diskT.write_delaunay_node_ele("delaunay_disk.node", "delaunay_disk.ele");
+    diskT.write_voronoi_node_ele("voronoi_disk.node", "voronoi_disk.ele");
+
     return 0;
 }
 

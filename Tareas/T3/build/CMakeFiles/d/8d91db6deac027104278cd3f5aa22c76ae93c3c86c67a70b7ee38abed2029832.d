@@ -1,4 +1,14 @@
 CGAL_Qt5_moc_and_resources_autogen/timestamp: \
+  C:/Users/Public/Documents/U/9no\ Semestre\ Primavera/Geometria-Computacional/Tareas/T3/CMakeLists.txt \
+  CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h \
+  CMakeFiles/3.28.1/CMakeCCompiler.cmake \
+  CMakeFiles/3.28.1/CMakeCXXCompiler.cmake \
+  CMakeFiles/3.28.1/CMakeRCCompiler.cmake \
+  CMakeFiles/3.28.1/CMakeSystem.cmake \
+  icons/File.qrc \
+  icons/Input.qrc \
+  icons/Triangulation_2.qrc \
+  resources/CGAL.qrc \
   C:/msys64/ucrt64/bin/cmake.exe \
   C:/msys64/ucrt64/include/CGAL/Installation/internal/enable_third_party_libraries.h \
   C:/msys64/ucrt64/include/CGAL/Qt/DemosMainWindow.h \
@@ -1606,14 +1616,4 @@ CGAL_Qt5_moc_and_resources_autogen/timestamp: \
   C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake \
   C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake \
   C:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake \
-  C:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake \
-  D:/Users/Escritorio/U/OtoÃ±o\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/CMakeLists.txt \
-  CMakeFiles/3.28.1/CMakeCCompiler.cmake \
-  CMakeFiles/3.28.1/CMakeCXXCompiler.cmake \
-  CMakeFiles/3.28.1/CMakeRCCompiler.cmake \
-  CMakeFiles/3.28.1/CMakeSystem.cmake \
-  icons/File.qrc \
-  icons/Input.qrc \
-  icons/Triangulation_2.qrc \
-  resources/CGAL.qrc \
-  D:/Users/Escritorio/U/Otoño\ 2024\ -\ 9no\ semestre/Geometria-Computacional/Tareas/T3/build/CGAL_Qt5_moc_and_resources_autogen/moc_predefs.h
+  C:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake

@@ -54,4 +54,6 @@ class DiskTriangulation {
         void write_voronoi_off(const std::string& filename); // Escribe el diagrama de Voronoi en un archivo OFF
         void draw_delaunay(); // Dibuja la triangulación de Delaunay
         void getCircleTriangulation(CDT& t, float r, int pointsA, float pcnt); // Prototipo de función para obtener la triangulación de un disco
+        void write_delaunay_node_ele(const std::string& node_filename, const std::string& ele_filename);
+        void write_voronoi_node_ele(const std::string& node_filename, const std::string& ele_filename);
 };
