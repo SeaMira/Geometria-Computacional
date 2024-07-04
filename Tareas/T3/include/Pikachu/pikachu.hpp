@@ -66,7 +66,7 @@ class PikachuTriangulation {
         std::vector<Segment_2> border;
 
     public:
-
+        void read_poly_file(const std::string& filename);
         PikachuTriangulation(const std::string& filename);
         void compute_voronoi();
         void draw_delaunay();

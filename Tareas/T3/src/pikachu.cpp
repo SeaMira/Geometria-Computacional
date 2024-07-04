@@ -41,6 +41,39 @@ bool is_point_in_triangle(const Point_2& p, const Point_2& a, const Point_2& b, 
             CGAL::orientation(c, a, p) != CGAL::RIGHT_TURN);
 }
 
+void PikachuTriangulation::read_poly_file(const std::string& filename) {
+    std::ifstream input(filename);
+    if (!input) {
+        std::cerr << "Error al abrir el archivo .poly " << filename << std::endl;
+        return;
+    }
+
+    int num_points, num_holes, num_uno, num_dos;
+    input >> num_points >> num_holes >> num_uno >> num_dos;
+
+    std::vector<Point_2> points(num_points);
+    for (int i = 0; i < num_points; ++i) {
+        int index;
+        float x, y;
+        input >> index >> x >> y;
+        std::cout << index << x << " " << y << std::endl;
+        points[index] = Point_2(x, y); // Índices en archivos .poly suelen ser 1-based
+    }
+
+    int blank1, blank2;
+    input >> blank1 >> blank2;
+
+    for (int i = 0; i < num_points; ++i) {
+        int index, p1, p2;
+        input >> index >> p1 >> p2;
+        std::cout << index << " " << p1 << " " << p2 << std::endl;
+        border.push_back(Segment_2(points[p1], points[p2]));
+    }
+
+    // input >> num_holes; // Puedes ignorar los agujeros si no son necesarios
+    input.close();
+}
+
 PikachuTriangulation::PikachuTriangulation(const std::string& filename): in_domain(in_domain_map) {
     std::ifstream input(filename);
     if (!input) {
@@ -100,23 +133,14 @@ PikachuTriangulation::PikachuTriangulation(const std::string& filename): in_doma
         }
     }
 
-    // Recorrer todas las caras para encontrar los segmentos del borde
-    for (auto fit = pikachu.finite_faces_begin(); fit != pikachu.finite_faces_end(); ++fit) {
-        for (int i = 0; i < 3; ++i) {
-            CDT::Face_handle neighbor = fit->neighbor(i);
-            if (pikachu.is_infinite(neighbor) || !in_domain_map[neighbor]) {
-                // Obtener los puntos del segmento
-                Point_2 v1 = fit->vertex((i + 1) % 3)->point();
-                Point_2 v2 = fit->vertex((i + 2) % 3)->point();
-                // Agregar el segmento al vector border
-                border.push_back(Segment_2(v1, v2));
-            }
-        }
-    }
+    read_poly_file("pikachu.poly");
 
     compute_voronoi();
 }
 
+Point_2 get_centroid(const Point_2& v0, const Point_2& v1, const Point_2& v2) {
+    return Point_2((v0.x() + v1.x() + v2.x()) / 3, (v0.y() + v1.y() + v2.y()) / 3);
+}
 
 void PikachuTriangulation::compute_voronoi() {
     for (auto vit = pikachu.finite_vertices_begin(); vit != pikachu.finite_vertices_end(); ++vit) {
@@ -136,6 +160,7 @@ void PikachuTriangulation::compute_voronoi() {
                     for (int i = 0; i < 3; ++i) {
                         Point_2 v1 = fcirc->vertex((i + 1) % 3)->point();
                         Point_2 v2 = fcirc->vertex((i + 2) % 3)->point();
+                        Point_2 v3 = fcirc->vertex(i)->point(); // Extra vertex for checking
                         if ((pikachu.is_infinite(fcirc->neighbor(i)) || !get(in_domain, fcirc->neighbor(i))) && (v1 == vit->point() || v2 == vit->point())) {
                             bool circ_center_in_domain = false;
                             for (auto fit = pikachu.finite_faces_begin(); fit != pikachu.finite_faces_end(); ++fit) {
@@ -149,7 +174,20 @@ void PikachuTriangulation::compute_voronoi() {
                                     }
                                 }
                             }
-                            if (circ_center_in_domain) {
+
+                            // Check if at least two segments in border intersect the segment between circ_center and the centroid
+                            Point_2 centroid = get_centroid(v1, v2, v3);
+                            Segment_2 center_to_centroid(circ_center, centroid);
+                            int intersection_count = 0;
+                            for (const auto& border_segment : border) {
+                                auto intersection = CGAL::intersection(center_to_centroid, border_segment);
+                                if (intersection) {
+                                    intersection_count++;
+                                    if (intersection_count >= 2) break;
+                                }
+                            }
+
+                            if (circ_center_in_domain && intersection_count < 2) {
                                 // Calculate the intersection point
                                 Point_2 midpoint = CGAL::midpoint(v1, v2);
 
@@ -159,9 +197,13 @@ void PikachuTriangulation::compute_voronoi() {
                                 if (orient == 2) { // 2 indicates counter-clockwise
                                     circ_centers.push_back(midpoint);
                                     if (std::find(circ_centers.begin(), circ_centers.end(), circ_center) == circ_centers.end()) circ_centers.push_back(circ_center);
+                                    if (std::find(circ_centers.begin(), circ_centers.end(), Point_2(vit->point())) == circ_centers.end()) circ_centers.push_back(Point_2(vit->point()));
+
                                 } else {
                                     if (std::find(circ_centers.begin(), circ_centers.end(), circ_center) == circ_centers.end()) circ_centers.push_back(circ_center);
                                     circ_centers.push_back(midpoint);
+                                    if (std::find(circ_centers.begin(), circ_centers.end(), Point_2(vit->point())) == circ_centers.end()) circ_centers.push_back(Point_2(vit->point()));
+
                                 }
                                 has_infinite_neighbour = true;
                             } 
@@ -264,70 +306,97 @@ double calculate_angle(const Point_2& p, Point_2& center) {
 
 std::vector<Point_2> PikachuTriangulation::extractValidSegments(std::vector<Point_2>& vor_cell, Point_2 voronoi_sector) {
     std::vector<Point_2> cropped_segments;
-        for (size_t i = 0; i < vor_cell.size(); ++i) {
-            Point_2 src = vor_cell[i];
-            Point_2 tgt = vor_cell[(i + 1) % vor_cell.size()];
+        std::cout << "New cell" << std::endl; 
 
-            Segment_2 s(src, tgt);
+    for (size_t i = 0; i < vor_cell.size(); ++i) {
+        Point_2 src = vor_cell[i];
+        Point_2 tgt = vor_cell[(i + 1) % vor_cell.size()];
 
-            bool src_in = false, tgt_in = false;
-            for (auto fit = pikachu.finite_faces_begin(); fit != pikachu.finite_faces_end(); ++fit) {
-                if (in_domain_map[fit]) {
-                    Point_2 v0 = fit->vertex(0)->point();
-                    Point_2 v1 = fit->vertex(1)->point();
-                    Point_2 v2 = fit->vertex(2)->point();
-                    if (is_point_in_triangle(src, v0, v1, v2)) {
-                        src_in = true;
-                        break;
-                    }
+        Segment_2 s(src, tgt);
+
+        bool src_in = false, tgt_in = false;
+        for (auto fit = pikachu.finite_faces_begin(); fit != pikachu.finite_faces_end(); ++fit) {
+            if (in_domain_map[fit]) {
+                Point_2 v0 = fit->vertex(0)->point();
+                Point_2 v1 = fit->vertex(1)->point();
+                Point_2 v2 = fit->vertex(2)->point();
+                if (is_point_in_triangle(src, v0, v1, v2)) {
+                    src_in = true;
+                    break;
                 }
             }
-            for (auto fit = pikachu.finite_faces_begin(); fit != pikachu.finite_faces_end(); ++fit) {
-                if (in_domain_map[fit]) {
-                    Point_2 v0 = fit->vertex(0)->point();
-                    Point_2 v1 = fit->vertex(1)->point();
-                    Point_2 v2 = fit->vertex(2)->point();
-                    if (is_point_in_triangle(tgt, v0, v1, v2)) {
-                        tgt_in = true;
-                        break;
-                    }
-                }
-            }
-
-            if (src_in && !tgt_in) {
-                cropped_segments.push_back(src);
-                std::cout << " src dentro target fuera " << std::endl; 
-                for (const auto& border_segment : border) {
-                    auto intersection = CGAL::intersection(s, border_segment);
-                    if (intersection) {
-                        if (const Point_2* p = boost::get<Point_2>(&*intersection)) {
-                            cropped_segments.push_back(*p);
-                            break;
-                        }
-                    }
-                }
-
-            } else if (!src_in && tgt_in) {
-                std::cout << " src fuera target dentro " << std::endl; 
-                for (const auto& border_segment : border) {
-                    auto intersection = CGAL::intersection(s, border_segment);
-                    if (intersection) {
-                        if (const Point_2* p = boost::get<Point_2>(&*intersection)) {
-                            cropped_segments.push_back(*p);
-                            break;
-                        }
-                    }
-                }
-
-            } else if (src_in && tgt_in) {
-                std::cout << " src dentro target dentro " << std::endl; 
-                cropped_segments.push_back(src);
-            }
-            removeDuplicates(cropped_segments);
-
-            std::cout << src.x()  << " " << src.y() << std::endl; 
-            std::cout << tgt.x()  << " " << tgt.y() << std::endl; 
         }
+        for (auto fit = pikachu.finite_faces_begin(); fit != pikachu.finite_faces_end(); ++fit) {
+            if (in_domain_map[fit]) {
+                Point_2 v0 = fit->vertex(0)->point();
+                Point_2 v1 = fit->vertex(1)->point();
+                Point_2 v2 = fit->vertex(2)->point();
+                if (is_point_in_triangle(tgt, v0, v1, v2)) {
+                    tgt_in = true;
+                    break;
+                }
+            }
+        }
+
+        if (src_in && !tgt_in) {
+            cropped_segments.push_back(src);
+            std::cout << " src dentro target fuera " << std::endl; 
+            Point_2 closest_intersection;
+            float min_distance = std::numeric_limits<float>::max();
+            bool intersection_found = false;
+
+            for (const auto& border_segment : border) {
+                auto intersection = CGAL::intersection(s, border_segment);
+                if (intersection) {
+                    if (const Point_2* p = boost::get<Point_2>(&*intersection)) {
+                        float distance = CGAL::squared_distance(*p, voronoi_sector);
+                        if (distance < min_distance) {
+                            closest_intersection = *p;
+                            min_distance = distance;
+                            intersection_found = true;
+                        }
+                    }
+                }
+            }
+            if (intersection_found) {
+                cropped_segments.push_back(closest_intersection);
+            }
+
+        } else if (!src_in && tgt_in) {
+            std::cout << " src fuera target dentro " << std::endl; 
+            Point_2 closest_intersection;
+            float min_distance = std::numeric_limits<float>::max();
+            bool intersection_found = false;
+
+            for (const auto& border_segment : border) {
+                auto intersection = CGAL::intersection(s, border_segment);
+                if (intersection) {
+                    if (const Point_2* p = boost::get<Point_2>(&*intersection)) {
+                        float distance = CGAL::squared_distance(*p, voronoi_sector);
+                        if (distance < min_distance) {
+                            closest_intersection = *p;
+                            min_distance = distance;
+                            intersection_found = true;
+                        }
+                    }
+                }
+            }
+            if (intersection_found) {
+                cropped_segments.push_back(closest_intersection);
+            }
+
+        } else if (src_in && tgt_in) {
+            std::cout << " src dentro target dentro " << std::endl; 
+            cropped_segments.push_back(src);
+        }
+
+        if (src.x() == 6308.0f) std::cout << "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" << std::endl;
+        
+    }
+    for (size_t i = 0; i < cropped_segments.size(); ++i) {
+        std::cout << cropped_segments[i] << std::endl; 
+    }
+        // removeDuplicates(cropped_segments);
 
     //     // Reordenar los puntos en cropped_segments en sentido antihorario alrededor de voronoi_sector
     // std::sort(cropped_segments.begin(), cropped_segments.end(),
